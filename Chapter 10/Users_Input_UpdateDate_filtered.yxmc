@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxConnectorGui.MongoInput.MongoInput">
+        <Position x="198" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Server>localhost:27017</Server>
+          <UserName>alteryxGallery</UserName>
+          <Password>4A67AA238E82C1261CE5BA8130BC1AD4A78C049273587FCA3E9E0FC7407DA349A37C7D0F263ECBB747FD6F35DD5CEC52F6E857292FA0627949606E9670912A7DBBF3D72D64B27176010B37825929DC3269994FD2378A614660CA3F4D0744F92E3C6CE2ED7E164B487</Password>
+          <Database>AlteryxGallery</Database>
+          <Collection>users</Collection>
+          <RecordLimit />
+          <Mode>Manual</Mode>
+          <IncludeRowid value="False" />
+          <Filter />
+          <Depth />
+          <Elements>
+            <Element name="_id" type="WString" size="256" criteria="" source="" />
+            <Element name="Role" type="WString" size="256" criteria="" source="" />
+            <Element name="Email" type="WString" size="256" criteria="" source="" />
+            <Element name="FirstName" type="WString" size="256" criteria="" source="" />
+            <Element name="LastName" type="WString" size="256" criteria="" source="" />
+            <Element name="DateAdded" type="DateTime" size="19" criteria="" source="" />
+            <Element name="DateUpdated" type="DateTime" size="19" criteria="" source="" />
+            <Element name="Pending" type="Bool" size="1" criteria="" source="" />
+            <Element name="Validated" type="Bool" size="1" criteria="" source="" />
+            <Element name="Active" type="Bool" size="1" criteria="" source="" />
+            <Element name="SubscriptionId" type="WString" size="256" criteria="" source="" />
+          </Elements>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="_id" size="256" source="MongoInput:" type="WString" />
+            <Field name="Role" size="256" source="MongoInput:" type="WString" />
+            <Field name="Email" size="256" source="MongoInput:" type="WString" />
+            <Field name="FirstName" size="256" source="MongoInput:" type="WString" />
+            <Field name="LastName" size="256" source="MongoInput:" type="WString" />
+            <Field name="DateAdded" source="MongoInput:" type="DateTime" />
+            <Field name="DateUpdated" source="MongoInput:" type="DateTime" />
+            <Field name="Pending" source="MongoInput:" type="Bool" />
+            <Field name="Validated" source="MongoInput:" type="Bool" />
+            <Field name="Active" source="MongoInput:" type="Bool" />
+            <Field name="SubscriptionId" size="256" source="MongoInput:" type="WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxMongoInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="438" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Data</Name>
+          <Abbrev>D</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>D Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="318" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[DateUpdated] &gt;= "2022-01-01 00:00:00"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[DateUpdated] &gt;= "2022-01-01 00:00:00"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="_id" size="256" source="MongoInput:" type="WString" />
+            <Field name="Role" size="256" source="MongoInput:" type="WString" />
+            <Field name="Email" size="256" source="MongoInput:" type="WString" />
+            <Field name="FirstName" size="256" source="MongoInput:" type="WString" />
+            <Field name="LastName" size="256" source="MongoInput:" type="WString" />
+            <Field name="DateAdded" source="MongoInput:" type="DateTime" />
+            <Field name="DateUpdated" source="MongoInput:" type="DateTime" />
+            <Field name="Pending" source="MongoInput:" type="Bool" />
+            <Field name="Validated" source="MongoInput:" type="Bool" />
+            <Field name="Active" source="MongoInput:" type="Bool" />
+            <Field name="SubscriptionId" size="256" source="MongoInput:" type="WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="_id" size="256" source="MongoInput:" type="WString" />
+            <Field name="Role" size="256" source="MongoInput:" type="WString" />
+            <Field name="Email" size="256" source="MongoInput:" type="WString" />
+            <Field name="FirstName" size="256" source="MongoInput:" type="WString" />
+            <Field name="LastName" size="256" source="MongoInput:" type="WString" />
+            <Field name="DateAdded" source="MongoInput:" type="DateTime" />
+            <Field name="DateUpdated" source="MongoInput:" type="DateTime" />
+            <Field name="Pending" source="MongoInput:" type="Bool" />
+            <Field name="Validated" source="MongoInput:" type="Bool" />
+            <Field name="Active" source="MongoInput:" type="Bool" />
+            <Field name="SubscriptionId" size="256" source="MongoInput:" type="WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="282" y="78" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Control Parameter (5)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="294" y="162" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="6" Connection="Action" />
+      <Destination ToolID="3" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="True" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="5" Connection="Question" />
+      <Destination ToolID="6" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (5)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (2)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Users_Input_UpdateDate_filtered</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="f00d23ad-d583-40d0-bc55-a7b02d9e5760" />
+      <Telemetry>
+        <PreviousWorkflowId value="d921ce36-a670-4529-b410-7e1a634812be" />
+        <OriginWorkflowId value="d921ce36-a670-4529-b410-7e1a634812be" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="6" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>2022-01-01 00:00:00</ReplaceText>
+              <Destination>3/Expression</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (4)</Name>
+          <ToolId value="4" />
+          <Questions>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Control Parameter (5)</Description>
+              <Name>Control Parameter (5)</Name>
+              <ToolId value="5" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (2)</Name>
+              <ToolId value="2" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AllSame</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (5)</Name>
+            <Description>Control Parameter (5)</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="2" Selected="False" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

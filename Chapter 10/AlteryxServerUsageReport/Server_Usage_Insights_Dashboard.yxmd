@@ -1,0 +1,866 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="Insights">
+        <Position x="894" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <InsightFields>
+            <InsightData>C:\Users\paulj\AppData\Local\Temp\Engine2_80744_1aa3f68d9108d04ebde7725e7cb143c8_\Insight302\insight.sqlite|||insightdata</InsightData>
+            <InsightDescription>C:\Users\paulj\AppData\Local\Temp\Engine2_80744_1aa3f68d9108d04ebde7725e7cb143c8_\Insight302\insightDescription.json</InsightDescription>
+            <Description>
+              <Elements>
+                <CHART>
+                  <x>240</x>
+                  <y>133</y>
+                  <id>insight-0</id>
+                  <width>574</width>
+                  <height>514</height>
+                  <type>CHART</type>
+                  <elementProps>
+                    <layout>
+                      <title>
+                        <text>Job run success each day</text>
+                      </title>
+                      <font>
+                        <family>sans-serif</family>
+                      </font>
+                      <autosize>false</autosize>
+                      <width>574</width>
+                      <height>514</height>
+                      <xaxis>
+                        <range>2022-01-17</range>
+                        <range>2022-01-24</range>
+                        <autorange>true</autorange>
+                        <title>
+                          <text>Job_completion_Day</text>
+                        </title>
+                        <type>date</type>
+                        <tickfont>
+                          <size>12</size>
+                        </tickfont>
+                        <nticks>0</nticks>
+                      </xaxis>
+                      <yaxis>
+                        <range>0</range>
+                        <range>2351.5789473684208</range>
+                        <autorange>true</autorange>
+                        <title>
+                          <text>Count</text>
+                        </title>
+                        <type>linear</type>
+                      </yaxis>
+                      <margin>
+                        <pad>0</pad>
+                        <t>100</t>
+                        <b>80</b>
+                        <l>80</l>
+                        <r>80</r>
+                      </margin>
+                    </layout>
+                    <data json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+                      <type>scatter</type>
+                      <mode>lines</mode>
+                      <stackgroup>1</stackgroup>
+                      <xsrc>Job_completion_Day</xsrc>
+                      <orientation>v</orientation>
+                      <ysrc>Count</ysrc>
+                      <transforms json:Array="true">
+                        <type>groupby</type>
+                        <groupssrc>Job_AlteryxResultCode</groupssrc>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <styles>
+                          <target>Error</target>
+                          <value>
+                            <line>
+                              <width>2</width>
+                            </line>
+                          </value>
+                        </styles>
+                        <styles>
+                          <target>Success</target>
+                        </styles>
+                        <styles>
+                          <target>Warning</target>
+                        </styles>
+                      </transforms>
+                    </data>
+                  </elementProps>
+                </CHART>
+                <CHART>
+                  <x>830</x>
+                  <y>132</y>
+                  <id>insight-1</id>
+                  <width>518</width>
+                  <height>496</height>
+                  <type>CHART</type>
+                  <elementProps>
+                    <layout>
+                      <title>
+                        <text>Average job run completion time</text>
+                      </title>
+                      <font>
+                        <family>sans-serif</family>
+                      </font>
+                      <autosize>false</autosize>
+                      <width>518</width>
+                      <height>496</height>
+                      <xaxis>
+                        <range>2022-01-17</range>
+                        <range>2022-01-24</range>
+                        <autorange>true</autorange>
+                        <title>
+                          <text>Job_completion_Day</text>
+                        </title>
+                        <type>date</type>
+                      </xaxis>
+                      <yaxis>
+                        <range>1.6369849666822742</range>
+                        <range>22.006345462096618</range>
+                        <autorange>true</autorange>
+                        <title>
+                          <text>Avg_ExecutionTime</text>
+                        </title>
+                        <type>linear</type>
+                      </yaxis>
+                    </layout>
+                    <data json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+                      <type>scatter</type>
+                      <mode>lines</mode>
+                      <boxpoints>false</boxpoints>
+                      <xsrc>Job_completion_Day</xsrc>
+                      <orientation>v</orientation>
+                      <ysrc>Avg_ExecutionTime</ysrc>
+                      <transforms json:Array="true">
+                        <type>groupby</type>
+                        <groupssrc>Job_AlteryxResultCode</groupssrc>
+                        <groups>null</groups>
+                        <groups>null</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <styles>
+                          <target>null</target>
+                        </styles>
+                        <styles>
+                          <target>Error</target>
+                        </styles>
+                        <styles>
+                          <target>Success</target>
+                        </styles>
+                        <styles>
+                          <target>Warning</target>
+                          <value>
+                            <line>
+                              <width>2</width>
+                            </line>
+                          </value>
+                        </styles>
+                      </transforms>
+                    </data>
+                  </elementProps>
+                </CHART>
+                <CHART>
+                  <x>1340</x>
+                  <y>135</y>
+                  <id>insight-2</id>
+                  <width>580</width>
+                  <height>498</height>
+                  <type>CHART</type>
+                  <elementProps>
+                    <layout>
+                      <title>
+                        <text>Time than 90% of jobs complete in</text>
+                      </title>
+                      <font>
+                        <family>sans-serif</family>
+                      </font>
+                      <autosize>false</autosize>
+                      <width>580</width>
+                      <height>498</height>
+                      <xaxis>
+                        <range>2022-01-17</range>
+                        <range>2022-01-24</range>
+                        <autorange>true</autorange>
+                        <title>
+                          <text>Job_completion_Day</text>
+                        </title>
+                        <type>date</type>
+                      </xaxis>
+                      <yaxis>
+                        <range>3.1886000000000023</range>
+                        <range>66.6186</range>
+                        <autorange>true</autorange>
+                        <title>
+                          <text>Percentile_Result_ExecutionTime</text>
+                        </title>
+                        <type>linear</type>
+                      </yaxis>
+                    </layout>
+                    <data json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+                      <type>scatter</type>
+                      <mode>lines</mode>
+                      <xsrc>Job_completion_Day</xsrc>
+                      <ysrc>Percentile_Result_ExecutionTime</ysrc>
+                      <transforms json:Array="true">
+                        <type>groupby</type>
+                        <groupssrc>Job_AlteryxResultCode</groupssrc>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                        <groups>Error</groups>
+                        <groups>Success</groups>
+                        <groups>Warning</groups>
+                      </transforms>
+                    </data>
+                  </elementProps>
+                </CHART>
+                <TEXT json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+                  <x>723</x>
+                  <y>18</y>
+                  <id>insight-3</id>
+                  <width>477</width>
+                  <height>160</height>
+                  <type>TEXT</type>
+                  <elementProps>
+                    <quillValue>&lt;p&gt;&lt;span class="ql-size-huge"&gt;Job Run Performance&lt;/span&gt;&lt;/p&gt;</quillValue>
+                  </elementProps>
+                </TEXT>
+              </Elements>
+              <Filters json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+                <name>Job Completion Day</name>
+                <controlName>date-range-slider</controlName>
+                <columnName>Job_completion_Day</columnName>
+                <type>between_dates</type>
+              </Filters>
+            </Description>
+            <InsightGalleryID>
+            </InsightGalleryID>
+            <InsightGalleryCheckSum>
+            </InsightGalleryCheckSum>
+          </InsightFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxInsightsPluginEngine.dll" EngineDllEntryPoint="AlteryxInsights" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="198" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Dataset] = "Job Analysis"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>filter to Job Analysis dataset</AnnotationText>
+          <DefaultAnnotationText>[Dataset] = "Job Analysis"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="318" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>ToDate([Job_CreationDateTime]) &gt;= "2022-01-01"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Choose recent values</AnnotationText>
+          <DefaultAnnotationText>ToDate([Job_CreationDateTime]) &gt;= "2022-01-01"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="582" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeTrim([Job_CompletionDateTime],&quot;day&quot;)" field="Job_completion_Day" size="10" type="Date" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[Trim datetime to date
+]]></AnnotationText>
+          <DefaultAnnotationText><![CDATA[Job_completion_Day = DateTimeTrim([Job_CompletionDateTime],"day")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="690" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Job_completion_Day" action="GroupBy" rename="Job_completion_Day" />
+            <SummarizeField field="Job_AlteryxResultCode" action="GroupBy" rename="Job_AlteryxResultCode" />
+            <SummarizeField field="Job_Id" action="Count" rename="Count" />
+            <SummarizeField field="ExecutionTime" action="Avg" rename="Avg_ExecutionTime" />
+            <SummarizeField field="Result_ExecutionTime" action="Percentile" rename="Percentile_Result_ExecutionTime">
+              <Percentile value="0.9" />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Aggregate for analysis</AnnotationText>
+          <DefaultAnnotationText>Aggregate for analysis</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="786" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Job_completion_Day" order="Ascending" />
+            <Field field="Job_AlteryxResultCode" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Sort for visualization</AnnotationText>
+          <DefaultAnnotationText>Job_completion_Day - Ascending
+Job_AlteryxResultCode - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="414" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!IsNull([Job_AlteryxResultCode])</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Remove Jobs that have not run</AnnotationText>
+          <DefaultAnnotationText>!IsNull([Job_AlteryxResultCode])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings>
+        <Position x="498" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">True</Value>
+          <Value name="List Box (11)">"Job_Id","Job_AlteryxResultCode","Job_AppName","Application_Id","Schedule_Id","Job_CompletionDateTime","Job_CreationDateTime","Job_Name","Job_Creator_UserId","ClientType","Error","ExecutionTime","IsAnonymous","ModuleName","RunWithE2","SubscriptionId","Job_Creator_User_Email","Job_Creator_Name","Job_Creator_User_Studio_name","Role","Result_ErrorMessage","Result_ExecutionStartTime","Result_ExecutionTime","Result_OutputLog","Result_QueueTime","PackageType","PublishedRevision_WorkflowCredentialType","Permissions.CanDownload","PublishedRevision_AuthorId","PublishedRevision_DateCreated","PublishedRevision_Description","PublishedRevision_Name","PublishedRevision_Email","PublishedRevision_AuthorName","PublishedRevision_StudioName","Dataset","Runtime","Version","ExecutionMode","Downloadable","Id","Original_AuthorId","IsDeleted","IsPublic","PublishedRevision_IsValid","PublishedRevision_RequiresApproval","Original_DateCreated","RunDisabled","TotalRunCount","Original_Author_Email","Original_Author_Name","Original_Author_StudioName","Attributes","Attribute_Values","App_TotalDownloads","Tag","CollectionId","Collection_Name","Collection_OwnerId","Collection_CreatedDate","Collection_Owner_Email","Collection_Owner_Name","Collection_Owner_StudioName","Schedule_ApplicationName","Schedule_Application_Id","Schedule_Comment","Schedule_CreationDateTime","Schedule_Enabled","Schedule_Frequency","Schedule_LastRunDateTime","Schedule_NextRunDateTime","Schedule_NumberOfTimesRun","ScheduleName","Schedule_StartDateTime","Schedule_UntilDateTime","Schedule_UserName","RequestID","ClientStatus","CredentialSource","LastModifiedDate","LastModifiedId","LC_Owner","Owner","Timezone","WorkerTag","Right_RunWithE2","UserId","Email","Name","Studio_Name","SessionId","Login_DateTime","SessionLength_Seconds","Access","Access_Value","SessionLength"</Value>
+          <Value name="Check Box (84)">False</Value>
+          <Value name="Check Box (117)">False</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings>
+        <Position x="78" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Tableau Output">True</Value>
+          <Value name="PDF Output">False</Value>
+          <Value name="Numeric Up Down (428)">30</Value>
+          <Value name="Text Box (2)">localhost:27017</Value>
+          <Value name="Text Box (3)">alteryxGallery</Value>
+          <Value name="Text Box (4)">4A4EEE35B1581643964360EEC6CDC4703A5D97E8ED8A24FDD4BA21E470E15C8D810F6DA0C551B222BDAF7BCCCABBBF14DB76929FC0C1F280773D5742D0243348D9E8A3FFABE96E07E077EC8D11086D2089AEBF1CD27356DA114B3F5860FDAF8A2C87E94736DA7697B6CD96F34632B51DD3627E890B3A4D12C7DFD7CDDC3215640A81E828D66C248EA9242B5D54EF8FD0F72BF26B0C505EAAD21ACDC7B7C3D5615249947D945946436D14A653602DAD6D0FF4294C2D4BA17FC6FF74F5A9C935AD4186CFD0672A7635CAE5F59CDBBE7B1EBEDB4E18CCC48E48E266EACD78FE9670135B4B4E1685B6991EC54B51E9C9FC5F7257B0E7914E73DEB3BD8E903EAC7AB5075AC5ED3C9AB652CCF1E6A489A5826225E9AB3E850F365D2EC39B57A378BA352675032E1285A0DE74F964867D99ECC09307F15510539B159DF836F9646173511EA3B0FACF521447C8B3CC4C44F80092C446D3D8011C3F517DFD7539CEA444635EA7FC817BE14434FBC7269E708A2ED0963A8366849D5C2DC71622292483CEE9F5D6164AEDD58197A18E8597652F030DDF552E5F80999DB36633506BE0D3605761884141498B2</Value>
+          <Value name="Check Box (6)">True</Value>
+          <Value name="Text Box (5)">AlteryxGallery</Value>
+          <Value name="Text Box (7)">alteryxServer</Value>
+          <Value name="Check Box (681)">False</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Control Parameter">
+          <RecordInfo>
+            <Field name="Output" source="TextInput:" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Data">
+          <RecordInfo>
+            <Field name="Job_Id" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Job_AlteryxResultCode" size="7" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Job_AppName" size="59" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Application_Id" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Schedule_Id" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Job_CompletionDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="Job_CreationDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="Job_Name" size="46" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Job_Creator_UserId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="ClientType" size="7" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Error" size="505" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="ExecutionTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Double" />
+            <Field name="IsAnonymous" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="ModuleName" size="46" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="RunWithE2" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="SubscriptionId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Job_Creator_User_Email" size="43" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Job_Creator_Name" size="22" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Job_Creator_User_Studio_name" size="31" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Role" size="9" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Result_ErrorMessage" size="174356" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Result_ExecutionStartTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="Result_ExecutionTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Double" />
+            <Field name="Result_OutputLog" size="1736072" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_WString" />
+            <Field name="Result_QueueTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Double" />
+            <Field name="PackageType" size="8" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="PublishedRevision_WorkflowCredentialType" size="12" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Permissions.CanDownload" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="PublishedRevision_AuthorId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="PublishedRevision_DateCreated" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="PublishedRevision_Description" size="1051" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_WString" />
+            <Field name="PublishedRevision_Name" size="85" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="PublishedRevision_Email" size="46" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="PublishedRevision_AuthorName" size="23" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="PublishedRevision_StudioName" size="31" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Dataset" size="12" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Runtime" size="55" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Version" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Int32" />
+            <Field name="ExecutionMode" size="12" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Downloadable" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field description="RegEx: Parsed from _id" name="Id" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Original_AuthorId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="IsDeleted" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="IsPublic" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="PublishedRevision_IsValid" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="PublishedRevision_RequiresApproval" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="Original_DateCreated" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="RunDisabled" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="TotalRunCount" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Int32" />
+            <Field name="Original_Author_Email" size="46" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Original_Author_Name" size="23" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Original_Author_StudioName" size="31" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Attributes" size="40" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Attribute_Values" size="12" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="App_TotalDownloads" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Int64" />
+            <Field name="Tag" size="12" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="CollectionId" size="32" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Collection_Name" size="37" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Collection_OwnerId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Collection_CreatedDate" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="Collection_Owner_Email" size="45" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Collection_Owner_Name" size="23" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Collection_Owner_StudioName" size="31" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Schedule_ApplicationName" size="59" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Schedule_Application_Id" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Schedule_Comment" size="164" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Schedule_CreationDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="Schedule_Enabled" size="8" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Schedule_Frequency" size="154" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Schedule_LastRunDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="Schedule_NextRunDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="Schedule_NumberOfTimesRun" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Int32" />
+            <Field name="ScheduleName" size="59" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Schedule_StartDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="Schedule_UntilDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="Schedule_UserName" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="RequestID" size="32" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="ClientStatus" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="CredentialSource" size="4" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="LastModifiedDate" size="19" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="LastModifiedId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="LC_Owner" size="21" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Owner" size="21" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Timezone" size="16" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="WorkerTag" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="Right_RunWithE2" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="UserId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Email" size="46" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Name" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Studio_Name" size="31" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="SessionId" size="55" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Login_DateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="SessionLength_Seconds" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Double" />
+            <Field name="Access" size="4" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Access_Value" size="9" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="SessionLength" size="40" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\AlteryxServerUsageReport\Alteryx_Server_Usage_Report.yxmc" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="29" y="5" width="241" height="213" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 16</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="54" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\AlteryxServerUsageReport\server_health_data.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>server_health_data.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Job_Id" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="Job_AlteryxResultCode" size="7" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="Job_AppName" size="59" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Application_Id" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="Schedule_Id" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="Job_CompletionDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+                <Field name="Job_CreationDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+                <Field name="Job_Name" size="46" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Job_Creator_UserId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="ClientType" size="7" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="Error" size="505" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="ExecutionTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Double" />
+                <Field name="IsAnonymous" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+                <Field name="ModuleName" size="46" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="RunWithE2" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+                <Field name="SubscriptionId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Job_Creator_User_Email" size="43" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="Job_Creator_Name" size="22" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Job_Creator_User_Studio_name" size="31" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Role" size="9" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="Result_ErrorMessage" size="174356" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Result_ExecutionStartTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+                <Field name="Result_ExecutionTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Double" />
+                <Field name="Result_OutputLog" size="1736072" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_WString" />
+                <Field name="Result_QueueTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Double" />
+                <Field name="PackageType" size="8" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="PublishedRevision_WorkflowCredentialType" size="12" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="Permissions.CanDownload" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+                <Field name="PublishedRevision_AuthorId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="PublishedRevision_DateCreated" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+                <Field name="PublishedRevision_Description" size="1051" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_WString" />
+                <Field name="PublishedRevision_Name" size="85" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="PublishedRevision_Email" size="46" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="PublishedRevision_AuthorName" size="23" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="PublishedRevision_StudioName" size="31" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Dataset" size="12" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="Runtime" size="55" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Version" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Int32" />
+                <Field name="ExecutionMode" size="12" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="Downloadable" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+                <Field description="RegEx: Parsed from _id" name="Id" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="Original_AuthorId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="IsDeleted" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+                <Field name="IsPublic" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+                <Field name="PublishedRevision_IsValid" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+                <Field name="PublishedRevision_RequiresApproval" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+                <Field name="Original_DateCreated" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+                <Field name="RunDisabled" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+                <Field name="TotalRunCount" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Int32" />
+                <Field name="Original_Author_Email" size="46" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Original_Author_Name" size="23" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Original_Author_StudioName" size="31" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Attributes" size="40" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Attribute_Values" size="12" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="App_TotalDownloads" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Int64" />
+                <Field name="Tag" size="12" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="CollectionId" size="32" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="Collection_Name" size="37" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Collection_OwnerId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="Collection_CreatedDate" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+                <Field name="Collection_Owner_Email" size="45" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Collection_Owner_Name" size="23" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Collection_Owner_StudioName" size="31" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Schedule_ApplicationName" size="59" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Schedule_Application_Id" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="Schedule_Comment" size="164" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Schedule_CreationDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+                <Field name="Schedule_Enabled" size="8" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="Schedule_Frequency" size="154" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Schedule_LastRunDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+                <Field name="Schedule_NextRunDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+                <Field name="Schedule_NumberOfTimesRun" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Int32" />
+                <Field name="ScheduleName" size="59" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Schedule_StartDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+                <Field name="Schedule_UntilDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+                <Field name="Schedule_UserName" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="RequestID" size="32" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="ClientStatus" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+                <Field name="CredentialSource" size="4" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="LastModifiedDate" size="19" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="LastModifiedId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="LC_Owner" size="21" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Owner" size="21" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Timezone" size="16" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="WorkerTag" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+                <Field name="Right_RunWithE2" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+                <Field name="UserId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="Email" size="46" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Name" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="Studio_Name" size="31" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+                <Field name="SessionId" size="55" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="Login_DateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+                <Field name="SessionLength_Seconds" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Double" />
+                <Field name="Access" size="4" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="Access_Value" size="9" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+                <Field name="SessionLength" size="40" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="186" y="54" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_61272_669ae3f7d9e74b41948b059ac5a0d1bd_\Engine_61272_1e7489bb88ec8647930e7c79b6446560~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="186" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Dataset" action="GroupBy" rename="Dataset" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="True" />
+      <Destination ToolID="14" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output26" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Data" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Server_Usage_Insights_Dashboard</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="3b3c3e01-570c-4ce1-bc75-29d94e6a8374" />
+      <Telemetry>
+        <PreviousWorkflowId value="48188ac8-4df4-477a-9edf-8570d0abddf9" />
+        <OriginWorkflowId value="48188ac8-4df4-477a-9edf-8570d0abddf9" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

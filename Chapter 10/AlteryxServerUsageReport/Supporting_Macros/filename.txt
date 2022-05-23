@@ -1,0 +1,5 @@
+MongoDB shell version v4.0.10
+connecting to: mongodb://localhost:27018/AlteryxService?gssapiServiceName=mongodb
+2022-01-24T14:05:50.257+0000 E QUERY    [js] Error: couldn't connect to server localhost:27018, connection attempt failed: SocketException: Error connecting to localhost:27018 (127.0.0.1:27018) :: caused by :: No connection could be made because the target machine actively refused it. :
+connect@src/mongo/shell/mongo.js:344:17
+@(connect):2:6

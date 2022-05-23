@@ -1,0 +1,963 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AlteryxDocument yxmdVer="11.0">
+  <Nodes>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="55" y="412.1" width="839" height="32" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Click the Run button (green triangle) on the toolbar to explore this macro</Text>
+          <Font name="Microsoft Sans Serif" size="15.75" style="1" />
+          <TextColor name="White" />
+          <FillColor r="31" g="68" b="125" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="55" y="376.1" width="839" height="32" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Tableau Workbook Template - Macro</Text>
+          <Font name="Microsoft Sans Serif" size="15.75" style="1" />
+          <TextColor name="White" />
+          <FillColor r="31" g="68" b="125" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="55" y="460.1" width="840" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Alteryx can directly output a tableau workbook. We do this by creating a tableau workbook "template" using sample data within tableau and saving. We can then reference this workbook from within alteryx to update the data source (.tde) and output a copy of the workbook template utilizing the new data source (.tde) 
+
+This is a great example of how alteryx can interact with un- or semi-structured data as alteryx will read in the tableau workbook (.twb) file and modify it.</Text>
+          <Font name="Corbel" size="10" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="255" b="215" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="55" y="820.0999" width="1057" height="385.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Output Workbook (.twb)</Caption>
+          <Style TextColor="#ffffff" FillColor="#59879b" BorderColor="#2f4f4f" Transparency="1" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="283" y="864.1001" width="179" height="192" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Here, we get the file path used to output the data source (.tde) so we can modify the tableau workbook template (.twb) with this file path.</Text>
+              <Font name="Corbel" size="10" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="494" y="864.1005" width="179" height="267.9995" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Use regex to identify the place in the XML where tableau stores the reference to the data source and replace with a reference to the new data source (.tde)</Text>
+              <Font name="Corbel" size="10" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="80" y="864.0999" width="179" height="316.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Read in the tableau workbook. Tableau workbooks (.twb) are xml files, but we'll read it in as a non-delimited file to preserve the file structure.
+
+
+
+
+
+
+
+
+
+
+One of the parameters (questions) for this macro is to point to the workbook template on your file system. A macro action will update this tool with the selection.</Text>
+              <Font name="Corbel" size="10" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="703" y="865.1001" width="179" height="192" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Before we output, we want to remove the field that we used to hold the data source (.tde) file path.</Text>
+              <Font name="Corbel" size="10" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="908" y="864.1005" width="179" height="192" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Output the now modified tableau workbook (.twb) to the same temporary space as the data source (.tde). We will output this as a non-delimited file which will preserve the orginal file structure.</Text>
+              <Font name="Corbel" size="10" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="547" y="948.1002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField field="Field_1" type="V_String" size="2147483647" expression="regex_replace([Field_1],&quot;(.*dbname=').*?('.*)&quot;,&quot;$1&quot;+&quot;{FilePath}&quot;+&quot;$2&quot;)" />
+                <FormulaField field="Field_1" type="V_String" size="2147483647" expression="replace([Field_1],&quot;{FilePath}&quot;,[FilePath])" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Field_1=regex_replace([Field_1],"(.*dbname=').*?('.*)","$1"+"...
+Field_1=replace([Field_1],"{FilePath}",[FilePath])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field_1" size="2147483647" source="Formula: replace([Field_1],&quot;{FilePath}&quot;,[FilePath])" type="V_String" />
+                <Field description="Formula: If [Row-1:FilePath] in (Null(),&quot;&quot;) Then&#xA;&#xA;&#xA;	If &quot;False&quot;=&quot;True&quot; Then&#xA;		 regex_replace(&quot;c:\&quot;,'\.[^\\\/]+(\..*)?$','') &#xA;		+&quot;.AlteryxData.tde&quot;&#xA;	Else&#xA;		 [Engine.TempFilePath]		&#xA;		+&quot;AlteryxData_&quot;&#xA;		+regex_replace(UuidCreate(),'[^\w]','')&#xA;		+&quot;.tde&quot;&#xA;	EndIf&#xA;&#xA;Else [Row-1:FilePath]&#xA;EndIf" name="FilePath" size="2056" source="Formula: If [Row-1:FilePath] in (Null(),&quot;&quot;) Then&#xA;&#xA;&#xA;	If &quot;False&quot;=&quot;True&quot; Then&#xA;		 regex_replace(&quot;c:\&quot;,'\.[^\\\/]+(\..*)?$','') &#xA;		+&quot;.AlteryxData.tde&quot;&#xA;	Else&#xA;		 [Engine.TempFilePath]		&#xA;		+&quot;AlteryxData_&quot;&#xA;		+regex_replace(UuidCreate(),'[^\w]','')&#xA;		+&quot;.tde&quot;&#xA;	EndIf&#xA;&#xA;Else [Row-1:FilePath]&#xA;EndIf" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="968" y="948.1002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">%temp%Workbook.twb</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>\0</Delimeter>
+                <ForceQuotes>Never</ForceQuotes>
+                <HeaderRow>False</HeaderRow>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>%temp%Workbook.twb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="129" y="948.1002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">..\Supporting_Macros\Alteryx_Server_Report.twb</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>\0</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>2147483648</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>False</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Alteryx_Server_Report.twb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field_1" size="2147483647" source="File: C:\Users\bgomez\Downloads\AlteryxServerUsageReport (3)\Supporting_Macros\Alteryx_Server_Report.twb" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="295" y="948.1002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields orderChanged="False" />
+              <Mode>First</Mode>
+              <N>1</N>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="AlteryxKey" source="RecordID: Starting Value=1" type="Int32" />
+                <Field description="Formula: [Row-1:PolygonNumber]+1" name="PolygonNumber" source="Formula: [Row-1:PolygonNumber]+1" type="Int32" />
+                <Field name="PointOrder" source="Formula: [PointOrder]+1" type="Int32" />
+                <Field name="Longitude" source="SpatialInfo: CentroidXY Source=Split_SpatialObj" type="Double" />
+                <Field name="Latitude" source="SpatialInfo: CentroidXY Source=Split_SpatialObj" type="Double" />
+                <Field description="Formula: If [Row-1:FilePath] in (Null(),&quot;&quot;) Then&#xA;&#xA;&#xA;	If &quot;False&quot;=&quot;True&quot; Then&#xA;		 regex_replace(&quot;c:\&quot;,'\.[^\\\/]+(\..*)?$','') &#xA;		+&quot;.AlteryxData.tde&quot;&#xA;	Else&#xA;		 [Engine.TempFilePath]		&#xA;		+&quot;AlteryxData_&quot;&#xA;		+regex_replace(UuidCreate(),'[^\w]','')&#xA;		+&quot;.tde&quot;&#xA;	EndIf&#xA;&#xA;Else [Row-1:FilePath]&#xA;EndIf" name="FilePath" size="512" source="Formula: If [Row-1:FilePath] in (Null(),&quot;&quot;) Then&#xA;&#xA;&#xA;	If &quot;False&quot;=&quot;True&quot; Then&#xA;		 regex_replace(&quot;c:\&quot;,'\.[^\\\/]+(\..*)?$','') &#xA;		+&quot;.AlteryxData.tde&quot;&#xA;	Else&#xA;		 [Engine.TempFilePath]		&#xA;		+&quot;AlteryxData_&quot;&#xA;		+regex_replace(UuidCreate(),'[^\w]','')&#xA;		+&quot;.tde&quot;&#xA;	EndIf&#xA;&#xA;Else [Row-1:FilePath]&#xA;EndIf" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="391" y="948.1002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <SelectFields>
+                    <SelectField field="Target_Field_1" selected="True" />
+                    <SelectField field="Source_FilePath" selected="True" size="2056" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field_1" size="2147483647" source="File: C:\Users\bgomez\Downloads\AlteryxServerUsageReport (3)\Supporting_Macros\Alteryx_Server_Report.twb" type="V_String" />
+                <Field description="Formula: If [Row-1:FilePath] in (Null(),&quot;&quot;) Then&#xA;&#xA;&#xA;	If &quot;False&quot;=&quot;True&quot; Then&#xA;		 regex_replace(&quot;c:\&quot;,'\.[^\\\/]+(\..*)?$','') &#xA;		+&quot;.AlteryxData.tde&quot;&#xA;	Else&#xA;		 [Engine.TempFilePath]		&#xA;		+&quot;AlteryxData_&quot;&#xA;		+regex_replace(UuidCreate(),'[^\w]','')&#xA;		+&quot;.tde&quot;&#xA;	EndIf&#xA;&#xA;Else [Row-1:FilePath]&#xA;EndIf" name="FilePath" size="2056" source="Formula: If [Row-1:FilePath] in (Null(),&quot;&quot;) Then&#xA;&#xA;&#xA;	If &quot;False&quot;=&quot;True&quot; Then&#xA;		 regex_replace(&quot;c:\&quot;,'\.[^\\\/]+(\..*)?$','') &#xA;		+&quot;.AlteryxData.tde&quot;&#xA;	Else&#xA;		 [Engine.TempFilePath]		&#xA;		+&quot;AlteryxData_&quot;&#xA;		+regex_replace(UuidCreate(),'[^\w]','')&#xA;		+&quot;.tde&quot;&#xA;	EndIf&#xA;&#xA;Else [Row-1:FilePath]&#xA;EndIf" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="763" y="948.1002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Field_1" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field_1" size="2147483647" source="Formula: replace([Field_1],&quot;{FilePath}&quot;,[FilePath])" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="55" y="544.1" width="840" height="238.9999" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Output datasource (.tde)</Caption>
+          <Style TextColor="#ffffff" FillColor="#59879b" BorderColor="#2f4f4f" Transparency="1" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="691" y="590.1" width="179" height="165.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Output the .tde file to a temporary space. This is the data source the workbook will reference.</Text>
+              <Font name="Corbel" size="10" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="283" y="589.1" width="179" height="168" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>We are using the block until done to allow the data source (.tde) output to occur before the tableau workbook (.twb) is created below.</Text>
+              <Font name="Corbel" size="10" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="487" y="590.1" width="179" height="168" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>We are using the block until done to allow the data source (.tde) output to occur before the tableau workbook (.twb) is created below.</Text>
+              <Font name="Corbel" size="10" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="80" y="588.1" width="179" height="168" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>This input represents the data being passed into the macro. This will be the data that the tableau workbook template will be updated to reference</Text>
+              <Font name="Corbel" size="10" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="758" y="661" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="42" MaxRecords="">%temp%AlteryxData.tde</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <OutputOption>Overwrite</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="True" />
+              <MultiFileType>Path</MultiFileType>
+              <MultiFileField>FilePath</MultiFileField>
+              <KeepField value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>%temp%AlteryxData.tde</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
+            <Position x="542" y="661" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="AlteryxKey" source="RecordID: Starting Value=1" type="Int32" />
+                <Field description="Formula: [Row-1:PolygonNumber]+1" name="PolygonNumber" source="Formula: [Row-1:PolygonNumber]+1" type="Int32" />
+                <Field name="PointOrder" source="Formula: [PointOrder]+1" type="Int32" />
+                <Field name="Longitude" source="SpatialInfo: CentroidXY Source=Split_SpatialObj" type="Double" />
+                <Field name="Latitude" source="SpatialInfo: CentroidXY Source=Split_SpatialObj" type="Double" />
+                <Field description="Formula: If [Row-1:FilePath] in (Null(),&quot;&quot;) Then&#xA;&#xA;&#xA;	If &quot;False&quot;=&quot;True&quot; Then&#xA;		 regex_replace(&quot;c:\&quot;,'\.[^\\\/]+(\..*)?$','') &#xA;		+&quot;.AlteryxData.tde&quot;&#xA;	Else&#xA;		 [Engine.TempFilePath]		&#xA;		+&quot;AlteryxData_&quot;&#xA;		+regex_replace(UuidCreate(),'[^\w]','')&#xA;		+&quot;.tde&quot;&#xA;	EndIf&#xA;&#xA;Else [Row-1:FilePath]&#xA;EndIf" name="FilePath" size="512" source="Formula: If [Row-1:FilePath] in (Null(),&quot;&quot;) Then&#xA;&#xA;&#xA;	If &quot;False&quot;=&quot;True&quot; Then&#xA;		 regex_replace(&quot;c:\&quot;,'\.[^\\\/]+(\..*)?$','') &#xA;		+&quot;.AlteryxData.tde&quot;&#xA;	Else&#xA;		 [Engine.TempFilePath]		&#xA;		+&quot;AlteryxData_&quot;&#xA;		+regex_replace(UuidCreate(),'[^\w]','')&#xA;		+&quot;.tde&quot;&#xA;	EndIf&#xA;&#xA;Else [Row-1:FilePath]&#xA;EndIf" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Output2">
+              <RecordInfo>
+                <Field name="AlteryxKey" source="RecordID: Starting Value=1" type="Int32" />
+                <Field description="Formula: [Row-1:PolygonNumber]+1" name="PolygonNumber" source="Formula: [Row-1:PolygonNumber]+1" type="Int32" />
+                <Field name="PointOrder" source="Formula: [PointOrder]+1" type="Int32" />
+                <Field name="Longitude" source="SpatialInfo: CentroidXY Source=Split_SpatialObj" type="Double" />
+                <Field name="Latitude" source="SpatialInfo: CentroidXY Source=Split_SpatialObj" type="Double" />
+                <Field description="Formula: If [Row-1:FilePath] in (Null(),&quot;&quot;) Then&#xA;&#xA;&#xA;	If &quot;False&quot;=&quot;True&quot; Then&#xA;		 regex_replace(&quot;c:\&quot;,'\.[^\\\/]+(\..*)?$','') &#xA;		+&quot;.AlteryxData.tde&quot;&#xA;	Else&#xA;		 [Engine.TempFilePath]		&#xA;		+&quot;AlteryxData_&quot;&#xA;		+regex_replace(UuidCreate(),'[^\w]','')&#xA;		+&quot;.tde&quot;&#xA;	EndIf&#xA;&#xA;Else [Row-1:FilePath]&#xA;EndIf" name="FilePath" size="512" source="Formula: If [Row-1:FilePath] in (Null(),&quot;&quot;) Then&#xA;&#xA;&#xA;	If &quot;False&quot;=&quot;True&quot; Then&#xA;		 regex_replace(&quot;c:\&quot;,'\.[^\\\/]+(\..*)?$','') &#xA;		+&quot;.AlteryxData.tde&quot;&#xA;	Else&#xA;		 [Engine.TempFilePath]		&#xA;		+&quot;AlteryxData_&quot;&#xA;		+regex_replace(UuidCreate(),'[^\w]','')&#xA;		+&quot;.tde&quot;&#xA;	EndIf&#xA;&#xA;Else [Row-1:FilePath]&#xA;EndIf" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Output3">
+              <RecordInfo>
+                <Field name="AlteryxKey" source="RecordID: Starting Value=1" type="Int32" />
+                <Field description="Formula: [Row-1:PolygonNumber]+1" name="PolygonNumber" source="Formula: [Row-1:PolygonNumber]+1" type="Int32" />
+                <Field name="PointOrder" source="Formula: [PointOrder]+1" type="Int32" />
+                <Field name="Longitude" source="SpatialInfo: CentroidXY Source=Split_SpatialObj" type="Double" />
+                <Field name="Latitude" source="SpatialInfo: CentroidXY Source=Split_SpatialObj" type="Double" />
+                <Field description="Formula: If [Row-1:FilePath] in (Null(),&quot;&quot;) Then&#xA;&#xA;&#xA;	If &quot;False&quot;=&quot;True&quot; Then&#xA;		 regex_replace(&quot;c:\&quot;,'\.[^\\\/]+(\..*)?$','') &#xA;		+&quot;.AlteryxData.tde&quot;&#xA;	Else&#xA;		 [Engine.TempFilePath]		&#xA;		+&quot;AlteryxData_&quot;&#xA;		+regex_replace(UuidCreate(),'[^\w]','')&#xA;		+&quot;.tde&quot;&#xA;	EndIf&#xA;&#xA;Else [Row-1:FilePath]&#xA;EndIf" name="FilePath" size="512" source="Formula: If [Row-1:FilePath] in (Null(),&quot;&quot;) Then&#xA;&#xA;&#xA;	If &quot;False&quot;=&quot;True&quot; Then&#xA;		 regex_replace(&quot;c:\&quot;,'\.[^\\\/]+(\..*)?$','') &#xA;		+&quot;.AlteryxData.tde&quot;&#xA;	Else&#xA;		 [Engine.TempFilePath]		&#xA;		+&quot;AlteryxData_&quot;&#xA;		+regex_replace(UuidCreate(),'[^\w]','')&#xA;		+&quot;.tde&quot;&#xA;	EndIf&#xA;&#xA;Else [Row-1:FilePath]&#xA;EndIf" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
+        </Node>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+            <Position x="126" y="661" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UseFileInput value="True" />
+              <Name>Input14</Name>
+              <Abbrev />
+              <ShowFieldMap value="False" />
+              <FileInput>
+                <Configuration>
+                  <Passwords />
+                  <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">.\TableauWorkbook.TestData.yxdb</File>
+                  <FormatSpecificOptions />
+                </Configuration>
+              </FileInput>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Input14</Name>
+              <DefaultAnnotationText>TableauWorkbook.TestData.yxdb</DefaultAnnotationText>
+              <Left value="True" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="AlteryxKey" source="RecordID: Starting Value=1" type="Int32" />
+                <Field description="Formula: [Row-1:PolygonNumber]+1" name="PolygonNumber" source="Formula: [Row-1:PolygonNumber]+1" type="Int32" />
+                <Field name="PointOrder" source="Formula: [PointOrder]+1" type="Int32" />
+                <Field name="Longitude" source="SpatialInfo: CentroidXY Source=Split_SpatialObj" type="Double" />
+                <Field name="Latitude" source="SpatialInfo: CentroidXY Source=Split_SpatialObj" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+            <Position x="334" y="661" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name>AlteryxKey</UpdateField_Name>
+              <CreateField_Name>FilePath</CreateField_Name>
+              <CreateField_Type>String</CreateField_Type>
+              <CreateField_Size>512</CreateField_Size>
+              <OtherRows>NULL</OtherRows>
+              <NumRows value="1" />
+              <Expression>If [Row-1:FilePath] in (Null(),"") Then
+
+
+	If "%Question.SaveWorkbookCheckbox%"="True" Then
+		 regex_replace("%Question.SaveWorkbookLocation%",'\.[^\\\/]+(\..*)?$','') 
+		+".AlteryxData.tde"
+	Else
+		 [Engine.TempFilePath]		
+		+"AlteryxData_"
+		+regex_replace(UuidCreate(),'[^\w]','')
+		+".tde"
+	EndIf
+
+Else [Row-1:FilePath]
+EndIf</Expression>
+              <GroupByFields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>If [Row-1:FilePath] in (Null(),"") Then
+
+
+	If "%Question.Save...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="AlteryxKey" source="RecordID: Starting Value=1" type="Int32" />
+                <Field description="Formula: [Row-1:PolygonNumber]+1" name="PolygonNumber" source="Formula: [Row-1:PolygonNumber]+1" type="Int32" />
+                <Field name="PointOrder" source="Formula: [PointOrder]+1" type="Int32" />
+                <Field name="Longitude" source="SpatialInfo: CentroidXY Source=Split_SpatialObj" type="Double" />
+                <Field name="Latitude" source="SpatialInfo: CentroidXY Source=Split_SpatialObj" type="Double" />
+                <Field description="Formula: If [Row-1:FilePath] in (Null(),&quot;&quot;) Then&#xA;&#xA;&#xA;	If &quot;False&quot;=&quot;True&quot; Then&#xA;		 regex_replace(&quot;c:\&quot;,'\.[^\\\/]+(\..*)?$','') &#xA;		+&quot;.AlteryxData.tde&quot;&#xA;	Else&#xA;		 [Engine.TempFilePath]		&#xA;		+&quot;AlteryxData_&quot;&#xA;		+regex_replace(UuidCreate(),'[^\w]','')&#xA;		+&quot;.tde&quot;&#xA;	EndIf&#xA;&#xA;Else [Row-1:FilePath]&#xA;EndIf" name="FilePath" size="512" source="Formula: If [Row-1:FilePath] in (Null(),&quot;&quot;) Then&#xA;&#xA;&#xA;	If &quot;False&quot;=&quot;True&quot; Then&#xA;		 regex_replace(&quot;c:\&quot;,'\.[^\\\/]+(\..*)?$','') &#xA;		+&quot;.AlteryxData.tde&quot;&#xA;	Else&#xA;		 [Engine.TempFilePath]		&#xA;		+&quot;AlteryxData_&quot;&#xA;		+regex_replace(UuidCreate(),'[^\w]','')&#xA;		+&quot;.tde&quot;&#xA;	EndIf&#xA;&#xA;Else [Row-1:FilePath]&#xA;EndIf" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="53" width="220" height="300" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Interface Tools</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ecf2f2" BorderColor="#2f4f4f" Transparency="1" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.FileBrowse.FileBrowse">
+            <Position x="79" y="97" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>Please navigate to the tableau workbook template (.twb)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="79" y="209.1" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
+            <Position x="190" y="101" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>SaveWorkbookCheckbox</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.FileBrowse.FileBrowse">
+            <Position x="190" y="173" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>SaveWorkbookLocation</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="190" y="269" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="47" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="47" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="65" Connection="Action" />
+      <Destination ToolID="44" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection name="Please navigate to the tableau workbook template (.twb)" Wireless="True">
+      <Origin ToolID="56" Connection="Question" />
+      <Destination ToolID="55" Connection="Question" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="55" Connection="Action" />
+      <Destination ToolID="38" Connection="Action" />
+    </Connection>
+    <Connection name="SaveWorkbookCheckbox" Wireless="True">
+      <Origin ToolID="63" Connection="Question" />
+      <Destination ToolID="65" Connection="Question" />
+    </Connection>
+    <Connection name="SaveWorkbookLocation" Wireless="True">
+      <Origin ToolID="64" Connection="Question" />
+      <Destination ToolID="65" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="False" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Please navigate to the tableau workbook template (.twb)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>SaveWorkbookLocation</Name>
+        <Value>c:\</Value>
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>SaveWorkbookCheckbox</Name>
+        <Value>False</Value>
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="False" />
+      <Name><![CDATA[Output Tableau Workbook ]]></Name>
+      <Description><![CDATA[Create a new tableau workbook using a pre-built tableau workbook "template" using sample data within tableau and saving. We can then reference this workbook from within alteryx to update the data source (.tde) and output a copy of the workbook template utilizing the new data source (.tde) ]]></Description>
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName>Tableau</CategoryName>
+      <SearchTags>Tableau, workbook</SearchTags>
+      <Author>Alteryx</Author>
+      <Company>Alteryx, Inc.</Company>
+      <Copyright>2014</Copyright>
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="55" />
+              <Expression>If FileExists([Please navigate to the tableau workbook template (.twb)]) Then [Please navigate to the tableau workbook template (.twb)]
+ElseIf FileExists(
+	
+	FileAddPaths(FileAddPaths([Engine.WorkflowDirectory],"01 Supporting_Macros"),
+	regex_replace([Please navigate to the tableau workbook template (.twb)],'.*[\\\/]([^\\\/]+)$','$1'))
+	
+	)
+	Then	FileAddPaths(FileAddPaths([Engine.WorkflowDirectory],"01 Supporting_Macros"),
+		regex_replace([Please navigate to the tableau workbook template (.twb)],'.*[\\\/]([^\\\/]+)$','$1'))
+
+Else [Please navigate to the tableau workbook template (.twb)]
+EndIf</Expression>
+              <Destination>38/File</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="65" />
+              <Expression>If [SaveWorkbookCheckbox] Then [SaveWorkbookLocation]
+Else [Destination]
+EndIf</Expression>
+              <Destination>44/File</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Tableau Workbook</Description>
+          <Name>Tab (57)</Name>
+          <ToolId value="57" />
+          <Questions>
+            <Question>
+              <Type>FileBrowse</Type>
+              <Description>Please navigate to the tableau workbook template (.twb)</Description>
+              <Name>Please navigate to the tableau workbook template (.twb)</Name>
+              <ToolId value="56" />
+              <SaveAs value="False" />
+              <Mode>FileSpec</Mode>
+              <FileSpec>Tableau Workbook (*.twb)|*.twb</FileSpec>
+            </Question>
+            <Question>
+              <Type>BooleanGroup</Type>
+              <Description>Save resulting Tableau workbook to specific location</Description>
+              <Name>SaveWorkbookCheckbox</Name>
+              <ToolId value="63" />
+              <Questions>
+                <Question>
+                  <Type>FileBrowse</Type>
+                  <Description>Save as</Description>
+                  <Name>SaveWorkbookLocation</Name>
+                  <ToolId value="64" />
+                  <SaveAs value="True" />
+                  <Mode>FileSpec</Mode>
+                  <FileSpec>Tableau Workbook (*.twb)|*.twb</FileSpec>
+                </Question>
+              </Questions>
+              <Default value="False" />
+              <Collapsable value="True" />
+            </Question>
+          </Questions>
+        </Question>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Input14</Description>
+          <Name>Tab (58)</Name>
+          <ToolId value="58" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Input14</Description>
+              <Name>Input14</Name>
+              <ToolId value="59" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImage>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</MacroImage>
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools />
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

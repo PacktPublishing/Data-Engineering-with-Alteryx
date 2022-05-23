@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="138" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="37">..\User Gallery Modification.yxmd</File>
+          <FormatSpecificOptions>
+            <ParseRoot>False</ParseRoot>
+            <OuterXML>False</OuterXML>
+            <IgnoreErrors>False</IgnoreErrors>
+            <XmlElement>MetaInfo</XmlElement>
+            <ChildValues>True</ChildValues>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>User Gallery Modification.yxmd</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="MetaInfo" size="110" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="connection" size="6" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="RecordInfo" size="202" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="NameIsFileName" size="1" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="NameIsFileName_value" size="4" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="Name" size="25" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="Description" size="23" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="RootToolName" size="1" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="ToolVersion" size="1" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="ToolInDb" size="1" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="ToolInDb_value" size="5" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="CategoryName" size="1" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="SearchTags" size="1" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="Author" size="1" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="Company" size="1" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="Copyright" size="1" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="DescriptionLink" size="1" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="DescriptionLink_actual" size="1" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="DescriptionLink_displayed" size="1" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="Example" size="25" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="WorkflowId" size="1" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="WorkflowId_value" size="36" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+            <Field name="Telemetry" size="25" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 09\User Gallery Modification.yxmd" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="498" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_26652_c3540b903d4e4cf4b0b1312a1c540535_\Engine_18944_4cc57421047d4546807ba5c24b9b36a3_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="222" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNull</Operator>
+            <Field>connection</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-01-31 17:06:09</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2022-01-31 17:06:09</StartDate>
+              <EndDate>2022-01-31 17:06:09</EndDate>
+              <Operand>
+              </Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IsNull([connection])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Message.Message">
+        <Position x="354" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <When>Filter</When>
+          <Filter>isnull([Description])</Filter>
+          <Type>Error</Type>
+          <Priority>High</Priority>
+          <Transient>False</Transient>
+          <MessageExpression>"No Description has been added"</MessageExpression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMessage" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="True" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>XML_Description_Validation</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="7eb57767-e44c-4d26-99b6-8174b587b5ef" />
+      <Telemetry>
+        <PreviousWorkflowId value="" />
+        <OriginWorkflowId value="7eb57767-e44c-4d26-99b6-8174b587b5ef" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

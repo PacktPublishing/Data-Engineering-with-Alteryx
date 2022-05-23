@@ -1,0 +1,1046 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AlteryxDocument yxmdVer="11.0">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>Input2</Name>
+          <Abbrev />
+          <ShowFieldMap value="True" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\kcunningham\Documents\UsageReporting2\blobInput.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>blobInput.yxdb</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ServiceData" size="2147483647" source="MongoInput:" type="Blob" />
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings>
+        <Position x="150" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>ServiceData</Field>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>AlteryxPlugin_SdPrint</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ServiceData" size="2147483647" source="MongoInput:" type="Blob" />
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+            <Field name="ServiceData_DebugPrint" size="1073741823" source="AlteryxPlugin_SdPrint:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="..\AlteryxService_Client.dll" EngineDllEntryPoint="AlteryxPlugin_SdPrint" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="252" y="192" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_1768_8622075514fc459b87bf9d4820b0cbd7\Engine_4752_4e31c241691147babce8be2da85ea322.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="822" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>ServiceData_DebugPrint</Field>
+          <NumFields value="1" />
+          <Delimeters value="\n" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+            <Field description="TextToColumns: Parsed from ServiceData_DebugPrint" name="ServiceData_DebugPrint" size="1073741823" source="TextToColumns: Parsed from ServiceData_DebugPrint" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1590" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_1768_8622075514fc459b87bf9d4820b0cbd7\Engine_4752_3658e57367274a178041e67cc0c5e4dc.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="1494" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="Id" />
+          </GroupFields>
+          <HeaderField field="ColumnName" />
+          <DataField field="ColumnValue" />
+          <Methods>
+            <Method method="Concat" />
+            <Separator>,</Separator>
+            <FieldSize value="1073741823" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="CrossTab:Group:Concat:" type="WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Id" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1590" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output21</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="342" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>REGEX_Match([ServiceData_DebugPrint],".*Name: OutputLog\n\{\n(.+?)\}\n.*")</Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>REGEX_Match([ServiceData_DebugPrint],".*Name: OutputLog\n\{\n...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+            <Field name="ServiceData_DebugPrint" size="1073741823" source="AlteryxPlugin_SdPrint:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+            <Field name="ServiceData_DebugPrint" size="1073741823" source="AlteryxPlugin_SdPrint:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="438" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>ServiceData_DebugPrint</Field>
+          <RegExExpression value="Name: OutputLog\n\{\n(.+?)\}\n" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="True" />
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="OutputLog" type="V_WString" size="1073741823" />
+          </ParseComplex>
+          <Match>
+            <Field>ServiceData_DebugPrint_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="2">
+          <Name />
+          <DefaultAnnotationText>Parse:
+Name: OutputLog\n\{\n(.+?)\}\n</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+            <Field name="ServiceData_DebugPrint" size="1073741823" source="AlteryxPlugin_SdPrint:" type="V_WString" />
+            <Field description="RegEx: Parsed from ServiceData_DebugPrint" name="OutputLog" size="1073741823" source="RegEx: Parsed from ServiceData_DebugPrint" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="534" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>ServiceData_DebugPrint</Field>
+          <RegExExpression value="Name: OutputLog\n\{\n(.+?)\}\n" />
+          <CaseInsensitve value="True" />
+          <Method>Replace</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>ServiceData_DebugPrint</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="RegExOut1" type="V_WString" size="1073741823" />
+          </ParseComplex>
+          <Match>
+            <Field>ServiceData_DebugPrint_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="2">
+          <Name />
+          <AnnotationText><![CDATA[Replace:
+Name: OutputLog\n\{\n(.+?)\}\n
+]]></AnnotationText>
+          <DefaultAnnotationText><![CDATA[Replace:
+Name: OutputLog\n\{\n(.+?)\}\n
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+            <Field name="ServiceData_DebugPrint" size="1073741823" source="AlteryxPlugin_SdPrint:" type="V_WString" />
+            <Field description="RegEx: Parsed from ServiceData_DebugPrint" name="OutputLog" size="1073741823" source="RegEx: Parsed from ServiceData_DebugPrint" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="630" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="OutputLog" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+            <Field name="ServiceData_DebugPrint" size="1073741823" source="AlteryxPlugin_SdPrint:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="726" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+            <Field name="ServiceData_DebugPrint" size="1073741823" source="AlteryxPlugin_SdPrint:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1014" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="Id" selected="True" />
+            <SelectField field="ColumnName" selected="True" />
+            <SelectField field="ColumnValue" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+            <Field name="ColumnName" size="64" source="Formula: &quot;OutputLog&quot;" type="V_WString" />
+            <Field name="ColumnValue" size="1073741823" source="Formula: [OutputLog]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1398" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="(Multiple Sources)" type="WString" />
+            <Field name="ColumnName" size="254" source="(Multiple Sources)" type="V_WString" />
+            <Field name="ColumnValue" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="630" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>OutputLog</Field>
+          <NumFields value="1" />
+          <Delimeters value="\n" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+            <Field name="ServiceData_DebugPrint" size="1073741823" source="AlteryxPlugin_SdPrint:" type="V_WString" />
+            <Field description="TextToColumns: Parsed from OutputLog" name="OutputLog" size="1073741823" source="TextToColumns: Parsed from OutputLog" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="726" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>LEFT([OutputLog],7)=="Value: "</Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>LEFT([OutputLog],7)=="Value: "</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+            <Field name="ServiceData_DebugPrint" size="1073741823" source="AlteryxPlugin_SdPrint:" type="V_WString" />
+            <Field description="TextToColumns: Parsed from OutputLog" name="OutputLog" size="1073741823" source="TextToColumns: Parsed from OutputLog" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+            <Field name="ServiceData_DebugPrint" size="1073741823" source="AlteryxPlugin_SdPrint:" type="V_WString" />
+            <Field description="TextToColumns: Parsed from OutputLog" name="OutputLog" size="1073741823" source="TextToColumns: Parsed from OutputLog" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="822" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>OutputLog</Field>
+          <RegExExpression value="Value: (.+?)\|(.+?)\|(.+)" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>OutputLog</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="ToolId" type="V_WString" size="1073741823" />
+            <Field field="MessageType" type="V_WString" size="1073741823" />
+            <Field field="Message" type="V_WString" size="1073741823" />
+          </ParseComplex>
+          <Match>
+            <Field>OutputLog_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Parse:
+Value: (.+?)\|(.+?)\|(.+)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+            <Field name="ServiceData_DebugPrint" size="1073741823" source="AlteryxPlugin_SdPrint:" type="V_WString" />
+            <Field description="TextToColumns: Parsed from OutputLog" name="OutputLog" size="1073741823" source="TextToColumns: Parsed from OutputLog" type="V_WString" />
+            <Field description="RegEx: Parsed from OutputLog" name="ToolId" size="1073741823" source="RegEx: Parsed from OutputLog" type="V_WString" />
+            <Field description="RegEx: Parsed from OutputLog" name="MessageType" size="1073741823" source="RegEx: Parsed from OutputLog" type="V_WString" />
+            <Field description="RegEx: Parsed from OutputLog" name="Message" size="1073741823" source="RegEx: Parsed from OutputLog" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="918" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[MessageType]=="3"</Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[MessageType]=="3"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+            <Field name="ServiceData_DebugPrint" size="1073741823" source="AlteryxPlugin_SdPrint:" type="V_WString" />
+            <Field description="TextToColumns: Parsed from OutputLog" name="OutputLog" size="1073741823" source="TextToColumns: Parsed from OutputLog" type="V_WString" />
+            <Field description="RegEx: Parsed from OutputLog" name="ToolId" size="1073741823" source="RegEx: Parsed from OutputLog" type="V_WString" />
+            <Field description="RegEx: Parsed from OutputLog" name="MessageType" size="1073741823" source="RegEx: Parsed from OutputLog" type="V_WString" />
+            <Field description="RegEx: Parsed from OutputLog" name="Message" size="1073741823" source="RegEx: Parsed from OutputLog" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+            <Field name="ServiceData_DebugPrint" size="1073741823" source="AlteryxPlugin_SdPrint:" type="V_WString" />
+            <Field description="TextToColumns: Parsed from OutputLog" name="OutputLog" size="1073741823" source="TextToColumns: Parsed from OutputLog" type="V_WString" />
+            <Field description="RegEx: Parsed from OutputLog" name="ToolId" size="1073741823" source="RegEx: Parsed from OutputLog" type="V_WString" />
+            <Field description="RegEx: Parsed from OutputLog" name="MessageType" size="1073741823" source="RegEx: Parsed from OutputLog" type="V_WString" />
+            <Field description="RegEx: Parsed from OutputLog" name="Message" size="1073741823" source="RegEx: Parsed from OutputLog" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1110" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Id" action="GroupBy" rename="Id" />
+            <SummarizeField field="ErrorMessage" action="Concat" rename="ErrorMessage">
+              <Concat_Start />
+              <Separator>\n</Separator>
+              <Concat_End />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="Summarize: GroupBy - Id" type="WString" />
+            <Field name="ErrorMessage" size="1073741823" source="Summarize: Concat - ErrorMessage" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Id" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1014" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="ErrorMessage" type="V_WString" size="999999" expression="&quot;ToolId &quot; + [ToolId] + &quot;: &quot; + [Message]" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ErrorMessage="ToolId " + [ToolId] + ": " + [Message]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+            <Field name="ServiceData_DebugPrint" size="1073741823" source="AlteryxPlugin_SdPrint:" type="V_WString" />
+            <Field description="TextToColumns: Parsed from OutputLog" name="OutputLog" size="1073741823" source="TextToColumns: Parsed from OutputLog" type="V_WString" />
+            <Field description="RegEx: Parsed from OutputLog" name="ToolId" size="1073741823" source="RegEx: Parsed from OutputLog" type="V_WString" />
+            <Field description="RegEx: Parsed from OutputLog" name="MessageType" size="1073741823" source="RegEx: Parsed from OutputLog" type="V_WString" />
+            <Field description="RegEx: Parsed from OutputLog" name="Message" size="1073741823" source="RegEx: Parsed from OutputLog" type="V_WString" />
+            <Field name="ErrorMessage" size="999999" source="Formula: &quot;ToolId &quot; + [ToolId] + &quot;: &quot; + [Message]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1206" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="ColumnName" type="V_WString" size="64" expression="&quot;ErrorMessage&quot;" />
+            <FormulaField field="ColumnValue" type="V_WString" size="1073741823" expression="[ErrorMessage]" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ColumnName="ErrorMessage"
+ColumnValue=[ErrorMessage]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="Summarize: GroupBy - Id" type="WString" />
+            <Field name="ErrorMessage" size="1073741823" source="Summarize: Concat - ErrorMessage" type="V_WString" />
+            <Field name="ColumnName" size="64" source="Formula: &quot;ErrorMessage&quot;" type="V_WString" />
+            <Field name="ColumnValue" size="1073741823" source="Formula: [ErrorMessage]" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Id" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1302" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="Id" selected="True" />
+            <SelectField field="ColumnName" selected="True" />
+            <SelectField field="ColumnValue" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="Summarize: GroupBy - Id" type="WString" />
+            <Field name="ColumnName" size="64" source="Formula: &quot;ErrorMessage&quot;" type="V_WString" />
+            <Field name="ColumnValue" size="1073741823" source="Formula: [ErrorMessage]" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Id" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="630" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="ColumnName" type="V_WString" size="64" expression="&quot;OutputLog&quot;" />
+            <FormulaField field="ColumnValue" type="V_WString" size="1073741823" expression="[OutputLog]" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="2">
+          <Name />
+          <DefaultAnnotationText>ColumnName="OutputLog"
+ColumnValue=[OutputLog]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+            <Field name="ServiceData_DebugPrint" size="1073741823" source="AlteryxPlugin_SdPrint:" type="V_WString" />
+            <Field description="RegEx: Parsed from ServiceData_DebugPrint" name="OutputLog" size="1073741823" source="RegEx: Parsed from ServiceData_DebugPrint" type="V_WString" />
+            <Field name="ColumnName" size="64" source="Formula: &quot;OutputLog&quot;" type="V_WString" />
+            <Field name="ColumnValue" size="1073741823" source="Formula: [OutputLog]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="918" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="ColumnName" type="V_WString" size="254" expression="IIF(LEFT([ServiceData_DebugPrint],6)==&quot;Name: &quot;,SUBSTRING([ServiceData_DebugPrint],6),NULL())" />
+            <FormulaField field="ColumnValue" type="V_WString" size="1073741823" expression="IF (IsNull([ColumnName])) THEN&#xA;IIF (LEFT([ServiceData_DebugPrint],7)==&quot;Value: &quot;,SUBSTRING([ServiceData_DebugPrint],7),[ServiceData_DebugPrint])&#xA;ELSE&#xA;NULL()&#xA;ENDIF" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ColumnName=IIF(LEFT([ServiceData_DebugPrint],6)=="Name: ",SUB...
+ColumnValue=IF (IsNull([ColumnName])) THEN
+IIF (LEFT([Service...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+            <Field description="TextToColumns: Parsed from ServiceData_DebugPrint" name="ServiceData_DebugPrint" size="1073741823" source="TextToColumns: Parsed from ServiceData_DebugPrint" type="V_WString" />
+            <Field name="ColumnName" size="254" source="Formula: IIF(LEFT([ServiceData_DebugPrint],6)==&quot;Name: &quot;,SUBSTRING([ServiceData_DebugPrint],6),NULL())" type="V_WString" />
+            <Field name="ColumnValue" size="1073741823" source="Formula: IF (IsNull([ColumnName])) THEN&#xA;IIF (LEFT([ServiceData_DebugPrint],7)==&quot;Value: &quot;,SUBSTRING([ServiceData_DebugPrint],7),[ServiceData_DebugPrint])&#xA;ELSE&#xA;NULL()&#xA;ENDIF" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="1014" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="True" />
+          <UpdateField_Name>ColumnName</UpdateField_Name>
+          <CreateField_Name>NewField</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>254</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IIF(ISNULL([ColumnName]),[Row-1:ColumnName],[ColumnName])</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IIF(ISNULL([ColumnName]),[Row-1:ColumnName],[ColumnName])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+            <Field description="TextToColumns: Parsed from ServiceData_DebugPrint" name="ServiceData_DebugPrint" size="1073741823" source="TextToColumns: Parsed from ServiceData_DebugPrint" type="V_WString" />
+            <Field description="Formula: IIF(ISNULL([ColumnName]),[Row-1:ColumnName],[ColumnName])" name="ColumnName" size="254" source="Formula: IIF(ISNULL([ColumnName]),[Row-1:ColumnName],[ColumnName])" type="V_WString" />
+            <Field name="ColumnValue" size="1073741823" source="Formula: IF (IsNull([ColumnName])) THEN&#xA;IIF (LEFT([ServiceData_DebugPrint],7)==&quot;Value: &quot;,SUBSTRING([ServiceData_DebugPrint],7),[ServiceData_DebugPrint])&#xA;ELSE&#xA;NULL()&#xA;ENDIF" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1110" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Id" action="GroupBy" rename="Id" />
+            <SummarizeField field="ColumnName" action="GroupBy" rename="ColumnName" />
+            <SummarizeField field="ColumnValue" action="Concat" rename="ColumnValue">
+              <Concat_Start />
+              <Separator />
+              <Concat_End />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="Summarize: GroupBy - Id" type="WString" />
+            <Field description="Formula: IIF(ISNULL([ColumnName]),[Row-1:ColumnName],[ColumnName])" name="ColumnName" size="254" source="Summarize: GroupBy - ColumnName" type="V_WString" />
+            <Field name="ColumnValue" size="1073741823" source="Summarize: Concat - ColumnValue" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Id" order="Asc" />
+            <Field field="ColumnName" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="246" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="Id" selected="True" />
+            <SelectField field="ServiceData_DebugPrint" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from _id" name="Id" size="256" source="RegEx: Parsed from _id" type="WString" />
+            <Field name="ServiceData_DebugPrint" size="1073741823" source="AlteryxPlugin_SdPrint:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="True" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="22" Connection="False" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="True" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="True" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (2)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (21)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ServiceDataParser</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (1)</Name>
+          <ToolId value="1" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (2)</Description>
+              <Name>Macro Input (2)</Name>
+              <ToolId value="2" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (21)</Description>
+              <Name>Macro Output (21)</Name>
+              <ToolId value="21" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools />
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,431 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="34">
+      <GuiSettings>
+        <Position x="186" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Tableau Output">True</Value>
+          <Value name="PDF Output">False</Value>
+          <Value name="Numeric Up Down (428)">30</Value>
+          <Value name="Text Box (2)">localhost:27017</Value>
+          <Value name="Text Box (3)">alteryxGallery</Value>
+          <Value name="Text Box (4)">4A4EEE35B1581643964360EEC6CDC4703A5D97E8ED8A24FDD4BA21E470E15C8D810F6DA0C551B222BDAF7BCCCABBBF14DB76929FC0C1F280773D5742D0243348D9E8A3FFABE96E07E077EC8D11086D2089AEBF1CD27356DA114B3F5860FDAF8A2C87E94736DA7697B6CD96F34632B51DD3627E890B3A4D12C7DFD7CDDC3215640A81E828D66C248EA9242B5D54EF8FD0F72BF26B0C505EAAD21ACDC7B7C3D5615249947D945946436D14A653602DAD6D0FF4294C2D4BA17FC6FF74F5A9C935AD4186CFD0672A7635CAE5F59CDBBE7B1EBEDB4E18CCC48E48E266EACD78FE9670135B4B4E1685B6991EC54B51E9C9FC5F7257B0E7914E73DEB3BD8E903EAC7AB5075AC5ED3C9AB652CCF1E6A489A5826225E9AB3E850F365D2EC39B57A378BA352675032E1285A0DE74F964867D99ECC09307F15510539B159DF836F9646173511EA3B0FACF521447C8B3CC4C44F80092C446D3D8011C3F517DFD7539CEA444635EA7FC817BE14434FBC7269E708A2ED0963A8366849D5C2DC71622292483CEE9F5D6164AEDD58197A18E8597652F030DDF552E5F80999DB36633506BE0D3605761884141498B2</Value>
+          <Value name="Check Box (6)">True</Value>
+          <Value name="Text Box (5)">AlteryxGallery</Value>
+          <Value name="Text Box (7)">alteryxServer</Value>
+          <Value name="Check Box (681)">False</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Alteryx Server Usage Report (8)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Control Parameter">
+          <RecordInfo>
+            <Field name="Output" source="TextInput:" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Data">
+          <RecordInfo>
+            <Field name="Job_Id" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Job_AlteryxResultCode" size="7" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Job_AppName" size="59" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Application_Id" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Schedule_Id" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Job_CompletionDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="Job_CreationDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="Job_Name" size="46" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Job_Creator_UserId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="ClientType" size="7" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Error" size="505" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="ExecutionTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Double" />
+            <Field name="IsAnonymous" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="ModuleName" size="46" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="RunWithE2" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="SubscriptionId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Job_Creator_User_Email" size="43" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Job_Creator_Name" size="22" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Job_Creator_User_Studio_name" size="31" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Role" size="9" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Result_ErrorMessage" size="174356" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Result_ExecutionStartTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="Result_ExecutionTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Double" />
+            <Field name="Result_OutputLog" size="1736072" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_WString" />
+            <Field name="Result_QueueTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Double" />
+            <Field name="PackageType" size="8" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="PublishedRevision_WorkflowCredentialType" size="12" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Permissions.CanDownload" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="PublishedRevision_AuthorId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="PublishedRevision_DateCreated" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="PublishedRevision_Description" size="1051" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_WString" />
+            <Field name="PublishedRevision_Name" size="85" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="PublishedRevision_Email" size="46" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="PublishedRevision_AuthorName" size="23" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="PublishedRevision_StudioName" size="31" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Dataset" size="12" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Runtime" size="55" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Version" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Int32" />
+            <Field name="ExecutionMode" size="12" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Downloadable" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field description="RegEx: Parsed from _id" name="Id" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Original_AuthorId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="IsDeleted" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="IsPublic" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="PublishedRevision_IsValid" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="PublishedRevision_RequiresApproval" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="Original_DateCreated" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="RunDisabled" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="TotalRunCount" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Int32" />
+            <Field name="Original_Author_Email" size="46" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Original_Author_Name" size="23" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Original_Author_StudioName" size="31" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Attributes" size="40" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Attribute_Values" size="12" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="App_TotalDownloads" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Int64" />
+            <Field name="Tag" size="12" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="CollectionId" size="32" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Collection_Name" size="37" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Collection_OwnerId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Collection_CreatedDate" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="Collection_Owner_Email" size="45" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Collection_Owner_Name" size="23" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Collection_Owner_StudioName" size="31" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Schedule_ApplicationName" size="59" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Schedule_Application_Id" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Schedule_Comment" size="164" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Schedule_CreationDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="Schedule_Enabled" size="8" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Schedule_Frequency" size="154" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Schedule_LastRunDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="Schedule_NextRunDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="Schedule_NumberOfTimesRun" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Int32" />
+            <Field name="ScheduleName" size="59" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Schedule_StartDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="Schedule_UntilDateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="Schedule_UserName" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="RequestID" size="32" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="ClientStatus" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="CredentialSource" size="4" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="LastModifiedDate" size="19" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="LastModifiedId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="LC_Owner" size="21" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Owner" size="21" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Timezone" size="16" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="WorkerTag" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="Right_RunWithE2" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Bool" />
+            <Field name="UserId" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Email" size="46" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Name" size="24" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="Studio_Name" size="31" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+            <Field name="SessionId" size="55" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Login_DateTime" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="DateTime" />
+            <Field name="SessionLength_Seconds" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="Double" />
+            <Field name="Access" size="4" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="Access_Value" size="9" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="String" />
+            <Field name="SessionLength" size="40" source="Formula: IIF(IsEmpty([_CurrentField_]),Null(),[_CurrentField_])" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Alteryx_Server_Usage_Report.yxmc" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings>
+        <Position x="666" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="BatchMacroGroupBy" />
+          <Value name="Save resulting Tableau workbook to a specific location">False</Value>
+          <Value name="Save As" />
+          <Value name="ControlParams"><![CDATA[Control Parameter (3)=Output
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit>
+            <Dependency Path="%temp%Workbook.twb" Package="False" IsMacro="False" IsOutput="True" IsAlias="False" />
+            <Dependency Path="%temp%AlteryxData.tde" Package="False" IsMacro="False" IsOutput="True" IsAlias="False" />
+          </Implicit>
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Supporting_Macros\Output.yxmc" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="618" y="210" width="144" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Output macro</Text>
+          <Font name="Segoe UI" size="12" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="114" y="198" width="216" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Alteryx Server Usage 
+Report macro</Text>
+          <Font name="Segoe UI" size="12" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="54" width="804" height="130" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+          <BG_Image>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</BG_Image>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="78" y="318" width="744" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Note:  The Alteryx Server Usage Report macro will be in a state of error until configured and the workflow is run</Text>
+          <Font name="Segoe UI" size="9.75" style="2" />
+          <TextColor r="179" g="0" b="0" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.HtmlBox.HtmlBox">
+        <Position x="54" y="354" width="828" height="480" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <URL>https://help.alteryx.com/current/index.htm#ServerUsageReport.htm</URL>
+          <HideAddressBar value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="810" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">server_health_data.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>server_health_data.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="738" y="126" width="141" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Tools Used</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="1" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="748" y="155" width="230" height="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[TOOLS USED:
+
+Support Macro(s)
+  - Alteryx_Server_Usage_Report.yxmc
+  - Output.yxmc
+]]></Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="690" y="90" width="202" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Workflow Description</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="1" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="700" y="119" width="250" height="96" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>The Alteryx Server Usage Report workflow creates a set of Tableau dashboards, or PDF and Excel files, with user access, content, schedules, and job analysis information for the Server.</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="34" Connection="Control Parameter" />
+      <Destination ToolID="9" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Data" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Data" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="False" />
+      <Name>Alteryx_Server_Usage_Report</Name>
+      <Description>The Alteryx Server Usage Report workflow creates a set of Tableau dashboards, or PDF and Excel files, with user access, content, schedules, and job analysis information for the Server.</Description>
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author>Content Engineering</Author>
+      <Company>Alteryx</Company>
+      <Copyright>2016</Copyright>
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="c3c7da05-ba2e-4f7e-bf84-bdaa56718bb1" />
+      <Telemetry>
+        <PreviousWorkflowId value="" />
+        <OriginWorkflowId value="c3c7da05-ba2e-4f7e-bf84-bdaa56718bb1" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

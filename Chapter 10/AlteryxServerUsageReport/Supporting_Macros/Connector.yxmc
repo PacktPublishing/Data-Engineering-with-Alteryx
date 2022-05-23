@@ -1,0 +1,3300 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AlteryxDocument yxmdVer="11.0">
+  <Nodes>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="120" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="264" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="384" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="636" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
+        <Position x="780" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="492" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1062" y="516" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Ignore</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="AutoShared" source="MongoInput:" type="Bool" />
+            <Field name="CollectionId" size="37" source="MongoInput:" type="WString" />
+            <Field name="CreatedDate" source="MongoInput:" type="DateTime" />
+            <Field name="Name" size="20" source="MongoInput:" type="WString" />
+            <Field name="OwnerId" size="29" source="MongoInput:" type="WString" />
+            <Field name="Shareable" source="MongoInput:" type="Bool" />
+            <Field name="Users" size="1073741823" source="Summarize: Concat - Value" type="V_WString" />
+            <Field name="Apps" size="1073741823" source="Summarize: Concat - AppId" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+        <Position x="936" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1158" y="516" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output71</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="96">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="870" y="510" width="137.5085" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Collections Actions</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ecf2f2" BorderColor="#2f4f4f" Transparency="25" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="90">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="990" y="649" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="91">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="1062" y="649" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="92">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="1134" y="649" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="93">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="1206" y="649" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="94">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Condition.Condition">
+            <Position x="930" y="589" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="95">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="930" y="697" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="101">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="870" y="534" width="120" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Collections</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ecf2f2" BorderColor="#2f4f4f" Transparency="25" Margin="60" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="97">
+          <GuiSettings Plugin="AlteryxConnectorGui.MongoInput.MongoInput">
+            <Position x="930" y="625" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UserName>user</UserName>
+              <Password>47EE81CF1C0F6FACC14F1225B1D8D3D819E089AAAD2DB35958B409D4951B2EA22965715378146DD8157D716CDDD294E2A20FE079D9758B64F1658880BCDF19FB8FFDEDB3C9552B3DCFD6B8AAC47D59D69B7FE53AC</Password>
+              <Server>localhost:27018</Server>
+              <Database>AlteryxGallery</Database>
+              <Collection>collections</Collection>
+              <RecordLimit />
+              <Mode>Automatic</Mode>
+              <IncludeRowid value="False" />
+              <Filter />
+              <Depth />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Apps.56f447456674011e986326e9" source="MongoInput:" type="DateTime" />
+                <Field name="AutoShared" source="MongoInput:" type="Bool" />
+                <Field name="CollectionId" size="37" source="MongoInput:" type="WString" />
+                <Field name="CreatedDate" source="MongoInput:" type="DateTime" />
+                <Field name="Name" size="20" source="MongoInput:" type="WString" />
+                <Field name="OwnerId" size="29" source="MongoInput:" type="WString" />
+                <Field name="Shareable" source="MongoInput:" type="Bool" />
+                <Field name="Users.0.DateShared" source="MongoInput:" type="DateTime" />
+                <Field name="Users.0.IsAdmin" source="MongoInput:" type="Bool" />
+                <Field name="Users.0.UserId" size="29" source="MongoInput:" type="WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxMongoInput" />
+        </Node>
+        <Node ToolID="103">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="1038" y="625" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields>
+                <Field field="CollectionId" />
+              </KeyFields>
+              <DataFields>
+                <Field field="Apps.56f447456674011e986326e9" selected="True" />
+                <Field field="AutoShared" selected="False" />
+                <Field field="CollectionId" selected="False" />
+                <Field field="CreatedDate" selected="False" />
+                <Field field="Name" selected="False" />
+                <Field field="OwnerId" selected="False" />
+                <Field field="Shareable" selected="False" />
+                <Field field="Users.0.DateShared" selected="True" />
+                <Field field="Users.0.IsAdmin" selected="True" />
+                <Field field="Users.0.UserId" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CollectionId" size="37" source="MongoInput:" type="WString" />
+                <Field name="Name" size="29" source="Transpose:" type="String" />
+                <Field name="Value" size="29" source="MongoInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="111">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1134" y="625" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Field>Name</Field>
+                <Operator>Contains</Operator>
+                <Operands>
+                  <Operand>Apps.</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Contains([Name],"Apps.")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="CollectionId" size="37" source="MongoInput:" type="WString" />
+                <Field name="Name" size="29" source="Transpose:" type="String" />
+                <Field name="Value" size="29" source="MongoInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="CollectionId" size="37" source="MongoInput:" type="WString" />
+                <Field name="Name" size="29" source="Transpose:" type="String" />
+                <Field name="Value" size="29" source="MongoInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="112">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1242" y="613" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField field="AppId" type="V_WString" size="64" expression="SUBSTRING([Name],5)" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>AppId=SUBSTRING([Name],5)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CollectionId" size="37" source="MongoInput:" type="WString" />
+                <Field name="Name" size="29" source="Transpose:" type="String" />
+                <Field name="Value" size="29" source="MongoInput:" type="V_WString" />
+                <Field name="AppId" size="64" source="Formula: SUBSTRING([Name],5)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="113">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1338" y="613" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="CollectionId" action="GroupBy" rename="CollectionId" />
+                <SummarizeField field="AppId" action="Concat" rename="Apps">
+                  <Concat_Start />
+                  <Separator>,</Separator>
+                  <Concat_End />
+                </SummarizeField>
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CollectionId" size="37" source="Summarize: GroupBy - CollectionId" type="WString" />
+                <Field name="Apps" size="1073741823" source="Summarize: Concat - AppId" type="V_WString" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="CollectionId" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="114">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1242" y="685" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Field>Name</Field>
+                <Operator>Contains</Operator>
+                <Operands>
+                  <Operand>.UserId</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Contains([Name],".UserId")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="CollectionId" size="37" source="MongoInput:" type="WString" />
+                <Field name="Name" size="29" source="Transpose:" type="String" />
+                <Field name="Value" size="29" source="MongoInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="CollectionId" size="37" source="MongoInput:" type="WString" />
+                <Field name="Name" size="29" source="Transpose:" type="String" />
+                <Field name="Value" size="29" source="MongoInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="115">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1338" y="673" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="CollectionId" action="GroupBy" rename="CollectionId" />
+                <SummarizeField field="Value" action="Concat" rename="Users">
+                  <Concat_Start />
+                  <Separator>,</Separator>
+                  <Concat_End />
+                </SummarizeField>
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CollectionId" size="37" source="Summarize: GroupBy - CollectionId" type="WString" />
+                <Field name="Users" size="1073741823" source="Summarize: Concat - Value" type="V_WString" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="CollectionId" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="117">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1038" y="757" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="AutoShared" selected="True" />
+                <SelectField field="CollectionId" selected="True" />
+                <SelectField field="CreatedDate" selected="True" />
+                <SelectField field="Name" selected="True" />
+                <SelectField field="OwnerId" selected="True" />
+                <SelectField field="Shareable" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="AutoShared" source="MongoInput:" type="Bool" />
+                <Field name="CollectionId" size="37" source="MongoInput:" type="WString" />
+                <Field name="CreatedDate" source="MongoInput:" type="DateTime" />
+                <Field name="Name" size="20" source="MongoInput:" type="WString" />
+                <Field name="OwnerId" size="29" source="MongoInput:" type="WString" />
+                <Field name="Shareable" source="MongoInput:" type="Bool" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="119">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
+            <Position x="1422" y="757" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JoinByRecPos value="False" />
+              <JoinFields>
+                <JoinInfo connection="#1">
+                  <Field field="CollectionId" />
+                </JoinInfo>
+                <JoinInfo connection="#2">
+                  <Field field="CollectionId" />
+                </JoinInfo>
+                <JoinInfo connection="#3">
+                  <Field field="CollectionId" />
+                </JoinInfo>
+              </JoinFields>
+              <CartesianMode>Error</CartesianMode>
+              <OutputJoinOnly value="False" />
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <SelectFields>
+                    <SelectField field="Input_#1_AutoShared" selected="True" />
+                    <SelectField field="Input_#1_CollectionId" selected="True" />
+                    <SelectField field="Input_#1_CreatedDate" selected="True" />
+                    <SelectField field="Input_#1_Name" selected="True" />
+                    <SelectField field="Input_#1_OwnerId" selected="True" />
+                    <SelectField field="Input_#1_Shareable" selected="True" />
+                    <SelectField field="Input_#2_CollectionId" selected="False" rename="Input_#2_CollectionId" />
+                    <SelectField field="Input_#2_Users" selected="True" />
+                    <SelectField field="Input_#3_CollectionId" selected="False" rename="Input_#3_CollectionId" />
+                    <SelectField field="Input_#3_Apps" selected="True" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="AutoShared" source="MongoInput:" type="Bool" />
+                <Field name="CollectionId" size="37" source="MongoInput:" type="WString" />
+                <Field name="CreatedDate" source="MongoInput:" type="DateTime" />
+                <Field name="Name" size="20" source="MongoInput:" type="WString" />
+                <Field name="OwnerId" size="29" source="MongoInput:" type="WString" />
+                <Field name="Shareable" source="MongoInput:" type="Bool" />
+                <Field name="Users" size="1073741823" source="Summarize: Concat - Value" type="V_WString" />
+                <Field name="Apps" size="1073741823" source="Summarize: Concat - AppId" type="V_WString" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="CollectionId" order="" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="89">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="216" width="120" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Users Actions</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ecf2f2" BorderColor="#2f4f4f" Transparency="25" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Condition.Condition">
+            <Position x="114" y="295" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="114" y="403" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="186" y="410" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="258" y="410" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="330" y="410" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="414" y="410" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="88">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="186" y="264" width="150.0392" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Subscriptions Actions</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ecf2f2" BorderColor="#2f4f4f" Transparency="25" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Condition.Condition">
+            <Position x="246" y="343" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="258" y="451" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="342" y="446" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="414" y="446" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="486" y="446" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="570" y="446" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="462" y="360" width="154.8195" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>App Packages Actions</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ecf2f2" BorderColor="#2f4f4f" Transparency="25" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="576" y="500" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="648" y="500" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="720" y="500" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="804" y="500" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="67">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Condition.Condition">
+            <Position x="522" y="439" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="68">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="522" y="547" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="87">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="330" y="312" width="127.9372" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Sessions Actions</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ecf2f2" BorderColor="#2f4f4f" Transparency="25" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Condition.Condition">
+            <Position x="390" y="391" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="66">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="390" y="499" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="474" y="494" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="546" y="494" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="618" y="494" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="702" y="494" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="86">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="738" y="456" width="120" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Results Actions</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ecf2f2" BorderColor="#2f4f4f" Transparency="25" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="82">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Condition.Condition">
+            <Position x="798" y="535" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="83">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="798" y="655" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="76">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="858" y="650" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="77">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="930" y="650" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="78">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="1002" y="650" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="79">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="1086" y="650" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="606" y="408" width="120" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Jobs Actions</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ecf2f2" BorderColor="#2f4f4f" Transparency="25" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="69">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Condition.Condition">
+            <Position x="666" y="487" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="70">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="672" y="601" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="732" y="608" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="804" y="608" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="876" y="608" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="960" y="608" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="240" width="120" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Users</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ecf2f2" BorderColor="#2f4f4f" Transparency="25" Margin="60" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxConnectorGui.MongoInput.MongoInput">
+            <Position x="114" y="319" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UserName>user</UserName>
+              <Password>48248820A03AFB219E0530697B66A9AD6B383B0608D8B0C38C07DC638DF02512233F3DB1CCF378F35C2A034A39ABB9B579151CE11BF09A2AC57627E3591DB6B3C015C1B9E91D3BAB1B49D94919DA70D385DB103D2</Password>
+              <Server>localhost:27018</Server>
+              <Database>AlteryxGallery</Database>
+              <Collection>users</Collection>
+              <RecordLimit />
+              <Mode>Manual</Mode>
+              <IncludeRowid value="False" />
+              <Filter />
+              <Depth />
+              <Elements>
+                <Element name="_id" type="WString" size="256" criteria="" source="" />
+                <Element name="Curator" type="Bool" size="1" criteria="" source="" />
+                <Element name="Email" type="WString" size="256" criteria="" source="" />
+                <Element name="FirstName" type="WString" size="256" criteria="" source="" />
+                <Element name="LastName" type="WString" size="256" criteria="" source="" />
+                <Element name="DateAdded" type="DateTime" size="19" criteria="" source="" />
+                <Element name="DateUpdated" type="DateTime" size="19" criteria="" source="" />
+                <Element name="Pending" type="Bool" size="1" criteria="" source="" />
+                <Element name="Validated" type="Bool" size="1" criteria="" source="" />
+                <Element name="Active" type="Bool" size="1" criteria="" source="" />
+                <Element name="SubscriptionId" type="WString" size="256" criteria="" source="" />
+              </Elements>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="_id" size="256" source="MongoInput:" type="WString" />
+                <Field name="Curator" source="MongoInput:" type="Bool" />
+                <Field name="Email" size="256" source="MongoInput:" type="WString" />
+                <Field name="FirstName" size="256" source="MongoInput:" type="WString" />
+                <Field name="LastName" size="256" source="MongoInput:" type="WString" />
+                <Field name="DateAdded" source="MongoInput:" type="DateTime" />
+                <Field name="DateUpdated" source="MongoInput:" type="DateTime" />
+                <Field name="Pending" source="MongoInput:" type="Bool" />
+                <Field name="Validated" source="MongoInput:" type="Bool" />
+                <Field name="Active" source="MongoInput:" type="Bool" />
+                <Field name="SubscriptionId" size="256" source="MongoInput:" type="WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxMongoInput" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+            <Position x="210" y="319" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>_id</Field>
+              <RegExExpression value="\{ &quot;\$oid&quot; : &quot;(.+?)&quot; \}" />
+              <CaseInsensitve value="True" />
+              <Method>ParseComplex</Method>
+              <Replace expression="">
+                <CopyUnmatched value="True" />
+              </Replace>
+              <ParseSimple>
+                <SplitToRows value="False" />
+                <RootName>_id</RootName>
+                <NumFields value="3" />
+                <ErrorHandling>Warn</ErrorHandling>
+              </ParseSimple>
+              <ParseComplex>
+                <Field field="UserId" type="WString" size="256" />
+              </ParseComplex>
+              <Match>
+                <Field>_id_Matched</Field>
+                <ErrorUnmatched value="False" />
+              </Match>
+            </Configuration>
+            <Annotation DisplayMode="2">
+              <Name />
+              <DefaultAnnotationText>Parse:
+\{ "\$oid" : "(.+?)" \}</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="_id" size="256" source="MongoInput:" type="WString" />
+                <Field name="Curator" source="MongoInput:" type="Bool" />
+                <Field name="Email" size="256" source="MongoInput:" type="WString" />
+                <Field name="FirstName" size="256" source="MongoInput:" type="WString" />
+                <Field name="LastName" size="256" source="MongoInput:" type="WString" />
+                <Field name="DateAdded" source="MongoInput:" type="DateTime" />
+                <Field name="DateUpdated" source="MongoInput:" type="DateTime" />
+                <Field name="Pending" source="MongoInput:" type="Bool" />
+                <Field name="Validated" source="MongoInput:" type="Bool" />
+                <Field name="Active" source="MongoInput:" type="Bool" />
+                <Field name="SubscriptionId" size="256" source="MongoInput:" type="WString" />
+                <Field description="RegEx: Parsed from _id" name="UserId" size="256" source="RegEx: Parsed from _id" type="WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="306" y="319" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <SelectFields>
+                <SelectField field="UserId" selected="True" />
+                <SelectField field="SubscriptionId" selected="True" />
+                <SelectField field="Email" selected="True" />
+                <SelectField field="FirstName" selected="True" />
+                <SelectField field="LastName" selected="True" />
+                <SelectField field="DateAdded" selected="True" />
+                <SelectField field="DateUpdated" selected="True" />
+                <SelectField field="Pending" selected="True" />
+                <SelectField field="Validated" selected="True" />
+                <SelectField field="Active" selected="True" />
+                <SelectField field="Curator" selected="True" />
+                <SelectField field="_id" selected="False" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="RegEx: Parsed from _id" name="UserId" size="256" source="RegEx: Parsed from _id" type="WString" />
+                <Field name="SubscriptionId" size="256" source="MongoInput:" type="WString" />
+                <Field name="Email" size="256" source="MongoInput:" type="WString" />
+                <Field name="FirstName" size="256" source="MongoInput:" type="WString" />
+                <Field name="LastName" size="256" source="MongoInput:" type="WString" />
+                <Field name="DateAdded" source="MongoInput:" type="DateTime" />
+                <Field name="DateUpdated" source="MongoInput:" type="DateTime" />
+                <Field name="Pending" source="MongoInput:" type="Bool" />
+                <Field name="Validated" source="MongoInput:" type="Bool" />
+                <Field name="Active" source="MongoInput:" type="Bool" />
+                <Field name="Curator" source="MongoInput:" type="Bool" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="402" y="319" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_8900_d56fbbda7fe645d5ba0b4f06941027f0\Engine_8408_108eba3c9b4940b8a4ebe15181b4bac5.yxdb</TempFile>
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Table</DefaultTab>
+                  <Hints />
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="474" y="384" width="120" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>App Packages</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ecf2f2" BorderColor="#2f4f4f" Transparency="25" Margin="60" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxConnectorGui.MongoInput.MongoInput">
+            <Position x="534" y="463" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UserName>user</UserName>
+              <Password>47EE81CF1C0F6FACC14F1225B1D8D3D819E089AAAD2DB35958B409D4951B2EA22965715378146DD8157D716CDDD294E2A20FE079D9758B64F1658880BCDF19FB8FFDEDB3C9552B3DCFD6B8AAC47D59D69B7FE53AC</Password>
+              <Server>localhost:27018</Server>
+              <Database>AlteryxGallery</Database>
+              <Collection>appInfos</Collection>
+              <RecordLimit />
+              <Mode>Manual</Mode>
+              <IncludeRowid value="False" />
+              <Filter />
+              <Depth />
+              <Elements>
+                <Element name="_id" type="WString" size="256" criteria="" source="" />
+                <Element name="SubscriptionId" type="WString" size="256" criteria="" source="" />
+                <Element name="PublishedRevision.AuthorId" type="WString" size="256" criteria="" source="" />
+                <Element name="PublishedRevision.CreatedDate" type="DateTime" size="19" criteria="" source="" />
+                <Element name="IsPublic" type="Bool" size="1" criteria="" source="" />
+                <Element name="Permissions.CanDownload" type="Bool" size="1" criteria="" source="" />
+                <Element name="ServiceId" type="WString" size="256" criteria="" source="" />
+                <Element name="PublishedRevision.RevisionNumber" type="WString" size="256" criteria="" source="" />
+                <Element name="PublishedRevision.RunCount" type="Int32" size="4" criteria="" source="" />
+                <Element name="PublishedRevision.DownloadCount" type="Int32" size="4" criteria="" source="" />
+                <Element name="PublishedRevision.PrimaryApplication.MetaInfo.Name" type="WString" size="256" criteria="" source="" />
+              </Elements>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="_id" size="256" source="MongoInput:" type="WString" />
+                <Field name="SubscriptionId" size="256" source="MongoInput:" type="WString" />
+                <Field name="PublishedRevision.AuthorId" size="256" source="MongoInput:" type="WString" />
+                <Field name="PublishedRevision.CreatedDate" source="MongoInput:" type="DateTime" />
+                <Field name="IsPublic" source="MongoInput:" type="Bool" />
+                <Field name="Permissions.CanDownload" source="MongoInput:" type="Bool" />
+                <Field name="ServiceId" size="256" source="MongoInput:" type="WString" />
+                <Field name="PublishedRevision.RevisionNumber" size="256" source="MongoInput:" type="WString" />
+                <Field name="PublishedRevision.RunCount" source="MongoInput:" type="Int32" />
+                <Field name="PublishedRevision.DownloadCount" source="MongoInput:" type="Int32" />
+                <Field name="PublishedRevision.PrimaryApplication.MetaInfo.Name" size="256" source="MongoInput:" type="WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxMongoInput" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+            <Position x="630" y="463" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>_id</Field>
+              <RegExExpression value="\{ &quot;\$oid&quot; : &quot;(.+?)&quot; \}" />
+              <CaseInsensitve value="True" />
+              <Method>ParseComplex</Method>
+              <Replace expression="">
+                <CopyUnmatched value="True" />
+              </Replace>
+              <ParseSimple>
+                <SplitToRows value="False" />
+                <RootName>_id</RootName>
+                <NumFields value="3" />
+                <ErrorHandling>Warn</ErrorHandling>
+              </ParseSimple>
+              <ParseComplex>
+                <Field field="AppId" type="WString" size="256" />
+              </ParseComplex>
+              <Match>
+                <Field>_id_Matched</Field>
+                <ErrorUnmatched value="False" />
+              </Match>
+            </Configuration>
+            <Annotation DisplayMode="2">
+              <Name />
+              <DefaultAnnotationText>Parse:
+\{ "\$oid" : "(.+?)" \}</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="_id" size="256" source="MongoInput:" type="WString" />
+                <Field name="SubscriptionId" size="256" source="MongoInput:" type="WString" />
+                <Field name="PublishedRevision.AuthorId" size="256" source="MongoInput:" type="WString" />
+                <Field name="PublishedRevision.CreatedDate" source="MongoInput:" type="DateTime" />
+                <Field name="IsPublic" source="MongoInput:" type="Bool" />
+                <Field name="Permissions.CanDownload" source="MongoInput:" type="Bool" />
+                <Field name="ServiceId" size="256" source="MongoInput:" type="WString" />
+                <Field name="PublishedRevision.RevisionNumber" size="256" source="MongoInput:" type="WString" />
+                <Field name="PublishedRevision.RunCount" source="MongoInput:" type="Int32" />
+                <Field name="PublishedRevision.DownloadCount" source="MongoInput:" type="Int32" />
+                <Field name="PublishedRevision.PrimaryApplication.MetaInfo.Name" size="256" source="MongoInput:" type="WString" />
+                <Field description="RegEx: Parsed from _id" name="AppId" size="256" source="RegEx: Parsed from _id" type="WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="726" y="463" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <SelectFields>
+                <SelectField field="AppId" selected="True" />
+                <SelectField field="SubscriptionId" selected="True" />
+                <SelectField field="PublishedRevision.AuthorId" selected="True" rename="UserId" />
+                <SelectField field="ServiceId" selected="True" rename="ServiceAppId" />
+                <SelectField field="PublishedRevision.PrimaryApplication.MetaInfo.Name" selected="True" rename="AppName" />
+                <SelectField field="PublishedRevision.CreatedDate" selected="True" rename="UploadDate" />
+                <SelectField field="IsPublic" selected="True" rename="Public" />
+                <SelectField field="Permissions.CanDownload" selected="True" rename="CanDownload" />
+                <SelectField field="PublishedRevision.RevisionNumber" selected="True" rename="Version" />
+                <SelectField field="PublishedRevision.RunCount" selected="True" rename="RunCount" />
+                <SelectField field="PublishedRevision.DownloadCount" selected="True" rename="DownloadCount" />
+                <SelectField field="_id" selected="False" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="RegEx: Parsed from _id" name="AppId" size="256" source="RegEx: Parsed from _id" type="WString" />
+                <Field name="SubscriptionId" size="256" source="MongoInput:" type="WString" />
+                <Field name="UserId" size="256" source="MongoInput:" type="WString" />
+                <Field name="ServiceAppId" size="256" source="MongoInput:" type="WString" />
+                <Field name="AppName" size="256" source="MongoInput:" type="WString" />
+                <Field name="UploadDate" source="MongoInput:" type="DateTime" />
+                <Field name="Public" source="MongoInput:" type="Bool" />
+                <Field name="CanDownload" source="MongoInput:" type="Bool" />
+                <Field name="Version" size="256" source="MongoInput:" type="WString" />
+                <Field name="RunCount" source="MongoInput:" type="Int32" />
+                <Field name="DownloadCount" source="MongoInput:" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="822" y="463" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_9340_f9c16b39d7d2451fb4c774f1e4611ec9_\Engine_7356_5648bae23ec54bf298010aa8465202f8_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="330" y="336" width="120" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Sessions</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ecf2f2" BorderColor="#2f4f4f" Transparency="25" Margin="60" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxConnectorGui.MongoInput.MongoInput">
+            <Position x="390" y="415" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UserName>user</UserName>
+              <Password>48248820A03AFB219E0530697B66A9AD6B383B0608D8B0C38C07DC638DF02512233F3DB1CCF378F35C2A034A39ABB9B579151CE11BF09A2AC57627E3591DB6B3C015C1B9E91D3BAB1B49D94919DA70D385DB103D2</Password>
+              <Server>localhost:27018</Server>
+              <Database>AlteryxGallery</Database>
+              <Collection>sessions</Collection>
+              <RecordLimit />
+              <Mode>Manual</Mode>
+              <IncludeRowid value="False" />
+              <Filter />
+              <Depth />
+              <Elements>
+                <Element name="SessionId" type="WString" size="256" criteria="" source="" />
+                <Element name="UserId" type="WString" size="256" criteria="" source="" />
+                <Element name="CreationDate" type="WString" size="256" criteria="" source="" />
+                <Element name="UpdateDate" type="WString" size="256" criteria="" source="" />
+              </Elements>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="SessionId" size="256" source="MongoInput:" type="WString" />
+                <Field name="UserId" size="256" source="MongoInput:" type="WString" />
+                <Field name="CreationDate" size="256" source="MongoInput:" type="WString" />
+                <Field name="UpdateDate" size="256" source="MongoInput:" type="WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxMongoInput" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="486" y="415" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="SessionId" selected="True" />
+                <SelectField field="UserId" selected="True" />
+                <SelectField field="CreationDate" selected="True" />
+                <SelectField field="UpdateDate" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="SessionId" size="256" source="MongoInput:" type="WString" />
+                <Field name="UserId" size="256" source="MongoInput:" type="WString" />
+                <Field name="CreationDate" size="256" source="MongoInput:" type="WString" />
+                <Field name="UpdateDate" size="256" source="MongoInput:" type="WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="582" y="415.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_8900_d56fbbda7fe645d5ba0b4f06941027f0\Engine_8408_f0c06ea72f1a4fbfa69f33de3a5877ae.yxdb</TempFile>
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Table</DefaultTab>
+                  <Hints />
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="606" y="432" width="120" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Jobs</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ecf2f2" BorderColor="#2f4f4f" Transparency="25" Margin="60" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxConnectorGui.MongoInput.MongoInput">
+            <Position x="666" y="511" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UserName>user</UserName>
+              <Password>48248820A03AFB219E0530697B66A9AD6B383B0608D8B0C38C07DC638DF02512233F3DB1CCF378F35C2A034A39ABB9B579151CE11BF09A2AC57627E3591DB6B3C015C1B9E91D3BAB1B49D94919DA70D385DB103D2</Password>
+              <Server>localhost:27018</Server>
+              <Database>AlteryxService</Database>
+              <Collection>AS_Queue</Collection>
+              <RecordLimit />
+              <Mode>Manual</Mode>
+              <IncludeRowid value="False" />
+              <Filter />
+              <Depth />
+              <Elements>
+                <Element name="_id" type="WString" size="256" criteria="" source="" />
+                <Element name="AS_Application__ID" type="WString" size="256" criteria="" source="" />
+                <Element name="CreationDateTime" type="DateTime" size="19" criteria="" source="" />
+                <Element name="CompletionDateTime" type="DateTime" size="19" criteria="" source="" />
+                <Element name="Status" type="WString" size="256" criteria="" source="" />
+                <Element name="UserName" type="WString" size="256" criteria="" source="" />
+                <Element name="__ServiceData" type="Blob" size="536870911" criteria="" source="" />
+              </Elements>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="_id" size="256" source="MongoInput:" type="WString" />
+                <Field name="AS_Application__ID" size="256" source="MongoInput:" type="WString" />
+                <Field name="CreationDateTime" source="MongoInput:" type="DateTime" />
+                <Field name="CompletionDateTime" source="MongoInput:" type="DateTime" />
+                <Field name="Status" size="256" source="MongoInput:" type="WString" />
+                <Field name="UserName" size="256" source="MongoInput:" type="WString" />
+                <Field name="__ServiceData" size="2147483647" source="MongoInput:" type="Blob" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxMongoInput" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="858" y="511" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <SelectFields>
+                <SelectField field="JobId" selected="True" />
+                <SelectField field="AS_Application__ID" selected="True" rename="ServiceAppId" />
+                <SelectField field="UserName" selected="True" rename="UserId" />
+                <SelectField field="Status" selected="True" />
+                <SelectField field="CreationDateTime" selected="True" />
+                <SelectField field="CompletionDateTime" selected="True" />
+                <SelectField field="__ServiceData" selected="True" rename="ServiceData" />
+                <SelectField field="_id" selected="False" />
+                <SelectField field="UserId" selected="False" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="RegEx: Parsed from _id" name="JobId" size="256" source="RegEx: Parsed from _id" type="WString" />
+                <Field name="ServiceAppId" size="256" source="MongoInput:" type="WString" />
+                <Field name="UserId" size="256" source="MongoInput:" type="WString" />
+                <Field name="Status" size="256" source="MongoInput:" type="WString" />
+                <Field name="CreationDateTime" source="MongoInput:" type="DateTime" />
+                <Field name="CompletionDateTime" source="MongoInput:" type="DateTime" />
+                <Field name="ServiceData" size="2147483647" source="MongoInput:" type="Blob" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="954" y="511" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_7424_9d4f3335c2914e2bb33bc8e557b3bf3a\Engine_8408_0e7b27cf33d24148a5868316a5d9d6ab.yxdb</TempFile>
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Table</DefaultTab>
+                  <Hints />
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="72">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+            <Position x="762" y="511" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>_id</Field>
+              <RegExExpression value="\{ &quot;\$oid&quot; : &quot;(.+?)&quot; \}" />
+              <CaseInsensitve value="True" />
+              <Method>ParseComplex</Method>
+              <Replace expression="">
+                <CopyUnmatched value="True" />
+              </Replace>
+              <ParseSimple>
+                <SplitToRows value="False" />
+                <RootName>_id</RootName>
+                <NumFields value="3" />
+                <ErrorHandling>Warn</ErrorHandling>
+              </ParseSimple>
+              <ParseComplex>
+                <Field field="JobId" type="WString" size="256" />
+              </ParseComplex>
+              <Match>
+                <Field>_id_Matched</Field>
+                <ErrorUnmatched value="False" />
+              </Match>
+            </Configuration>
+            <Annotation DisplayMode="2">
+              <Name />
+              <DefaultAnnotationText>Parse:
+\{ "\$oid" : "(.+?)" \}</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="_id" size="256" source="MongoInput:" type="WString" />
+                <Field name="AS_Application__ID" size="256" source="MongoInput:" type="WString" />
+                <Field name="CreationDateTime" source="MongoInput:" type="DateTime" />
+                <Field name="CompletionDateTime" source="MongoInput:" type="DateTime" />
+                <Field name="Status" size="256" source="MongoInput:" type="WString" />
+                <Field name="UserName" size="256" source="MongoInput:" type="WString" />
+                <Field name="__ServiceData" size="2147483647" source="MongoInput:" type="Blob" />
+                <Field description="RegEx: Parsed from _id" name="JobId" size="256" source="RegEx: Parsed from _id" type="WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="198" y="288" width="120" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Subscriptions</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ecf2f2" BorderColor="#2f4f4f" Transparency="25" Margin="60" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxConnectorGui.MongoInput.MongoInput">
+            <Position x="258" y="367" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UserName>user</UserName>
+              <Password>48248820A03AFB219E0530697B66A9AD6B383B0608D8B0C38C07DC638DF02512233F3DB1CCF378F35C2A034A39ABB9B579151CE11BF09A2AC57627E3591DB6B3C015C1B9E91D3BAB1B49D94919DA70D385DB103D2</Password>
+              <Server>localhost:27018</Server>
+              <Database>AlteryxGallery</Database>
+              <Collection>subscriptions</Collection>
+              <RecordLimit />
+              <Mode>Manual</Mode>
+              <IncludeRowid value="False" />
+              <Filter />
+              <Depth />
+              <Elements>
+                <Element name="_id" type="WString" size="256" criteria="" source="" />
+                <Element name="Name" type="WString" size="256" criteria="" source="" />
+                <Element name="Type" type="WString" size="256" criteria="" source="" />
+                <Element name="SeatsPurchased" type="Int32" size="4" criteria="" source="" />
+                <Element name="MemberPassesPurchased" type="Int32" size="4" criteria="" source="" />
+                <Element name="MemberPassesUsed" type="Int32" size="4" criteria="" source="" />
+              </Elements>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="_id" size="256" source="MongoInput:" type="WString" />
+                <Field name="Name" size="256" source="MongoInput:" type="WString" />
+                <Field name="Type" size="256" source="MongoInput:" type="WString" />
+                <Field name="SeatsPurchased" source="MongoInput:" type="Int32" />
+                <Field name="MemberPassesPurchased" source="MongoInput:" type="Int32" />
+                <Field name="MemberPassesUsed" source="MongoInput:" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxMongoInput" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+            <Position x="354" y="367" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>_id</Field>
+              <RegExExpression value="\{ &quot;\$oid&quot; : &quot;(.+?)&quot; \}" />
+              <CaseInsensitve value="True" />
+              <Method>ParseComplex</Method>
+              <Replace expression="">
+                <CopyUnmatched value="True" />
+              </Replace>
+              <ParseSimple>
+                <SplitToRows value="False" />
+                <RootName>_id</RootName>
+                <NumFields value="3" />
+                <ErrorHandling>Warn</ErrorHandling>
+              </ParseSimple>
+              <ParseComplex>
+                <Field field="SubscriptionId" type="WString" size="256" />
+              </ParseComplex>
+              <Match>
+                <Field>_id_Matched</Field>
+                <ErrorUnmatched value="False" />
+              </Match>
+            </Configuration>
+            <Annotation DisplayMode="2">
+              <Name />
+              <DefaultAnnotationText>Parse:
+\{ "\$oid" : "(.+?)" \}</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="_id" size="256" source="MongoInput:" type="WString" />
+                <Field name="Name" size="256" source="MongoInput:" type="WString" />
+                <Field name="Type" size="256" source="MongoInput:" type="WString" />
+                <Field name="SeatsPurchased" source="MongoInput:" type="Int32" />
+                <Field name="MemberPassesPurchased" source="MongoInput:" type="Int32" />
+                <Field name="MemberPassesUsed" source="MongoInput:" type="Int32" />
+                <Field description="RegEx: Parsed from _id" name="SubscriptionId" size="256" source="RegEx: Parsed from _id" type="WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="546" y="367" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <SelectFields>
+                <SelectField field="SubscriptionId" selected="True" />
+                <SelectField field="_id" selected="False" />
+                <SelectField field="Name" selected="True" />
+                <SelectField field="Type" selected="True" />
+                <SelectField field="SeatsPurchased" selected="True" />
+                <SelectField field="MemberPassesPurchased" selected="True" />
+                <SelectField field="MemberPassesUsed" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="RegEx: Parsed from _id" name="SubscriptionId" size="256" source="RegEx: Parsed from _id" type="WString" />
+                <Field name="Name" size="256" source="MongoInput:" type="WString" />
+                <Field name="Type" size="256" source="Formula: IF ([Type] == &quot;0&quot;) THEN&#xA;&quot;Free&quot;&#xA;ELSEIF ([Type] == &quot;1&quot;) THEN&#xA;&quot;Paid&quot;&#xA;ELSE&#xA;&quot;Unknown&quot;&#xA;ENDIF" type="WString" />
+                <Field name="SeatsPurchased" source="MongoInput:" type="Int32" />
+                <Field name="MemberPassesPurchased" source="MongoInput:" type="Int32" />
+                <Field name="MemberPassesUsed" source="MongoInput:" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="642" y="367" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_8900_d56fbbda7fe645d5ba0b4f06941027f0\Engine_8408_a7542d18701e4fc1b52e5c36a5bce1e2.yxdb</TempFile>
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Table</DefaultTab>
+                  <Hints />
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="450" y="367" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField field="Type" type="WString" size="256" expression="IF ([Type] == &quot;0&quot;) THEN&#xA;&quot;Free&quot;&#xA;ELSEIF ([Type] == &quot;1&quot;) THEN&#xA;&quot;Paid&quot;&#xA;ELSE&#xA;&quot;Unknown&quot;&#xA;ENDIF" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Type=IF ([Type] == "0") THEN
+"Free"
+ELSEIF ([Type] == "1") TH...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="_id" size="256" source="MongoInput:" type="WString" />
+                <Field name="Name" size="256" source="MongoInput:" type="WString" />
+                <Field name="Type" size="256" source="Formula: IF ([Type] == &quot;0&quot;) THEN&#xA;&quot;Free&quot;&#xA;ELSEIF ([Type] == &quot;1&quot;) THEN&#xA;&quot;Paid&quot;&#xA;ELSE&#xA;&quot;Unknown&quot;&#xA;ENDIF" type="WString" />
+                <Field name="SeatsPurchased" source="MongoInput:" type="Int32" />
+                <Field name="MemberPassesPurchased" source="MongoInput:" type="Int32" />
+                <Field name="MemberPassesUsed" source="MongoInput:" type="Int32" />
+                <Field description="RegEx: Parsed from _id" name="SubscriptionId" size="256" source="RegEx: Parsed from _id" type="WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="81">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="738" y="480" width="120" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Results</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ecf2f2" BorderColor="#2f4f4f" Transparency="25" Margin="60" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="73">
+          <GuiSettings Plugin="AlteryxConnectorGui.MongoInput.MongoInput">
+            <Position x="798" y="559" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UserName>user</UserName>
+              <Password>48248820A03AFB219E0530697B66A9AD6B383B0608D8B0C38C07DC638DF02512233F3DB1CCF378F35C2A034A39ABB9B579151CE11BF09A2AC57627E3591DB6B3C015C1B9E91D3BAB1B49D94919DA70D385DB103D2</Password>
+              <Server>localhost:27018</Server>
+              <Database>AlteryxService</Database>
+              <Collection>AS_Results</Collection>
+              <RecordLimit />
+              <Mode>Manual</Mode>
+              <IncludeRowid value="False" />
+              <Filter />
+              <Depth />
+              <Elements>
+                <Element name="_id" type="WString" size="256" criteria="" source="" />
+                <Element name="AS_Queue__ID" type="WString" size="256" criteria="" source="" />
+                <Element name="__ServiceData" type="Blob" size="536870911" criteria="" source="" />
+              </Elements>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="_id" size="256" source="MongoInput:" type="WString" />
+                <Field name="AS_Queue__ID" size="256" source="MongoInput:" type="WString" />
+                <Field name="__ServiceData" size="2147483647" source="MongoInput:" type="Blob" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxMongoInput" />
+        </Node>
+        <Node ToolID="74">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="990" y="559" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <SelectFields>
+                <SelectField field="ResultId" selected="True" />
+                <SelectField field="AS_Queue__ID" selected="True" rename="JobId" />
+                <SelectField field="__ServiceData" selected="True" rename="ServiceData" />
+                <SelectField field="_id" selected="False" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="RegEx: Parsed from _id" name="ResultId" size="256" source="RegEx: Parsed from _id" type="WString" />
+                <Field name="JobId" size="256" source="MongoInput:" type="WString" />
+                <Field name="ServiceData" size="2147483647" source="MongoInput:" type="Blob" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="75">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1086" y="559" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_7424_9d4f3335c2914e2bb33bc8e557b3bf3a\Engine_8408_0e7b27cf33d24148a5868316a5d9d6ab.yxdb</TempFile>
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Table</DefaultTab>
+                  <Hints />
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="80">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+            <Position x="894" y="559" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>_id</Field>
+              <RegExExpression value="\{ &quot;\$oid&quot; : &quot;(.+?)&quot; \}" />
+              <CaseInsensitve value="True" />
+              <Method>ParseComplex</Method>
+              <Replace expression="">
+                <CopyUnmatched value="True" />
+              </Replace>
+              <ParseSimple>
+                <SplitToRows value="False" />
+                <RootName>_id</RootName>
+                <NumFields value="3" />
+                <ErrorHandling>Warn</ErrorHandling>
+              </ParseSimple>
+              <ParseComplex>
+                <Field field="ResultId" type="WString" size="256" />
+              </ParseComplex>
+              <Match>
+                <Field>_id_Matched</Field>
+                <ErrorUnmatched value="False" />
+              </Match>
+            </Configuration>
+            <Annotation DisplayMode="2">
+              <Name />
+              <DefaultAnnotationText>Parse:
+\{ "\$oid" : "(.+?)" \}</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="_id" size="256" source="MongoInput:" type="WString" />
+                <Field name="AS_Queue__ID" size="256" source="MongoInput:" type="WString" />
+                <Field name="__ServiceData" size="2147483647" source="MongoInput:" type="Blob" />
+                <Field description="RegEx: Parsed from _id" name="ResultId" size="256" source="RegEx: Parsed from _id" type="WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="9" Connection="Question" />
+      <Destination ToolID="17" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="9" Connection="Question" />
+      <Destination ToolID="25" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="9" Connection="Question" />
+      <Destination ToolID="34" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="9" Connection="Question" />
+      <Destination ToolID="42" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="9" Connection="Question" />
+      <Destination ToolID="49" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="9" Connection="Question" />
+      <Destination ToolID="76" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="9" Connection="Question" />
+      <Destination ToolID="90" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="10" Connection="Question" />
+      <Destination ToolID="18" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="10" Connection="Question" />
+      <Destination ToolID="26" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="10" Connection="Question" />
+      <Destination ToolID="35" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="10" Connection="Question" />
+      <Destination ToolID="43" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="10" Connection="Question" />
+      <Destination ToolID="50" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="10" Connection="Question" />
+      <Destination ToolID="77" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="10" Connection="Question" />
+      <Destination ToolID="91" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="11" Connection="Question" />
+      <Destination ToolID="19" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="11" Connection="Question" />
+      <Destination ToolID="27" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="11" Connection="Question" />
+      <Destination ToolID="36" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="11" Connection="Question" />
+      <Destination ToolID="44" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="11" Connection="Question" />
+      <Destination ToolID="51" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="11" Connection="Question" />
+      <Destination ToolID="78" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="11" Connection="Question" />
+      <Destination ToolID="92" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="12" Connection="Question" />
+      <Destination ToolID="20" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="12" Connection="Question" />
+      <Destination ToolID="28" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="12" Connection="Question" />
+      <Destination ToolID="37" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="12" Connection="Question" />
+      <Destination ToolID="45" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="12" Connection="Question" />
+      <Destination ToolID="93" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="14" Connection="Question" />
+      <Destination ToolID="52" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="14" Connection="Question" />
+      <Destination ToolID="79" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="59" Connection="Question" />
+      <Destination ToolID="61" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="59" Connection="Question" />
+      <Destination ToolID="63" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="59" Connection="Question" />
+      <Destination ToolID="65" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="59" Connection="Question" />
+      <Destination ToolID="67" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="59" Connection="Question" />
+      <Destination ToolID="69" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="59" Connection="Question" />
+      <Destination ToolID="82" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="59" Connection="Question" />
+      <Destination ToolID="94" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="90" Connection="Action" />
+      <Destination ToolID="97" Connection="Action" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="91" Connection="Action" />
+      <Destination ToolID="97" Connection="Action" />
+    </Connection>
+    <Connection name="#3" Wireless="True">
+      <Origin ToolID="92" Connection="Action" />
+      <Destination ToolID="97" Connection="Action" />
+    </Connection>
+    <Connection name="#4" Wireless="True">
+      <Origin ToolID="93" Connection="Action" />
+      <Destination ToolID="97" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="94" Connection="True Condition" />
+      <Destination ToolID="95" Connection="Condition" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="95" Connection="Action" />
+      <Destination ToolID="101" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="97" Connection="Output" />
+      <Destination ToolID="103" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="97" Connection="Output" />
+      <Destination ToolID="117" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="103" Connection="Output" />
+      <Destination ToolID="111" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="111" Connection="True" />
+      <Destination ToolID="112" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="111" Connection="False" />
+      <Destination ToolID="114" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="112" Connection="Output" />
+      <Destination ToolID="113" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="113" Connection="Output" />
+      <Destination ToolID="119" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="115" Connection="Output" />
+      <Destination ToolID="119" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="117" Connection="Output" />
+      <Destination ToolID="119" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="114" Connection="True" />
+      <Destination ToolID="115" Connection="Input" />
+    </Connection>
+    <Connection name="#7">
+      <Origin ToolID="119" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection name="#5">
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection name="#6">
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="True Condition" />
+      <Destination ToolID="62" Connection="Condition" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="62" Connection="Action" />
+      <Destination ToolID="53" Connection="Action" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="17" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection name="#3" Wireless="True">
+      <Origin ToolID="18" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection name="#4" Wireless="True">
+      <Origin ToolID="19" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection name="#5" Wireless="True">
+      <Origin ToolID="20" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="True Condition" />
+      <Destination ToolID="64" Connection="Condition" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="64" Connection="Action" />
+      <Destination ToolID="54" Connection="Action" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="25" Connection="Action" />
+      <Destination ToolID="21" Connection="Action" />
+    </Connection>
+    <Connection name="#3" Wireless="True">
+      <Origin ToolID="26" Connection="Action" />
+      <Destination ToolID="21" Connection="Action" />
+    </Connection>
+    <Connection name="#4" Wireless="True">
+      <Origin ToolID="27" Connection="Action" />
+      <Destination ToolID="21" Connection="Action" />
+    </Connection>
+    <Connection name="#5" Wireless="True">
+      <Origin ToolID="28" Connection="Action" />
+      <Destination ToolID="21" Connection="Action" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="42" Connection="Action" />
+      <Destination ToolID="38" Connection="Action" />
+    </Connection>
+    <Connection name="#3" Wireless="True">
+      <Origin ToolID="43" Connection="Action" />
+      <Destination ToolID="38" Connection="Action" />
+    </Connection>
+    <Connection name="#4" Wireless="True">
+      <Origin ToolID="44" Connection="Action" />
+      <Destination ToolID="38" Connection="Action" />
+    </Connection>
+    <Connection name="#5" Wireless="True">
+      <Origin ToolID="45" Connection="Action" />
+      <Destination ToolID="38" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="True Condition" />
+      <Destination ToolID="68" Connection="Condition" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="68" Connection="Action" />
+      <Destination ToolID="56" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="True Condition" />
+      <Destination ToolID="66" Connection="Condition" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="66" Connection="Action" />
+      <Destination ToolID="55" Connection="Action" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="34" Connection="Action" />
+      <Destination ToolID="30" Connection="Action" />
+    </Connection>
+    <Connection name="#3" Wireless="True">
+      <Origin ToolID="35" Connection="Action" />
+      <Destination ToolID="30" Connection="Action" />
+    </Connection>
+    <Connection name="#4" Wireless="True">
+      <Origin ToolID="36" Connection="Action" />
+      <Destination ToolID="30" Connection="Action" />
+    </Connection>
+    <Connection name="#5" Wireless="True">
+      <Origin ToolID="37" Connection="Action" />
+      <Destination ToolID="30" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="82" Connection="True Condition" />
+      <Destination ToolID="83" Connection="Condition" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="83" Connection="Action" />
+      <Destination ToolID="81" Connection="Action" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="76" Connection="Action" />
+      <Destination ToolID="73" Connection="Action" />
+    </Connection>
+    <Connection name="#3" Wireless="True">
+      <Origin ToolID="77" Connection="Action" />
+      <Destination ToolID="73" Connection="Action" />
+    </Connection>
+    <Connection name="#4" Wireless="True">
+      <Origin ToolID="78" Connection="Action" />
+      <Destination ToolID="73" Connection="Action" />
+    </Connection>
+    <Connection name="#5" Wireless="True">
+      <Origin ToolID="79" Connection="Action" />
+      <Destination ToolID="73" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="True Condition" />
+      <Destination ToolID="70" Connection="Condition" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="70" Connection="Action" />
+      <Destination ToolID="57" Connection="Action" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="49" Connection="Action" />
+      <Destination ToolID="46" Connection="Action" />
+    </Connection>
+    <Connection name="#3" Wireless="True">
+      <Origin ToolID="50" Connection="Action" />
+      <Destination ToolID="46" Connection="Action" />
+    </Connection>
+    <Connection name="#4" Wireless="True">
+      <Origin ToolID="51" Connection="Action" />
+      <Destination ToolID="46" Connection="Action" />
+    </Connection>
+    <Connection name="#5" Wireless="True">
+      <Origin ToolID="52" Connection="Action" />
+      <Destination ToolID="46" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (9)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (10)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (11)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Drop Down (59)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (12)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (14)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Check Box (13)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="False" />
+      <Name>Connector</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="18" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>1/UserName</Destination>
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="19" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>1/Password</Destination>
+              <Mapping>Update Password</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration />
+              <DefaultConfiguration value="True" />
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="20" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>1/Database</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="25" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>21/Server</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="26" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>21/UserName</Destination>
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="27" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>21/Password</Destination>
+              <Mapping>Update Password</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration />
+              <DefaultConfiguration value="True" />
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="28" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>21/Database</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="34" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>30/Server</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="35" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>30/UserName</Destination>
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="36" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>30/Password</Destination>
+              <Mapping>Update Password</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration />
+              <DefaultConfiguration value="True" />
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="37" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>30/Database</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="42" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>38/Server</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="43" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>38/UserName</Destination>
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="44" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>38/Password</Destination>
+              <Mapping>Update Password</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration />
+              <DefaultConfiguration value="True" />
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="45" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>38/Database</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="50" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>46/UserName</Destination>
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="51" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>46/Password</Destination>
+              <Mapping>Update Password</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration />
+              <DefaultConfiguration value="True" />
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="52" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>46/Database</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="77" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>73/UserName</Destination>
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="78" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>73/Password</Destination>
+              <Mapping>Update Password</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration />
+              <DefaultConfiguration value="True" />
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="79" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>73/Database</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="17" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>1/Server</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="49" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>46/Server</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="76" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>73/Server</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="90" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>97/Server</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="91" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>97/UserName</Destination>
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="92" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>97/Password</Destination>
+              <Mapping>Update Password</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration />
+              <DefaultConfiguration value="True" />
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="93" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>97/Database</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+        <Condition>
+          <Type>Condition</Type>
+          <Description />
+          <ToolId value="61" />
+          <Expression>[#1]=="users"</Expression>
+          <True>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="62" />
+              <Expression>"False"</Expression>
+              <Destination>53/Disabled/@value</Destination>
+              <Mapping>Enable/Disable Container</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>Enabled|Disabled	1</DynamicConfiguration>
+              <DefaultConfiguration value="True" />
+            </Action>
+          </True>
+          <False />
+        </Condition>
+        <Condition>
+          <Type>Condition</Type>
+          <Description />
+          <ToolId value="63" />
+          <Expression>[#1]=="subscriptions"</Expression>
+          <True>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="64" />
+              <Expression>"False"</Expression>
+              <Destination>54/Disabled/@value</Destination>
+              <Mapping>Enable/Disable Container</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>Enabled|Disabled	1</DynamicConfiguration>
+              <DefaultConfiguration value="True" />
+            </Action>
+          </True>
+          <False />
+        </Condition>
+        <Condition>
+          <Type>Condition</Type>
+          <Description />
+          <ToolId value="65" />
+          <Expression>[#1]=="sessions"</Expression>
+          <True>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="66" />
+              <Expression>"False"</Expression>
+              <Destination>55/Disabled/@value</Destination>
+              <Mapping>Enable/Disable Container</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>Enabled|Disabled	1</DynamicConfiguration>
+              <DefaultConfiguration value="True" />
+            </Action>
+          </True>
+          <False />
+        </Condition>
+        <Condition>
+          <Type>Condition</Type>
+          <Description />
+          <ToolId value="67" />
+          <Expression>[#1]=="apps"</Expression>
+          <True>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="68" />
+              <Expression>"False"</Expression>
+              <Destination>56/Disabled/@value</Destination>
+              <Mapping>Enable/Disable Container</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>Enabled|Disabled	1</DynamicConfiguration>
+              <DefaultConfiguration value="True" />
+            </Action>
+          </True>
+          <False />
+        </Condition>
+        <Condition>
+          <Type>Condition</Type>
+          <Description />
+          <ToolId value="69" />
+          <Expression>[#1]=="jobs"</Expression>
+          <True>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="70" />
+              <Expression>"False"</Expression>
+              <Destination>57/Disabled/@value</Destination>
+              <Mapping>Enable/Disable Container</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>Enabled|Disabled	1</DynamicConfiguration>
+              <DefaultConfiguration value="True" />
+            </Action>
+          </True>
+          <False />
+        </Condition>
+        <Condition>
+          <Type>Condition</Type>
+          <Description />
+          <ToolId value="82" />
+          <Expression>[#1]=="results"</Expression>
+          <True>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="83" />
+              <Expression>"False"</Expression>
+              <Destination>81/Disabled/@value</Destination>
+              <Mapping>Enable/Disable Container</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>Enabled|Disabled	1</DynamicConfiguration>
+              <DefaultConfiguration value="True" />
+            </Action>
+          </True>
+          <False />
+        </Condition>
+        <Condition>
+          <Type>Condition</Type>
+          <Description />
+          <ToolId value="94" />
+          <Expression>[#1]=="collections"</Expression>
+          <True>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="95" />
+              <Expression>"False"</Expression>
+              <Destination>101/Disabled/@value</Destination>
+              <Mapping>Enable/Disable Container</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>Enabled|Disabled	1</DynamicConfiguration>
+              <DefaultConfiguration value="True" />
+            </Action>
+          </True>
+          <False />
+        </Condition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (8)</Name>
+          <ToolId value="8" />
+          <Questions>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Database Host</Description>
+              <Name>Text Box (9)</Name>
+              <ToolId value="9" />
+              <Default>localhost:27018</Default>
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Username</Description>
+              <Name>Text Box (10)</Name>
+              <ToolId value="10" />
+              <Default>user</Default>
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Password</Description>
+              <Name>Text Box (11)</Name>
+              <ToolId value="11" />
+              <Default />
+              <Password value="True" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Collection</Description>
+              <Name>Drop Down (59)</Name>
+              <ToolId value="59" />
+              <Multiple value="False" />
+              <Default />
+              <Mode>Manual</Mode>
+              <Manual_Values><![CDATA[Users:users
+Subscriptions:subscriptions
+Sessions:sessions
+Apps:apps
+Jobs:jobs
+Results:results
+Collections:collections
+]]></Manual_Values>
+            </Question>
+            <Question>
+              <Type>BooleanGroup</Type>
+              <Description>Advanced Options</Description>
+              <Name>Check Box (13)</Name>
+              <ToolId value="13" />
+              <Questions>
+                <Question>
+                  <Type>TextBox</Type>
+                  <Description>Alteryx Gallery Database Name</Description>
+                  <Name>Text Box (12)</Name>
+                  <ToolId value="12" />
+                  <Default>AlteryxGallery</Default>
+                  <Password value="False" />
+                  <Multiline value="False" />
+                  <Hidden value="False" />
+                </Question>
+                <Question>
+                  <Type>TextBox</Type>
+                  <Description>Alteryx Service Database Name</Description>
+                  <Name>Text Box (14)</Name>
+                  <ToolId value="14" />
+                  <Default>AlteryxService</Default>
+                  <Password value="False" />
+                  <Multiline value="False" />
+                  <Hidden value="False" />
+                </Question>
+              </Questions>
+              <Default value="False" />
+              <Collapsable value="True" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (71)</Description>
+              <Name>Macro Output (71)</Name>
+              <ToolId value="71" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImage>iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAslSURBVGhD3ZkLXM3nH8dPG0o1Q+6JWi1auqnTiaTRn2nZ2MVmWzaEEpUkthHCXMJUc1tMolJrquE/tgoVKS1dJIVKdTAlteV0PfXZ9/mdTv9z6oS5vJr/9/V6d855rt/P7/s8z+95nngAXmgUJr5IcH8GDPrPC8f/rQBNIoqoIfAv4ywxjuhUwCCinFBU+d+CmJhEKBSwiZCrYDthPt6yX4xh2g5y6V1MMqFQwG+tBTBYczJiY89QlsSu3yiFhaVj+4a6igZCoQCmjCvk7uHH/JYzJkia/y/g4QJ2+Icxn+WsoOBm+0a6kocLmPHxCuaznB06fKJ9I10G2cMFMLb4HYRY3MwKI+H0ReiPfE+uka6E+SxFVsAJ2UJS9PSndUh7lryuPx3Tpntiwzf7sW9/DObNX6ewnAw1nQlYIFPouWNoNANHjyZQ9x0tOvq0wjqtHKIiCgV0GoVnTWjoL9StxGpr63D9eiFOnUpAZGQM/a7l0vVHTFdUt4jor+EUzJPSXgDDiYggfn8eDB1mn8EcFIvFuHQpGzt37qdl+0u4OHthsesyVN6rZNmIi0+77+8fLvzwo+X5VI892JWEuqzznQl4akQVagpBA9dfT+ZgY2Mj9uz5AS4u5PiiZfBwW45l7t64UXqHZbe3JGJ+e+c7E2BKeBPfP0vmzF0bcyD459Sw8JPpiYkZ+cyr0pIyLPdejQ8/XQirtxwx0vp9vOkdjGnb4zFv71kEnryMPOF9VlRqbHsw9GECfAlFY++psHdw43pvb8lXb2PMLB/01JuAl/Xs0E3HFr3e8UU/5zCQcxxarofh+kMSCm5Xt9YCU6SrSMAU2U6fJWfO/s713CjyB5rWo76hCttPFGCIawR6zQyAqsEUqI6YxAnp/fZXJCCcnD/QJoJhtOxHRKcVce2QVRFa7QWwc0Bbp2wXeux4IpKTM7Fk6XY5h/4J0rd6i/gmaiv7ATXd8G3EdKh/uokcOwgNcraXnTt66tpCRfdNqNktQW+XcPSZR3lSWkVoLjyEo2mFXHtk59oLaHsTC8Z8jrq6ekmxVlu+IqCDc49DROSvXP1G0QZApIKffh2EoTNGQPtTS/Sfuwt9F0RAY9ZuqBhOhbK2NTTf9YbR6uPo7RoK5Xkh6OtCw4kxP4QToecejtyytnkRpFDAtu2HJdky9iSbOe3Xpkoqt4jQXGONO6WvwMbNEIM/MMDwLxzR1ykc/cipvguPwHbZLtjPdMLmVTvwe3AC9n2yDRNtPKE61g0a736DfiwSzoc5EY7fJaCpWbLNUSjAd10QlylrWdnXOjj4KNgwZNbclE5PfwiCjmpCecpoaH5kgoFz/EhAGNQWhCDqTD5q71XDZ4EnNhlNRY3NUogE7iizWAhn7WlQ0xiP/gafoN/HAVw0hi48jJSCP7i2FQpgG7fbdyq4AlL7zHFlBwcfhYvrRq5uU30kGu6rIye3LzaHDMbUr+2gvegINwe+jJJMcHFsClIMP0eG6TwUmy9CkZkryq2XQjhmCSYNmwr1V8dioJYDifCnSIRhQzT3PpQTkCDbuYHhB9yONCgoGm9PdZdz7HHxWb2H66SpdicelKuhqVoVqO+O8vLZuHCtAt+ezEXFX3UQ55dBOH4pqtaEojE1HzUnL0L4ni8KR7vi/jgvHDKZi14D7TCAIjFg5MfQmEvDaGcCGpqa5QTslu38WcAeADNx7UY0VKqikRCREDQ4c+lS+3PlAdyasw3Ntf9bOGrP56LYYjFuWS1BhuUi6AyZDA0SMZANJwdf2Pv9isqaejkBbxDsvKnQmcfl3Wme8NsagqSkSxJPyMT1u8l5FVTceQW0pUBD/dzWHJrfD+pQMnEFyn1CWlMkJr5bhZs0F4QCD6TzF2HIoEnoQwIGMQF8Z0zafAr3KHqyAhi2BNvxKXTuUTDnZa34zwYcK6zBtgvBeP/QKMwMN0PdPYqEaDLltnBlmoSVuDnOE6VTvkZ9bjGXxqxq7wkUmS7EnbGeSKFIGA91gNqAiVDpMw69RzniQ/94iOqbOgiQMoIw/6fcKCwLZp1vTL+FSdFX8drBLKjsygNvcwx4KydDa/s43BK+iubqYeS+ZJEQl9dwzrNJW+qwChUbwnHX63sUC9xQzHdD6VgvXLNyQaalK8JMnOGkPR165guwIoJWNrLOBDwR1NY51qhNVB6UAtOgFJAGXmAmXvZPQI+N06C+cTzicgYBf/VAk7j14oCOrXdnf4+yMV4oHr0IhUYLUGjsjBJLD1qBVqCAnP+Zb4Q4S3PcHDsX9QJvXN5zGtWiRq56ewFPdbUYEHiEazQ4r4JznhMReBFK32VCxW8xeGvHw/u4Ic1aZTRWT6GSksNLxclTyBvthFIrL3J6GUfxGA9kWn2CWAsjhFkMRzh/OCLNdJE23h5/CQu4esxkBTz11SLbgjAT1jTg9ZBsiYiAVIpCDnrsCEa39TYY/q0tikv6ANVqNLklq1S20APHPnsDv+gJcMZiIhIEtjjON0MEXwfh5HykhS4iTfQQpq+DY1v1kVH5Du6LotHcIr8KdbhafBJOnUrhnGLzQBKB1igEXISa3ywuCotijCXDqMoAf9xfh8QScySkjcJPM3UQqq+F0JFaCDfSxhGT1xAxShdH9CWfJ9YaILHIBIk3iHwT3K6KkhPQdrXImPWFDx35rqKo6BZ30aWpNUXO0c6QrkR3axthduRyaxTYXMhG9x1hUKV5oLx+IiIuatFSo4akTGPE55ghqdgUiXkmOLnjDUTP0MePNnr40UoPUXavI3beCMRFGlIZEyRdkzh/WeiGRnGlnIC2rcREO+e2OyGpsZeSNP9RHD/BToDAbyXV6LGTnj4XhXRuKKlsX4Pu663Qf+t47EswQuolevrp5ojPMuOebLKQhFw1wenzRkg4Y4SzF42RVGhK6eR4AUF5WSWz6S0sWcUUCpC+QWXtcu6NDo52BrvNZpFj5pdxu20o8QIzOCFq2xbj5VV8qC+1xlcRApwjEckZ5ohLH42EbDOcvWaKpCKCopLEhgz9Pn2F0vNNcUXo1eY8WbRCAavX7JVky9hZOlVJ8x8Htn9i1tTcgi/PlcpMaCYiFT19XdHDwxQvuQlg72+Fg/F8pGSa43zGaJymiDAxv9HnqYt8/JLKx4Xc8SirDKGJK1k+yaITrxorPtDo6L6DvLy24xsePKh9og3d4dD/cvWZiNUXyiSR4ERk0vdLUN7yDXp+bQ2e+2j0XS6AQ6AAW2IscTTRgia1OVIyTJFzZQRuFw9BTYUALS11XHtk+5MLjHnJ+UZyAuQutdgwYNfs7CT2NP8bkIpgFnK1AsMOMOfZkKJIfHcZ3QJi0HOLC5R934TSSj66rxJg8EZr8Hfb4P1QPr6INIZbrAGq7/ZHS2Nca0t4q6ZcnceQFfDcrhY/onOxSCR5enmVtZgbVwS1Xeltq5MSRaSbfxRN8NVQ3eoIlU326LZhAni+tuCtmYCX1tkhp2gInUvZrSJns0UVqjyGrIAOUXiW8AWzcP58lqR7srQ/HmDh6WIM3peBlwIkKxRDKSCFth4nacmNoJffQe4FqOQXi9iCeNr/scsIznRRRb4T7QUwnuvV4iqf3Tfz84tFEj+AO7SnibpeifnxRfTeyMXAoGz02ptF5KBfUC6MwgowJ64UWXcbWmsgPD5PwJOiSMBTQ2NcQkAr0u8yn9TvZ0Q084hN8uwKEbeHWptaBs+kEixJLIFPihD7r1Qgo/wBaun01WqqOj8c40nhBHQxHW8QOje2XZerL/ejC+lOmBCzCV/CnwggNhBOhDlBB+qOdTskvGgoTHxxAO9vQfKWQ7Ra8NEAAAAASUVORK5CYII=</MacroImage>
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools />
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

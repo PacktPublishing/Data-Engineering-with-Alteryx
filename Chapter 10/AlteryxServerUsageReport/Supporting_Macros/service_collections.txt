@@ -1,0 +1,36 @@
+MongoDB shell version v4.0.27
+connecting to: mongodb://localhost:27017/alteryxServer?gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("e288ebba-cf5b-402d-9146-a99f11a8eae9") }
+MongoDB server version: 4.0.26
+[
+	"AS_App_Chunks",
+	"AS_App_Chunks.Files",
+	"AS_ApplicationVersions",
+	"AS_ApplicationVersions.Files",
+	"AS_Applications",
+	"AS_Applications.Files",
+	"AS_Insights",
+	"AS_Insights.Files",
+	"AS_PackageDefinitions",
+	"AS_PackageDefinitions.Files",
+	"AS_Queue",
+	"AS_Queue.Files",
+	"AS_QueueInputs",
+	"AS_QueueInputs.Files",
+	"AS_ResourcePermissions",
+	"AS_ResourcePermissions.Files",
+	"AS_Resources",
+	"AS_Resources.Files",
+	"AS_Results",
+	"AS_Results.Files",
+	"AS_ResultsFiles",
+	"AS_ResultsFiles.Files",
+	"AS_RunAsCredentials",
+	"AS_RunAsCredentials.Files",
+	"AS_Schedules",
+	"AS_Schedules.Files",
+	"AS_TileSetAccessTimes",
+	"AS_TileSetAccessTimes.Files",
+	"AS_TileSets",
+	"AS_TileSets.Files"
+]
