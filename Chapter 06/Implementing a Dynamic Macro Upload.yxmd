@@ -1,0 +1,417 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="82" width="325" height="297" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Using a secrets file for parameters</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+          <Caption>Using a secrets file for parameters</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="114" y="263" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 06\Data\weather_child.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>weather_child.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="current_dt" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="lat" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="lon" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="timezone" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="timezone_offset" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="clouds" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="dew_point" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="dt" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="feels_like_day" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="feels_like_eve" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="feels_like_morn" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="feels_like_night" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="humidity" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="moon_phase" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="moonrise" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="moonset" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="pop" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="pressure" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="rain" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="sunrise" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="sunset" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="temp_day" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="temp_eve" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="temp_max" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="temp_min" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="temp_morn" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="temp_night" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="uvi" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="weather_0_description" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="weather_0_icon" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="weather_0_id" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="weather_0_main" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="wind_deg" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="wind_gust" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="wind_speed" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="UNIX_TIME_ZERO" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="131" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">H:\My Drive\Book\Alteryx for Data Engineers\Workflows\env files\database_table.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>database_table.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="schema" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\env files\database_table.csv" type="V_String" />
+                <Field name="database" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\env files\database_table.csv" type="V_String" />
+                <Field name="table" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\env files\database_table.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings>
+            <Position x="295" y="204" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="BatchMacroGroupBy" />
+              <Value name="ControlParams"><![CDATA[Control Parameter (4)=FQDN
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro=".\supporting_macros\Dynamic Snowflake Output.yxmc" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="187" y="132" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[schema]+'.'+[database]+'.'+[table]" field="FQDN" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[FQDN = [schema]+'.'+[database]+'.'+[table]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="605" y="101" width="386" height="250" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Importing parameters from environment variables</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="631" y="235" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 06\Data\weather_child.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>weather_child.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="current_dt" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="lat" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="lon" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="timezone" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="timezone_offset" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="clouds" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="dew_point" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="dt" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="feels_like_day" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="feels_like_eve" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="feels_like_morn" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="feels_like_night" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="humidity" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="moon_phase" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="moonrise" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="moonset" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="pop" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="pressure" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="rain" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="sunrise" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="sunset" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="temp_day" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="temp_eve" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="temp_max" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="temp_min" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="temp_morn" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="temp_night" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="uvi" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="weather_0_description" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="weather_0_icon" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="weather_0_id" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="weather_0_main" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="wind_deg" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="wind_gust" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="wind_speed" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+                <Field name="UNIX_TIME_ZERO" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Raw_Data\weather.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="630" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="2" />
+              <Fields>
+                <Field name="psh_call" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>echo "FDQN" &gt; env_variables.csv</c>
+                </r>
+                <r>
+                  <c>echo %SCHEMA%.%DATABASE%.%TABLE% &gt;&gt; env_variables.csv</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RunCommand.RunCommand">
+            <Position x="750" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OutputConfiguration>
+                <Configuration>
+                  <File MaxRecords="" FileFormat="0">import_env_variables.bat</File>
+                  <Passwords />
+                  <FormatSpecificOptions>
+                    <LineEndStyle>CRLF</LineEndStyle>
+                    <Delimeter>\0</Delimeter>
+                    <ForceQuotes>False</ForceQuotes>
+                    <HeaderRow>False</HeaderRow>
+                    <CodePage>28591</CodePage>
+                    <WriteBOM>True</WriteBOM>
+                  </FormatSpecificOptions>
+                  <MultiFile value="False" />
+                </Configuration>
+              </OutputConfiguration>
+              <InputConfiguration>
+                <Configuration>
+                  <Passwords />
+                  <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">env_variables.csv</File>
+                  <FormatSpecificOptions>
+                    <HeaderRow>True</HeaderRow>
+                    <IgnoreErrors>False</IgnoreErrors>
+                    <AllowShareWrite>False</AllowShareWrite>
+                    <ImportLine>1</ImportLine>
+                    <FieldLen>254</FieldLen>
+                    <SingleThreadRead>False</SingleThreadRead>
+                    <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                    <Delimeter>,</Delimeter>
+                    <QuoteRecordBreak>False</QuoteRecordBreak>
+                    <CodePage>28591</CodePage>
+                  </FormatSpecificOptions>
+                </Configuration>
+              </InputConfiguration>
+              <ProgramName>import_env_variables.bat</ProgramName>
+              <Arguments />
+              <WorkingDir />
+              <RunMinimized value="False" />
+              <RunSilent value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Run import_env_variables.bat</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="FDQN" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 06\env_variables.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRunCommand" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings>
+            <Position x="907" y="224" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="BatchMacroGroupBy" />
+              <Value name="ControlParams"><![CDATA[Control Parameter (4)=FDQN
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 06\supporting_macros\Dynamic Snowflake Output.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="8" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Implementing a Dynamic Macro Upload</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="b695a11e-246a-475a-9a07-5699d9d1b574" />
+      <Telemetry>
+        <PreviousWorkflowId value="876e8951-6d6d-423b-b106-21bd3c2514a8" />
+        <OriginWorkflowId value="876e8951-6d6d-423b-b106-21bd3c2514a8" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

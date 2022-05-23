@@ -1,0 +1,1289 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="2010" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="65">snowbl:DSN=Snowflake;UID=BIAnalyst;PWD=__EncPwd1__;Staging=local;Method=user|||weather_bulk_load</File>
+          <Passwords>42616E6F7E6CF4EA9A0447829CA4C9C0F08E7CB6CACDF95AA44CBA9F1254166F5E358DBDCB92F3641C0EA93C4</Passwords>
+          <FormatSpecificOptions>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <ChunkSize>64</ChunkSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <CompressionType>GZip</CompressionType>
+            <NumThreads>4</NumThreads>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Snowflake
+Query=weather_bulk_load</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1972" y="15" width="1095" height="254" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Data Profiling and Checks</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1997" y="64" width="288" height="169" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Confirm record count is correct</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="35">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Message.Message">
+                <Position x="2178" y="113" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <When>Filter</When>
+                  <Filter>[Count]!=8</Filter>
+                  <Type>ErrorStop</Type>
+                  <Priority>High</Priority>
+                  <Transient>False</Transient>
+                  <MessageExpression>IF [Count]&lt;8 THEN "Less than 8 records in forecast, check forecast download"
+ELSE "More than 8 records in forecast check API for structural changes" ENDIF</MessageExpression>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name>Record Count Check</Name>
+                  <DefaultAnnotationText>Record Count Check</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMessage" />
+            </Node>
+            <Node ToolID="36">
+              <GuiSettings>
+                <Position x="2022" y="149" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings Macro="CountRecords.yxmc" />
+            </Node>
+            <Node ToolID="37">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+                <Position x="2094" y="113" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <CartesianMode>Error</CartesianMode>
+                  <SelectConfiguration>
+                    <Configuration outputConnection="Output">
+                      <OrderChanged value="False" />
+                      <CommaDecimal value="False" />
+                      <SelectFields>
+                        <SelectField field="*Unknown" selected="True" />
+                      </SelectFields>
+                    </Configuration>
+                  </SelectConfiguration>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="2597" y="65" width="445" height="180" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Logic Checks on Temp fields</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="39">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="2958" y="114" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15920_3f48c212e4426e47a809c249faf53ef5_\Engine_15920_49da31f8f1fd5841aa6403275d72e8a1~.yxdb</TempFile>
+                  <TempFileDataProfiling />
+                  <Layout>
+                    <ViewMode>Single</ViewMode>
+                    <ViewSize value="100" />
+                    <View1>
+                      <DefaultTab>Profile</DefaultTab>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                    <View2 />
+                  </Layout>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+            <Node ToolID="44">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Message.Message">
+                <Position x="2730" y="114" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <When>Filter</When>
+                  <Filter>tonumber([Minimum])&lt;0 or tonumber([Maximum])&gt;30</Filter>
+                  <Type>Warning</Type>
+                  <Priority>Normal</Priority>
+                  <Transient>False</Transient>
+                  <MessageExpression>"The Field: "+ [FieldName] + " has a temperature outside the target range and needs investigating"</MessageExpression>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name>Temperature Range Check</Name>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMessage" />
+            </Node>
+            <Node ToolID="45">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Message.Message">
+                <Position x="2826" y="114" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <When>Filter</When>
+                  <Filter>tonumber([NULLS])!=0</Filter>
+                  <Type>Warning</Type>
+                  <Priority>Normal</Priority>
+                  <Transient>False</Transient>
+                  <MessageExpression>"The Field: "+ [FieldName] + " has a NULL values and needs investigating"</MessageExpression>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name>Null Value Check</Name>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMessage" />
+            </Node>
+            <Node ToolID="46">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="2622" y="114" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Operator>Contains</Operator>
+                    <Field>FieldName</Field>
+                    <Operands>
+                      <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                      <DateType>fixed</DateType>
+                      <PeriodDate>2021-10-29 23:45:19</PeriodDate>
+                      <PeriodType>
+                      </PeriodType>
+                      <PeriodCount>0</PeriodCount>
+                      <StartDate>2021-10-29 23:45:19</StartDate>
+                      <EndDate>2021-10-29 23:45:19</EndDate>
+                      <Operand>temp</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Contains([FieldName],"temp")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="2297" y="64" width="289" height="133" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Isolate numerics and profile</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="38">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+                <Position x="2406" y="113" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Limit_UniqueCount>10000</Limit_UniqueCount>
+                  <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+                  <IsMetric value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+            </Node>
+            <Node ToolID="41">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+                <Position x="2502" y="113" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <GroupFields>
+                    <Field field="FieldName" />
+                  </GroupFields>
+                  <HeaderField field="Name" />
+                  <DataField field="Value" />
+                  <Methods>
+                    <Method method="Concat" />
+                    <Separator>,</Separator>
+                    <FieldSize value="2048" />
+                  </Methods>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="FieldName" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                    <Field name="25th_Percentile" size="2048" source="CrossTab:Header:Name:25th Percentile:Concat:" type="V_WString" />
+                    <Field name="25th_Percentile_Margin_Of_Error" size="2048" source="CrossTab:Header:Name:25th Percentile Margin Of Error:Concat:" type="V_WString" />
+                    <Field name="50th_Percentile" size="2048" source="CrossTab:Header:Name:50th Percentile:Concat:" type="V_WString" />
+                    <Field name="50th_Percentile_Margin_Of_Error" size="2048" source="CrossTab:Header:Name:50th Percentile Margin Of Error:Concat:" type="V_WString" />
+                    <Field name="75th_Percentile" size="2048" source="CrossTab:Header:Name:75th Percentile:Concat:" type="V_WString" />
+                    <Field name="75th_Percentile_Margin_Of_Error" size="2048" source="CrossTab:Header:Name:75th Percentile Margin Of Error:Concat:" type="V_WString" />
+                    <Field name="Average" size="2048" source="CrossTab:Header:Name:Average:Concat:" type="V_WString" />
+                    <Field name="Data_Type" size="2048" source="CrossTab:Header:Name:Data Type:Concat:" type="V_WString" />
+                    <Field name="Description" size="2048" source="CrossTab:Header:Name:Description:Concat:" type="V_WString" />
+                    <Field name="Histogram" size="2048" source="CrossTab:Header:Name:Histogram:Concat:" type="V_WString" />
+                    <Field name="Histogram_Margin_Of_Error" size="2048" source="CrossTab:Header:Name:Histogram Margin Of Error:Concat:" type="V_WString" />
+                    <Field name="Maximum" size="2048" source="CrossTab:Header:Name:Maximum:Concat:" type="V_WString" />
+                    <Field name="Minimum" size="2048" source="CrossTab:Header:Name:Minimum:Concat:" type="V_WString" />
+                    <Field name="Name" size="2048" source="CrossTab:Header:Name:Name:Concat:" type="V_WString" />
+                    <Field name="Non_Nulls" size="2048" source="CrossTab:Header:Name:Non-Nulls:Concat:" type="V_WString" />
+                    <Field name="Nulls" size="2048" source="CrossTab:Header:Name:Nulls:Concat:" type="V_WString" />
+                    <Field name="OKs" size="2048" source="CrossTab:Header:Name:OKs:Concat:" type="V_WString" />
+                    <Field name="Size" size="2048" source="CrossTab:Header:Name:Size:Concat:" type="V_WString" />
+                    <Field name="Source" size="2048" source="CrossTab:Header:Name:Source:Concat:" type="V_WString" />
+                    <Field name="Standard_Deviation" size="2048" source="CrossTab:Header:Name:Standard Deviation:Concat:" type="V_WString" />
+                    <Field name="Sum" size="2048" source="CrossTab:Header:Name:Sum:Concat:" type="V_WString" />
+                    <Field name="Unique_Values" size="2048" source="CrossTab:Header:Name:Unique Values:Concat:" type="V_WString" />
+                    <Field name="Uniques" size="2048" source="CrossTab:Header:Name:Uniques:Concat:" type="V_WString" />
+                    <Field name="Variance" size="2048" source="CrossTab:Header:Name:Variance:Concat:" type="V_WString" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+            </Node>
+            <Node ToolID="42">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
+                <Position x="2322" y="113" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>FieldTypes</Mode>
+                  <FieldTypes>Byte,Int16,Int32,Int64,FixedDecimal,Float,Double</FieldTypes>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicSelect" />
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="741" y="131" width="217" height="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>parse the JSON field</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="751" y="165" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="DownloadData" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Drop excess fields to focus on Download Data</AnnotationText>
+              <DefaultAnnotationText>Drop excess fields to focus on Download Data</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+            <Position x="859" y="165" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JSON_Field>DownloadData</JSON_Field>
+              <IncludeInOutput value="False" />
+              <SingleField value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Separate JSON into individual cells</AnnotationText>
+              <DefaultAnnotationText>Separate JSON into individual cells</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1026" y="92" width="930" height="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Transform JSON Records into table</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1051" y="165" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>Contains</Operator>
+                <Field>JSON_Name</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2021-10-28 22:58:21</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>daily</Operand>
+                  <StartDate>2021-10-28 22:58:21</StartDate>
+                  <EndDate>2021-10-28 22:58:21</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Contains([JSON_Name],"daily")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="1255" y="141" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="JSON_Name1" />
+                <Field field="JSON_Name2" />
+              </GroupFields>
+              <HeaderField field="JSON_Name3" />
+              <DataField field="JSON_ValueString" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name2" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field name="clouds" size="2048" source="CrossTab:Header:JSON_Name3:clouds:Concat:" type="V_WString" />
+                <Field name="dew_point" size="2048" source="CrossTab:Header:JSON_Name3:dew_point:Concat:" type="V_WString" />
+                <Field name="dt" size="2048" source="CrossTab:Header:JSON_Name3:dt:Concat:" type="V_WString" />
+                <Field name="feels_like_day" size="2048" source="CrossTab:Header:JSON_Name3:feels_like.day:Concat:" type="V_WString" />
+                <Field name="feels_like_eve" size="2048" source="CrossTab:Header:JSON_Name3:feels_like.eve:Concat:" type="V_WString" />
+                <Field name="feels_like_morn" size="2048" source="CrossTab:Header:JSON_Name3:feels_like.morn:Concat:" type="V_WString" />
+                <Field name="feels_like_night" size="2048" source="CrossTab:Header:JSON_Name3:feels_like.night:Concat:" type="V_WString" />
+                <Field name="humidity" size="2048" source="CrossTab:Header:JSON_Name3:humidity:Concat:" type="V_WString" />
+                <Field name="moon_phase" size="2048" source="CrossTab:Header:JSON_Name3:moon_phase:Concat:" type="V_WString" />
+                <Field name="moonrise" size="2048" source="CrossTab:Header:JSON_Name3:moonrise:Concat:" type="V_WString" />
+                <Field name="moonset" size="2048" source="CrossTab:Header:JSON_Name3:moonset:Concat:" type="V_WString" />
+                <Field name="pop" size="2048" source="CrossTab:Header:JSON_Name3:pop:Concat:" type="V_WString" />
+                <Field name="pressure" size="2048" source="CrossTab:Header:JSON_Name3:pressure:Concat:" type="V_WString" />
+                <Field name="sunrise" size="2048" source="CrossTab:Header:JSON_Name3:sunrise:Concat:" type="V_WString" />
+                <Field name="sunset" size="2048" source="CrossTab:Header:JSON_Name3:sunset:Concat:" type="V_WString" />
+                <Field name="temp_day" size="2048" source="CrossTab:Header:JSON_Name3:temp.day:Concat:" type="V_WString" />
+                <Field name="temp_eve" size="2048" source="CrossTab:Header:JSON_Name3:temp.eve:Concat:" type="V_WString" />
+                <Field name="temp_max" size="2048" source="CrossTab:Header:JSON_Name3:temp.max:Concat:" type="V_WString" />
+                <Field name="temp_min" size="2048" source="CrossTab:Header:JSON_Name3:temp.min:Concat:" type="V_WString" />
+                <Field name="temp_morn" size="2048" source="CrossTab:Header:JSON_Name3:temp.morn:Concat:" type="V_WString" />
+                <Field name="temp_night" size="2048" source="CrossTab:Header:JSON_Name3:temp.night:Concat:" type="V_WString" />
+                <Field name="uvi" size="2048" source="CrossTab:Header:JSON_Name3:uvi:Concat:" type="V_WString" />
+                <Field name="weather_0_description" size="2048" source="CrossTab:Header:JSON_Name3:weather.0.description:Concat:" type="V_WString" />
+                <Field name="weather_0_icon" size="2048" source="CrossTab:Header:JSON_Name3:weather.0.icon:Concat:" type="V_WString" />
+                <Field name="weather_0_id" size="2048" source="CrossTab:Header:JSON_Name3:weather.0.id:Concat:" type="V_WString" />
+                <Field name="weather_0_main" size="2048" source="CrossTab:Header:JSON_Name3:weather.0.main:Concat:" type="V_WString" />
+                <Field name="wind_deg" size="2048" source="CrossTab:Header:JSON_Name3:wind_deg:Concat:" type="V_WString" />
+                <Field name="wind_gust" size="2048" source="CrossTab:Header:JSON_Name3:wind_gust:Concat:" type="V_WString" />
+                <Field name="wind_speed" size="2048" source="CrossTab:Header:JSON_Name3:wind_speed:Concat:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="1159" y="141" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>JSON_Name</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>JSON_Name</RootName>
+              <Delimeters value="." />
+              <NumFields value="3" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="1159" y="225" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields />
+              <HeaderField field="JSON_Name" />
+              <DataField field="JSON_ValueString" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="current_clouds" size="2048" source="CrossTab:Header:JSON_Name:current.clouds:Concat:" type="V_WString" />
+                <Field name="current_dew_point" size="2048" source="CrossTab:Header:JSON_Name:current.dew_point:Concat:" type="V_WString" />
+                <Field name="current_dt" size="2048" source="CrossTab:Header:JSON_Name:current.dt:Concat:" type="V_WString" />
+                <Field name="current_feels_like" size="2048" source="CrossTab:Header:JSON_Name:current.feels_like:Concat:" type="V_WString" />
+                <Field name="current_humidity" size="2048" source="CrossTab:Header:JSON_Name:current.humidity:Concat:" type="V_WString" />
+                <Field name="current_pressure" size="2048" source="CrossTab:Header:JSON_Name:current.pressure:Concat:" type="V_WString" />
+                <Field name="current_sunrise" size="2048" source="CrossTab:Header:JSON_Name:current.sunrise:Concat:" type="V_WString" />
+                <Field name="current_sunset" size="2048" source="CrossTab:Header:JSON_Name:current.sunset:Concat:" type="V_WString" />
+                <Field name="current_temp" size="2048" source="CrossTab:Header:JSON_Name:current.temp:Concat:" type="V_WString" />
+                <Field name="current_uvi" size="2048" source="CrossTab:Header:JSON_Name:current.uvi:Concat:" type="V_WString" />
+                <Field name="current_visibility" size="2048" source="CrossTab:Header:JSON_Name:current.visibility:Concat:" type="V_WString" />
+                <Field name="current_weather_0_description" size="2048" source="CrossTab:Header:JSON_Name:current.weather.0.description:Concat:" type="V_WString" />
+                <Field name="current_weather_0_icon" size="2048" source="CrossTab:Header:JSON_Name:current.weather.0.icon:Concat:" type="V_WString" />
+                <Field name="current_weather_0_id" size="2048" source="CrossTab:Header:JSON_Name:current.weather.0.id:Concat:" type="V_WString" />
+                <Field name="current_weather_0_main" size="2048" source="CrossTab:Header:JSON_Name:current.weather.0.main:Concat:" type="V_WString" />
+                <Field name="current_wind_deg" size="2048" source="CrossTab:Header:JSON_Name:current.wind_deg:Concat:" type="V_WString" />
+                <Field name="current_wind_speed" size="2048" source="CrossTab:Header:JSON_Name:current.wind_speed:Concat:" type="V_WString" />
+                <Field name="lat" size="2048" source="CrossTab:Header:JSON_Name:lat:Concat:" type="V_WString" />
+                <Field name="lon" size="2048" source="CrossTab:Header:JSON_Name:lon:Concat:" type="V_WString" />
+                <Field name="timezone" size="2048" source="CrossTab:Header:JSON_Name:timezone:Concat:" type="V_WString" />
+                <Field name="timezone_offset" size="2048" source="CrossTab:Header:JSON_Name:timezone_offset:Concat:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="1363" y="153" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="True" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Source_current_dt" selected="True" input="Source_" />
+                    <SelectField field="Source_lat" selected="True" input="Source_" />
+                    <SelectField field="Source_lon" selected="True" input="Source_" />
+                    <SelectField field="Source_timezone" selected="True" input="Source_" />
+                    <SelectField field="Source_timezone_offset" selected="True" input="Source_" />
+                    <SelectField field="Target_JSON_Name1" selected="True" input="Target_" />
+                    <SelectField field="Target_JSON_Name2" selected="True" input="Target_" />
+                    <SelectField field="Target_clouds" selected="True" input="Target_" />
+                    <SelectField field="Target_dew_point" selected="True" input="Target_" />
+                    <SelectField field="Target_dt" selected="True" input="Target_" />
+                    <SelectField field="Target_feels_like_day" selected="True" input="Target_" />
+                    <SelectField field="Target_feels_like_eve" selected="True" input="Target_" />
+                    <SelectField field="Target_feels_like_morn" selected="True" input="Target_" />
+                    <SelectField field="Target_feels_like_night" selected="True" input="Target_" />
+                    <SelectField field="Target_humidity" selected="True" input="Target_" />
+                    <SelectField field="Target_moon_phase" selected="True" input="Target_" />
+                    <SelectField field="Target_moonrise" selected="True" input="Target_" />
+                    <SelectField field="Target_moonset" selected="True" input="Target_" />
+                    <SelectField field="Target_pop" selected="True" input="Target_" />
+                    <SelectField field="Target_pressure" selected="True" input="Target_" />
+                    <SelectField field="Target_rain" selected="True" input="Target_" />
+                    <SelectField field="Target_sunrise" selected="True" input="Target_" />
+                    <SelectField field="Target_sunset" selected="True" input="Target_" />
+                    <SelectField field="Target_temp_day" selected="True" input="Target_" />
+                    <SelectField field="Target_temp_eve" selected="True" input="Target_" />
+                    <SelectField field="Target_temp_max" selected="True" input="Target_" />
+                    <SelectField field="Target_temp_min" selected="True" input="Target_" />
+                    <SelectField field="Target_temp_morn" selected="True" input="Target_" />
+                    <SelectField field="Target_temp_night" selected="True" input="Target_" />
+                    <SelectField field="Target_uvi" selected="True" input="Target_" />
+                    <SelectField field="Target_weather_0_description" selected="True" input="Target_" />
+                    <SelectField field="Target_weather_0_icon" selected="True" input="Target_" />
+                    <SelectField field="Target_weather_0_id" selected="True" input="Target_" />
+                    <SelectField field="Target_weather_0_main" selected="True" input="Target_" />
+                    <SelectField field="Target_wind_deg" selected="True" input="Target_" />
+                    <SelectField field="Target_wind_gust" selected="True" input="Target_" />
+                    <SelectField field="Target_wind_speed" selected="True" input="Target_" />
+                    <SelectField field="Source_current_clouds" selected="True" input="Source_" />
+                    <SelectField field="Source_current_dew_point" selected="True" input="Source_" />
+                    <SelectField field="Source_current_feels_like" selected="True" input="Source_" />
+                    <SelectField field="Source_current_humidity" selected="True" input="Source_" />
+                    <SelectField field="Source_current_pressure" selected="True" input="Source_" />
+                    <SelectField field="Source_current_sunrise" selected="True" input="Source_" />
+                    <SelectField field="Source_current_sunset" selected="True" input="Source_" />
+                    <SelectField field="Source_current_temp" selected="True" input="Source_" />
+                    <SelectField field="Source_current_uvi" selected="True" input="Source_" />
+                    <SelectField field="Source_current_visibility" selected="True" input="Source_" />
+                    <SelectField field="Source_current_weather_0_description" selected="True" input="Source_" />
+                    <SelectField field="Source_current_weather_0_icon" selected="True" input="Source_" />
+                    <SelectField field="Source_current_weather_0_id" selected="True" input="Source_" />
+                    <SelectField field="Source_current_weather_0_main" selected="True" input="Source_" />
+                    <SelectField field="Source_current_wind_deg" selected="True" input="Source_" />
+                    <SelectField field="Source_current_wind_speed" selected="True" input="Source_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="1555" y="153" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="current_dt" selected="True" />
+                <Field field="lat" selected="True" />
+                <Field field="lon" selected="True" />
+                <Field field="timezone" selected="True" />
+                <Field field="timezone_offset" selected="True" />
+                <Field field="JSON_Name1" selected="True" />
+                <Field field="JSON_Name2" selected="True" />
+                <Field field="clouds" selected="True" />
+                <Field field="dew_point" selected="True" />
+                <Field field="dt" selected="True" />
+                <Field field="feels_like_day" selected="True" />
+                <Field field="feels_like_eve" selected="True" />
+                <Field field="feels_like_morn" selected="True" />
+                <Field field="feels_like_night" selected="True" />
+                <Field field="humidity" selected="True" />
+                <Field field="moon_phase" selected="True" />
+                <Field field="moonrise" selected="True" />
+                <Field field="moonset" selected="True" />
+                <Field field="pop" selected="True" />
+                <Field field="pressure" selected="True" />
+                <Field field="rain" selected="True" />
+                <Field field="sunrise" selected="True" />
+                <Field field="sunset" selected="True" />
+                <Field field="temp_day" selected="True" />
+                <Field field="temp_eve" selected="True" />
+                <Field field="temp_max" selected="True" />
+                <Field field="temp_min" selected="True" />
+                <Field field="temp_morn" selected="True" />
+                <Field field="temp_night" selected="True" />
+                <Field field="uvi" selected="True" />
+                <Field field="weather_0_description" selected="True" />
+                <Field field="weather_0_icon" selected="True" />
+                <Field field="weather_0_id" selected="True" />
+                <Field field="weather_0_main" selected="True" />
+                <Field field="wind_deg" selected="True" />
+                <Field field="wind_gust" selected="True" />
+                <Field field="wind_speed" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="current_dt" source="CrossTab:Header:JSON_Name:current.dt:Concat:" type="Int32" />
+                <Field name="lat" source="CrossTab:Header:JSON_Name:lat:Concat:" type="Double" />
+                <Field name="lon" source="CrossTab:Header:JSON_Name:lon:Concat:" type="Double" />
+                <Field name="timezone" size="13" source="CrossTab:Header:JSON_Name:timezone:Concat:" type="String" />
+                <Field name="timezone_offset" source="CrossTab:Header:JSON_Name:timezone_offset:Concat:" type="Byte" />
+                <Field name="clouds" source="CrossTab:Header:JSON_Name3:clouds:Concat:" type="Byte" />
+                <Field name="dew_point" source="CrossTab:Header:JSON_Name3:dew_point:Concat:" type="Double" />
+                <Field name="dt" source="CrossTab:Header:JSON_Name3:dt:Concat:" type="Int32" />
+                <Field name="feels_like_day" source="CrossTab:Header:JSON_Name3:feels_like.day:Concat:" type="Double" />
+                <Field name="feels_like_eve" source="CrossTab:Header:JSON_Name3:feels_like.eve:Concat:" type="Double" />
+                <Field name="feels_like_morn" source="CrossTab:Header:JSON_Name3:feels_like.morn:Concat:" type="Double" />
+                <Field name="feels_like_night" source="CrossTab:Header:JSON_Name3:feels_like.night:Concat:" type="Double" />
+                <Field name="humidity" source="CrossTab:Header:JSON_Name3:humidity:Concat:" type="Byte" />
+                <Field name="moon_phase" source="CrossTab:Header:JSON_Name3:moon_phase:Concat:" type="Double" />
+                <Field name="moonrise" source="CrossTab:Header:JSON_Name3:moonrise:Concat:" type="Int32" />
+                <Field name="moonset" source="CrossTab:Header:JSON_Name3:moonset:Concat:" type="Int32" />
+                <Field name="pop" source="CrossTab:Header:JSON_Name3:pop:Concat:" type="Double" />
+                <Field name="pressure" source="CrossTab:Header:JSON_Name3:pressure:Concat:" type="Int16" />
+                <Field name="sunrise" source="CrossTab:Header:JSON_Name3:sunrise:Concat:" type="Int32" />
+                <Field name="sunset" source="CrossTab:Header:JSON_Name3:sunset:Concat:" type="Int32" />
+                <Field name="temp_day" source="CrossTab:Header:JSON_Name3:temp.day:Concat:" type="Double" />
+                <Field name="temp_eve" source="CrossTab:Header:JSON_Name3:temp.eve:Concat:" type="Double" />
+                <Field name="temp_max" source="CrossTab:Header:JSON_Name3:temp.max:Concat:" type="Double" />
+                <Field name="temp_min" source="CrossTab:Header:JSON_Name3:temp.min:Concat:" type="Double" />
+                <Field name="temp_morn" source="CrossTab:Header:JSON_Name3:temp.morn:Concat:" type="Double" />
+                <Field name="temp_night" source="CrossTab:Header:JSON_Name3:temp.night:Concat:" type="Double" />
+                <Field name="uvi" source="CrossTab:Header:JSON_Name3:uvi:Concat:" type="Double" />
+                <Field name="weather_0_description" size="15" source="CrossTab:Header:JSON_Name3:weather.0.description:Concat:" type="String" />
+                <Field name="weather_0_icon" size="3" source="CrossTab:Header:JSON_Name3:weather.0.icon:Concat:" type="String" />
+                <Field name="weather_0_id" source="CrossTab:Header:JSON_Name3:weather.0.id:Concat:" type="Int16" />
+                <Field name="weather_0_main" size="6" source="CrossTab:Header:JSON_Name3:weather.0.main:Concat:" type="String" />
+                <Field name="wind_deg" source="CrossTab:Header:JSON_Name3:wind_deg:Concat:" type="Int16" />
+                <Field name="wind_gust" source="CrossTab:Header:JSON_Name3:wind_gust:Concat:" type="Double" />
+                <Field name="wind_speed" source="CrossTab:Header:JSON_Name3:wind_speed:Concat:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1651" y="153" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeParse('19700101', '%Y%m%d')" field="UNIX_TIME_ZERO" size="10" type="Date" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[UNIX_TIME_ZERO = DateTimeParse('19700101', '%Y%m%d')
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+            <Position x="1747" y="153" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldType>Numeric</FieldType>
+              <Fields orderChanged="False">
+                <Field name="current_dt" />
+                <Field name="dt" />
+                <Field name="moonrise" />
+                <Field name="moonset" />
+                <Field name="sunrise" />
+                <Field name="sunset" />
+                <Field name="lat" selected="False" />
+                <Field name="lon" selected="False" />
+                <Field name="timezone_offset" selected="False" />
+                <Field name="JSON_Name2" selected="False" />
+                <Field name="clouds" selected="False" />
+                <Field name="dew_point" selected="False" />
+                <Field name="feels_like_day" selected="False" />
+                <Field name="feels_like_eve" selected="False" />
+                <Field name="feels_like_morn" selected="False" />
+                <Field name="feels_like_night" selected="False" />
+                <Field name="humidity" selected="False" />
+                <Field name="moon_phase" selected="False" />
+                <Field name="pop" selected="False" />
+                <Field name="pressure" selected="False" />
+                <Field name="temp_day" selected="False" />
+                <Field name="temp_eve" selected="False" />
+                <Field name="temp_max" selected="False" />
+                <Field name="temp_min" selected="False" />
+                <Field name="temp_morn" selected="False" />
+                <Field name="temp_night" selected="False" />
+                <Field name="uvi" selected="False" />
+                <Field name="weather_0_id" selected="False" />
+                <Field name="wind_deg" selected="False" />
+                <Field name="wind_gust" selected="False" />
+                <Field name="wind_speed" selected="False" />
+                <Field name="*Unknown" selected="False" />
+              </Fields>
+              <CopyOutput value="False" />
+              <Expression>DateTimeAdd([UNIX_TIME_ZERO], [_CurrentField_], 'seconds')</Expression>
+              <ChangeFieldType value="True" />
+              <OutputFieldType type="DateTime" size="19" scale="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DateTimeAdd([UNIX_TIME_ZERO], [_CurrentField_], 'seconds')</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1843" y="153" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="dt" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dt - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
+            <Position x="1459" y="153" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Formula</Mode>
+              <Expression>!(contains([Name], 'current') or contains([Name], 'JSON')) OR [Name]="current_dt"</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="93" width="669" height="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Weather Download Process from Chapter 4</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="189" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">..\env files\secret.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>secret.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="openweathermap" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\env files\secret.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="79" y="142" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="baseURL" />
+                <Field name="APIEndpoint" />
+                <Field name="parameters" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>https://api.openweathermap.org/</c>
+                  <c>data/2.5/onecall?</c>
+                  <c>lat={lat}&amp;lon={long}&amp;exclude={part}&amp;appid={API key}&amp;units={units}</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="211" y="166" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="416" y="166" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[baseURL]+[APIEndpoint]+[parameters]" field="call_URL" size="1073741823" type="V_WString" />
+                <FormulaField expression="Replace([call_URL], &quot;{lat}&quot;, ToString([latitude]))" field="call_URL" size="1073741823" type="V_WString" />
+                <FormulaField expression="Replace([call_URL], &quot;{long}&quot;, ToString([longitude]))" field="call_URL" size="1073741823" type="V_WString" />
+                <FormulaField expression="Replace([call_URL], &quot;{part}&quot;, [part])" field="call_URL" size="1073741823" type="V_WString" />
+                <FormulaField expression="Replace([call_URL], &quot;{units}&quot;, &quot;metric&quot;)" field="call_URL" size="1073741823" type="V_WString" />
+                <FormulaField expression="Replace([call_URL], &quot;{API key}&quot;, [openweathermap])" field="call_URL" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>call_URL = [baseURL]+[APIEndpoint]+[parameters]
+call_URL = Replace([call_URL], "...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+            <Position x="500" y="166" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Password />
+              <URLField>call_URL</URLField>
+              <OutputMode>String</OutputMode>
+              <CodePage>65001</CodePage>
+              <EncodeURLs value="True" />
+              <Headers>
+                <NameValues />
+                <Fields orderChanged="False">
+                  <Field name="baseURL" selected="False" />
+                  <Field name="APIEndpoint" selected="False" />
+                  <Field name="parameters" selected="False" />
+                  <Field name="openweathermap" selected="False" />
+                  <Field name="latitude" selected="False" />
+                  <Field name="longitude" selected="False" />
+                  <Field name="call_URL" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </Fields>
+              </Headers>
+              <Payload>
+                <HTTPAction>GET</HTTPAction>
+                <QueryStringBodyMode>Compose</QueryStringBodyMode>
+                <ComposeNameValues />
+                <ComposeFields orderChanged="False">
+                  <Field name="baseURL" selected="False" />
+                  <Field name="APIEndpoint" selected="False" />
+                  <Field name="parameters" selected="False" />
+                  <Field name="openweathermap" selected="False" />
+                  <Field name="latitude" selected="False" />
+                  <Field name="longitude" selected="False" />
+                  <Field name="call_URL" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </ComposeFields>
+              </Payload>
+              <UserName />
+              <numConnections>2</numConnections>
+              <Timeout>600</Timeout>
+              <EnableRPM value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="308" y="166" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="//latitued for London&#xA;51.51" field="latitude" size="8" type="Double" />
+                <FormulaField expression="//longitude for london&#xA;-0.12" field="longitude" size="8" type="Double" />
+                <FormulaField expression="//forecast parts that are not of interest&#xA;&quot;minutely,hourly&quot;" field="part" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>latitude = //latitued for London
+51.51
+longitude = //longitude for london
+-0.12
+...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Test.Test">
+            <Position x="595" y="237" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Tests>
+                <Test>
+                  <Name>Response Code 200</Name>
+                  <Connection>#1</Connection>
+                  <Type>ExpAll</Type>
+                  <Value>contains([DownloadHeaders], "HTTP/1.1 200 OK")</Value>
+                </Test>
+              </Tests>
+              <DontReportSubsequent value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Check Response Headers for Code 200</AnnotationText>
+              <DefaultAnnotationText>Response Code 200</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTest" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output9" />
+      <Destination ToolID="37" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="37" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="True" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="True" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="False" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="25" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="25" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="36" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Saving Weather Data to Snowflake</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="486a3bf7-803b-4308-bf69-c19a96e04aa5" />
+      <Telemetry>
+        <PreviousWorkflowId value="e8e32849-21aa-4a2f-b388-5cf62108a88a" />
+        <OriginWorkflowId value="81930e67-e110-4e45-80b4-f9b53f1d0aa6" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
