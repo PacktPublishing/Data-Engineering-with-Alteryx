@@ -1,0 +1,1658 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.4">
+  <Nodes>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="453" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\HousingPricesTestData.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>HousingPricesTestData.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="id" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="date" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="price" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="bedrooms" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="bathrooms" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="sqft_living" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="sqft_lot" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="floors" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="waterfront" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="view" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="condition" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="grade" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="sqft_above" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="sqft_basement" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="yr_built" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="yr_renovated" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="zipcode" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="lat" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="long" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="sqft_living15" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="sqft_lot15" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="150" y="453" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="id" selected="True" />
+            <Field field="date" selected="True" />
+            <Field field="price" selected="True" />
+            <Field field="bedrooms" selected="True" />
+            <Field field="bathrooms" selected="True" />
+            <Field field="sqft_living" selected="True" />
+            <Field field="sqft_lot" selected="True" />
+            <Field field="floors" selected="True" />
+            <Field field="waterfront" selected="True" />
+            <Field field="view" selected="True" />
+            <Field field="condition" selected="True" />
+            <Field field="grade" selected="True" />
+            <Field field="sqft_above" selected="True" />
+            <Field field="sqft_basement" selected="True" />
+            <Field field="yr_built" selected="True" />
+            <Field field="yr_renovated" selected="True" />
+            <Field field="zipcode" selected="True" />
+            <Field field="lat" selected="True" />
+            <Field field="long" selected="True" />
+            <Field field="sqft_living15" selected="True" />
+            <Field field="sqft_lot15" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="id" size="10" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="String" />
+            <Field name="date" size="15" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="String" />
+            <Field name="price" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Double" />
+            <Field name="bedrooms" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Byte" />
+            <Field name="bathrooms" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Double" />
+            <Field name="sqft_living" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int16" />
+            <Field name="sqft_lot" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int32" />
+            <Field name="floors" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Double" />
+            <Field name="waterfront" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Byte" />
+            <Field name="view" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Byte" />
+            <Field name="condition" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Byte" />
+            <Field name="grade" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Byte" />
+            <Field name="sqft_above" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int16" />
+            <Field name="sqft_basement" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int16" />
+            <Field name="yr_built" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int16" />
+            <Field name="yr_renovated" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int16" />
+            <Field name="zipcode" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int32" />
+            <Field name="lat" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Double" />
+            <Field name="long" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Double" />
+            <Field name="sqft_living15" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int16" />
+            <Field name="sqft_lot15" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1518" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+        <Position x="1422" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Limit_UniqueCount>10000</Limit_UniqueCount>
+          <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+          <IsMetric value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Data Profiling</AnnotationText>
+          <DefaultAnnotationText>Data Profiling</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="1302" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\CalgaryLoadSampleData.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CalgaryLoadSampleData.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CONAME" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+            <Field name="ADDR" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+            <Field name="CITY16" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+            <Field name="STATE" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+            <Field name="ZIP" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+            <Field name="ZIP4" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+            <Field name="STCODE" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+            <Field name="CNTYCD" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+            <Field name="GROUP" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+            <Field name="SEQUENCE" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+            <Field name="CASS_Address2" size="64" source="CASS: US=2013-03-15 CA=2013-03-15" type="V_String" />
+            <Field name="CASS_AddressPlusSuite" size="64" source="CASS: US=2013-03-15 CA=2013-03-15" type="V_String" />
+            <Field name="CASS_CarrierRoute" size="4" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+            <Field name="CASS_City" size="64" source="CASS: US=2013-03-15 CA=2013-03-15" type="V_String" />
+            <Field name="CASS_DeliveryPointCheckDigit" size="1" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+            <Field name="CASS_DeliveryPointCode" size="2" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+            <Field name="CASS_ErrorCode" size="1" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+            <Field name="CASS_LastLine" size="80" source="CASS: US=2013-03-15 CA=2013-03-15" type="V_String" />
+            <Field name="CASS_Plus4" size="4" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+            <Field name="CASS_State" size="2" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+            <Field name="CASS_StatusCode" size="1" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+            <Field name="CASS_ZIP" size="7" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+            <Field name="MatchStatus" size="8" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="String" />
+            <Field name="Score" scale="1" size="6" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="FixedDecimal" />
+            <Field name="SpatialObj" size="2147483647" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="SpatialObj" />
+            <Field name="Lat" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="Double" />
+            <Field name="Lon" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="Double" />
+            <Field name="GeoLevel" size="15" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="String" />
+            <Field name="CensusId" size="16" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="677" y="642" width="677" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Outlier Detection</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="702" y="691" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="price" action="Median" rename="Median_price" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Calculate Price Median</AnnotationText>
+              <DefaultAnnotationText>Calculate Price Median</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="798" y="691" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Append Median to Data Set</AnnotationText>
+              <DefaultAnnotationText>Append Median to Data Set</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="906" y="691" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="ABS([price]-[Median_price])" field="Median Deviation" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Median Deviation = ABS([price]-[Median_price])
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="1122" y="691" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Append Deviation to Data Set</AnnotationText>
+              <DefaultAnnotationText>Append Deviation to Data Set</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1014" y="691" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Median Deviation" action="Median" rename="MAD" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Calculate Median of Deviations</AnnotationText>
+              <DefaultAnnotationText>Calculate Median of Deviations</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1230" y="691" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[price] &gt; [Median_price] + ([MAD]*3.5)&#xA;or [price] &lt; [Median_price] - ([MAD]*3.5)" field="Outlier" size="1" type="Bool" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Calculate Outlier Flag</AnnotationText>
+              <DefaultAnnotationText>Outlier = [price] &gt; [Median_price] + ([MAD]*3.5)
+or [price] &lt; [Median_price] - (...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="677" y="330" width="337" height="289" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 39</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="30">
+          <GuiSettings>
+            <Position x="702" y="403" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="do target">True</Value>
+              <Value name="target">price</Value>
+              <Value name="target level" />
+              <Value name="use fields">"price","bedrooms","bathrooms","sqft_living","sqft_lot","floors","waterfront","view","condition","grade","sqft_above","sqft_basement","yr_built","yr_renovated","zipcode","lat","long","sqft_living15","sqft_lot15"</Value>
+              <Value name="Pearson">True</Value>
+              <Value name="Spearman">False</Value>
+              <Value name="Hoeffding">False</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Association_Analysis.yxmc" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="870" y="379" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_19948_2d5d79b3b51442e6886d6e02dfc5011b_\Engine_7568_14b1e7161def421da279a8a7872a1b5f_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="930" y="391" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_19948_2d5d79b3b51442e6886d6e02dfc5011b_\Engine_7568_a5db072eb6a34b828d1c168f15cecc57_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings>
+            <Position x="702" y="535" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="fields">sqft_living + sqft_above + sqft_living15</Value>
+              <Value name="scale">True</Value>
+              <Value name="max components">2</Value>
+              <Value name="append pc">True</Value>
+              <Value name="num pc">1</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="id" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="date" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="price" source="R-DATA:" type="Double" />
+                <Field name="bedrooms" source="R-DATA:" type="Int32" />
+                <Field name="bathrooms" source="R-DATA:" type="Double" />
+                <Field name="sqft_living" source="R-DATA:" type="Int32" />
+                <Field name="sqft_lot" source="R-DATA:" type="Int32" />
+                <Field name="floors" source="R-DATA:" type="Double" />
+                <Field name="waterfront" source="R-DATA:" type="Int32" />
+                <Field name="view" source="R-DATA:" type="Int32" />
+                <Field name="condition" source="R-DATA:" type="Int32" />
+                <Field name="grade" source="R-DATA:" type="Int32" />
+                <Field name="sqft_above" source="R-DATA:" type="Int32" />
+                <Field name="sqft_basement" source="R-DATA:" type="Int32" />
+                <Field name="yr_built" source="R-DATA:" type="Int32" />
+                <Field name="yr_renovated" source="R-DATA:" type="Int32" />
+                <Field name="zipcode" source="R-DATA:" type="Int32" />
+                <Field name="lat" source="R-DATA:" type="Double" />
+                <Field name="long" source="R-DATA:" type="Double" />
+                <Field name="sqft_living15" source="R-DATA:" type="Int32" />
+                <Field name="sqft_lot15" source="R-DATA:" type="Int32" />
+                <Field name="PC1" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Reports">
+              <RecordInfo>
+                <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Report" size="2147483647" source="Report: (Multiple Sources)" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Principal_Components.yxmc" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="822" y="535" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_33164_1f776c5c96d5416e9d12a102247f6050_\Engine_27324_ff5b51e3a74f49259d5f9b2674e28d21_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="822" y="463" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_33164_1f776c5c96d5416e9d12a102247f6050_\Engine_27324_ef9f704b6d864494ab27e79f618bc3a3_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="221" y="632" width="433" height="300" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Distribution Analysis</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+          <Caption>Distribution Analysis</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Caption>Distribution Analysis</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="22">
+          <GuiSettings>
+            <Position x="342" y="681" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Field">price</Value>
+              <Value name="Distributions">NormalzLognormalzWeibullzGamma</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Distribution_Analysis.yxmc" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="438" y="741" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_29816_0ee14733c6b165469f5806e4ad89f991_\Engine_29816_2ee44d27f51dce4dabf4a08e4565da56~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="246" y="681" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="bedrooms" selected="True" type="Int16" size="2" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
+            <Position x="570" y="681" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFileType />
+              <OutputFile>H:\My Drive\Book\Alteryx for Data Engineers\Images\Chapter 07\Chapter 7-10 Distribution Analysis for the sqft_living field.png</OutputFile>
+              <BatchMode value="False" />
+              <DataField>Layout</DataField>
+              <Separator>Continuous</Separator>
+              <EmbedDependencies value="False" />
+              <ShowHeader value="False" />
+              <ShowFooter value="False" />
+              <PortraitMode value="True" />
+              <PaperType Width="595" Height="841" Left="0" Right="0" Top="0" Bottom="0" />
+              <DefaultStyles>
+                <Style Name="TextStyle" FontName="Arial" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1033" />
+              </DefaultStyles>
+              <PNGResolution>3</PNGResolution>
+              <PNGLargerAction>squeeze</PNGLargerAction>
+              <PNGLargerThanPageChoice>warning</PNGLargerThanPageChoice>
+              <PNGTransparentBG value="False" />
+              <PNGBackColor value="#ffffff" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="354" y="801" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="LOG(sqft_living)" field="LogNormal sqft_living" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[LogNormal sqft_living = LOG(sqft_living)
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings>
+            <Position x="474" y="801" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Field">LogNormal sqft_living</Value>
+              <Value name="Distributions">NormalzLognormalzWeibullzGamma</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Distribution_Analysis.yxmc" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="570" y="801" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_29816_0ee14733c6b165469f5806e4ad89f991_\Engine_29816_15988cf6e9df3248b5f5c2d64064a825~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="125" y="40" width="880" height="345" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Null proportion identification and basic summary</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="846" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_33164_1f776c5c96d5416e9d12a102247f6050_\Engine_27324_1989943a1a484cc3a2093462945b45d8_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+            <Position x="246" y="90" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Limit_UniqueCount>10000</Limit_UniqueCount>
+              <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+              <IsMetric value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="342" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="FieldName" />
+              </GroupFields>
+              <HeaderField field="Name" />
+              <DataField field="Value" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="FieldName" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field name="25th_Percentile" size="2048" source="CrossTab:Header:Name:25th Percentile:Concat:" type="V_WString" />
+                <Field name="25th_Percentile_Margin_Of_Error" size="2048" source="CrossTab:Header:Name:25th Percentile Margin Of Error:Concat:" type="V_WString" />
+                <Field name="50th_Percentile" size="2048" source="CrossTab:Header:Name:50th Percentile:Concat:" type="V_WString" />
+                <Field name="50th_Percentile_Margin_Of_Error" size="2048" source="CrossTab:Header:Name:50th Percentile Margin Of Error:Concat:" type="V_WString" />
+                <Field name="75th_Percentile" size="2048" source="CrossTab:Header:Name:75th Percentile:Concat:" type="V_WString" />
+                <Field name="75th_Percentile_Margin_Of_Error" size="2048" source="CrossTab:Header:Name:75th Percentile Margin Of Error:Concat:" type="V_WString" />
+                <Field name="Average" size="2048" source="CrossTab:Header:Name:Average:Concat:" type="V_WString" />
+                <Field name="Average_Length" size="2048" source="CrossTab:Header:Name:Average Length:Concat:" type="V_WString" />
+                <Field name="Average_Number_of_Parts" size="2048" source="CrossTab:Header:Name:Average Number of Parts:Concat:" type="V_WString" />
+                <Field name="Average_Number_of_Points" size="2048" source="CrossTab:Header:Name:Average Number of Points:Concat:" type="V_WString" />
+                <Field name="Average_Size__Bytes_" size="2048" source="CrossTab:Header:Name:Average Size (Bytes):Concat:" type="V_WString" />
+                <Field name="Blanks" size="2048" source="CrossTab:Header:Name:Blanks:Concat:" type="V_WString" />
+                <Field name="Count_Line" size="2048" source="CrossTab:Header:Name:Count Line:Concat:" type="V_WString" />
+                <Field name="Count_MultiPoint" size="2048" source="CrossTab:Header:Name:Count MultiPoint:Concat:" type="V_WString" />
+                <Field name="Count_Point" size="2048" source="CrossTab:Header:Name:Count Point:Concat:" type="V_WString" />
+                <Field name="Count_Polygon" size="2048" source="CrossTab:Header:Name:Count Polygon:Concat:" type="V_WString" />
+                <Field name="Count_PolyPolyline" size="2048" source="CrossTab:Header:Name:Count PolyPolyline:Concat:" type="V_WString" />
+                <Field name="Count_Rectangle" size="2048" source="CrossTab:Header:Name:Count Rectangle:Concat:" type="V_WString" />
+                <Field name="Data_Type" size="2048" source="CrossTab:Header:Name:Data Type:Concat:" type="V_WString" />
+                <Field name="Description" size="2048" source="CrossTab:Header:Name:Description:Concat:" type="V_WString" />
+                <Field name="Histogram" size="2048" source="CrossTab:Header:Name:Histogram:Concat:" type="V_WString" />
+                <Field name="Histogram_Margin_Of_Error" size="2048" source="CrossTab:Header:Name:Histogram Margin Of Error:Concat:" type="V_WString" />
+                <Field name="Largest_Area__Sq_Miles_" size="2048" source="CrossTab:Header:Name:Largest Area (Sq Miles):Concat:" type="V_WString" />
+                <Field name="Largest_Number_of_Parts" size="2048" source="CrossTab:Header:Name:Largest Number of Parts:Concat:" type="V_WString" />
+                <Field name="Largest_Number_of_Points" size="2048" source="CrossTab:Header:Name:Largest Number of Points:Concat:" type="V_WString" />
+                <Field name="Largest_Size__Bytes_" size="2048" source="CrossTab:Header:Name:Largest Size (Bytes):Concat:" type="V_WString" />
+                <Field name="Longest_Length" size="2048" source="CrossTab:Header:Name:Longest Length:Concat:" type="V_WString" />
+                <Field name="Longest_Length__Miles_" size="2048" source="CrossTab:Header:Name:Longest Length (Miles):Concat:" type="V_WString" />
+                <Field name="Longest_Value" size="2048" source="CrossTab:Header:Name:Longest Value:Concat:" type="V_WString" />
+                <Field name="Maximum" size="2048" source="CrossTab:Header:Name:Maximum:Concat:" type="V_WString" />
+                <Field name="Minimum" size="2048" source="CrossTab:Header:Name:Minimum:Concat:" type="V_WString" />
+                <Field name="Name" size="2048" source="CrossTab:Header:Name:Name:Concat:" type="V_WString" />
+                <Field name="Non_Nulls" size="2048" source="CrossTab:Header:Name:Non-Nulls:Concat:" type="V_WString" />
+                <Field name="Nulls" size="2048" source="CrossTab:Header:Name:Nulls:Concat:" type="V_WString" />
+                <Field name="OKs" size="2048" source="CrossTab:Header:Name:OKs:Concat:" type="V_WString" />
+                <Field name="Scale" size="2048" source="CrossTab:Header:Name:Scale:Concat:" type="V_WString" />
+                <Field name="Shortest__Non_Blank__Length" size="2048" source="CrossTab:Header:Name:Shortest (Non Blank) Length:Concat:" type="V_WString" />
+                <Field name="Shortest_Value" size="2048" source="CrossTab:Header:Name:Shortest Value:Concat:" type="V_WString" />
+                <Field name="Size" size="2048" source="CrossTab:Header:Name:Size:Concat:" type="V_WString" />
+                <Field name="Source" size="2048" source="CrossTab:Header:Name:Source:Concat:" type="V_WString" />
+                <Field name="Standard_Deviation" size="2048" source="CrossTab:Header:Name:Standard Deviation:Concat:" type="V_WString" />
+                <Field name="Sum" size="2048" source="CrossTab:Header:Name:Sum:Concat:" type="V_WString" />
+                <Field name="Unique_Values" size="2048" source="CrossTab:Header:Name:Unique Values:Concat:" type="V_WString" />
+                <Field name="Uniques" size="2048" source="CrossTab:Header:Name:Uniques:Concat:" type="V_WString" />
+                <Field name="Values_with_Both_Whitespace" size="2048" source="CrossTab:Header:Name:Values with Both Whitespace:Concat:" type="V_WString" />
+                <Field name="Values_with_Leading_Whitespace" size="2048" source="CrossTab:Header:Name:Values with Leading Whitespace:Concat:" type="V_WString" />
+                <Field name="Values_with_Trailing_Whitespace" size="2048" source="CrossTab:Header:Name:Values with Trailing Whitespace:Concat:" type="V_WString" />
+                <Field name="Variance" size="2048" source="CrossTab:Header:Name:Variance:Concat:" type="V_WString" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="FieldName" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="666" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="% Nulls" order="Descending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>% Nulls - Descending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="558" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="([Nulls]/([Nulls]+[Non_Nulls]))* 100" field="% Nulls" size="4" type="Float" />
+                <FormulaField expression="15" field="Ref" size="4" type="Float" />
+                <FormulaField expression="[% Nulls] &gt; [Ref]" field="Over Cutoff" size="1" type="Bool" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Create Null proportion field</AnnotationText>
+              <DefaultAnnotationText>% Nulls = ([Nulls]/([Nulls]+[Non_Nulls]))* 100
+Ref = 15
+Over Cutoff = [% Nulls] ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="PlotlyCharting">
+            <Position x="774" y="90" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ChartingFields>
+                <Traces>
+                  <type>bar</type>
+                  <mode>markers</mode>
+                  <orientation>v</orientation>
+                  <xsrc>FieldName</xsrc>
+                  <ysrc>% Nulls</ysrc>
+                  <textposition>None</textposition>
+                  <marker>
+                    <line>
+                      <width>0</width>
+                    </line>
+                    <opacity>1</opacity>
+                    <color>#1f77b4</color>
+                  </marker>
+                </Traces>
+                <Traces>
+                  <orientation>v</orientation>
+                  <type>scatter</type>
+                  <mode>lines</mode>
+                  <ysrc>Ref</ysrc>
+                  <xsrc>FieldName</xsrc>
+                  <line>
+                    <width>2</width>
+                  </line>
+                  <showlegend>true</showlegend>
+                  <boxpoints>false</boxpoints>
+                  <decreasing>
+                    <line>
+                      <color>#7f7f7f</color>
+                    </line>
+                    <fillcolor>rgba(127, 127, 127, 0.5)</fillcolor>
+                  </decreasing>
+                  <increasing>
+                    <line>
+                      <color>#17becf</color>
+                    </line>
+                    <fillcolor>rgba(23, 190, 207, 0.5)</fillcolor>
+                  </increasing>
+                  <autocolorscale>true</autocolorscale>
+                </Traces>
+                <Layout>
+                  <title>
+                    <text>Proportion of Nulls for each field</text>
+                  </title>
+                  <font>
+                    <family>sans-serif</family>
+                  </font>
+                  <autosize>false</autosize>
+                  <width>700</width>
+                  <height>849</height>
+                  <showlegend>true</showlegend>
+                  <hovermode>closest</hovermode>
+                  <xaxis>
+                    <range>-0.5</range>
+                    <range>28.5</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>
+                      </text>
+                    </title>
+                    <showspikes>false</showspikes>
+                    <type>category</type>
+                    <tickfont>
+                      <size>12</size>
+                    </tickfont>
+                    <nticks>0</nticks>
+                  </xaxis>
+                  <yaxis>
+                    <range>0</range>
+                    <range>18.315789072137129</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>% Nulls</text>
+                    </title>
+                    <showspikes>false</showspikes>
+                    <type>linear</type>
+                  </yaxis>
+                  <barnorm>0</barnorm>
+                  <dragmode>zoom</dragmode>
+                  <margin>
+                    <pad>0</pad>
+                    <t>100</t>
+                    <b>80</b>
+                    <l>80</l>
+                    <r>80</r>
+                  </margin>
+                  <legend>
+                    <font>
+                      <size>12</size>
+                    </font>
+                    <borderwidth>0</borderwidth>
+                  </legend>
+                </Layout>
+              </ChartingFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText><![CDATA[Interactive Chart ]]></AnnotationText>
+              <DefaultAnnotationText><![CDATA[Interactive Chart ]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="462" y="90" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="FieldName" selected="True" />
+                <Field field="25th_Percentile" selected="True" />
+                <Field field="25th_Percentile_Margin_Of_Error" selected="True" />
+                <Field field="50th_Percentile" selected="True" />
+                <Field field="50th_Percentile_Margin_Of_Error" selected="True" />
+                <Field field="75th_Percentile" selected="True" />
+                <Field field="75th_Percentile_Margin_Of_Error" selected="True" />
+                <Field field="Average" selected="True" />
+                <Field field="Average_Length" selected="True" />
+                <Field field="Average_Number_of_Parts" selected="True" />
+                <Field field="Average_Number_of_Points" selected="True" />
+                <Field field="Average_Size__Bytes_" selected="True" />
+                <Field field="Blanks" selected="True" />
+                <Field field="Count_Line" selected="True" />
+                <Field field="Count_MultiPoint" selected="True" />
+                <Field field="Count_Point" selected="True" />
+                <Field field="Count_Polygon" selected="True" />
+                <Field field="Count_PolyPolyline" selected="True" />
+                <Field field="Count_Rectangle" selected="True" />
+                <Field field="Data_Type" selected="True" />
+                <Field field="Description" selected="True" />
+                <Field field="Histogram" selected="True" />
+                <Field field="Histogram_Margin_Of_Error" selected="True" />
+                <Field field="Largest_Area__Sq_Miles_" selected="True" />
+                <Field field="Largest_Number_of_Parts" selected="True" />
+                <Field field="Largest_Number_of_Points" selected="True" />
+                <Field field="Largest_Size__Bytes_" selected="True" />
+                <Field field="Longest_Length" selected="True" />
+                <Field field="Longest_Length__Miles_" selected="True" />
+                <Field field="Longest_Value" selected="True" />
+                <Field field="Maximum" selected="True" />
+                <Field field="Minimum" selected="True" />
+                <Field field="Name" selected="True" />
+                <Field field="Non_Nulls" selected="True" />
+                <Field field="Nulls" selected="True" />
+                <Field field="OKs" selected="True" />
+                <Field field="Scale" selected="True" />
+                <Field field="Shortest__Non_Blank__Length" selected="True" />
+                <Field field="Shortest_Value" selected="True" />
+                <Field field="Size" selected="True" />
+                <Field field="Source" selected="True" />
+                <Field field="Standard_Deviation" selected="True" />
+                <Field field="Sum" selected="True" />
+                <Field field="Unique_Values" selected="True" />
+                <Field field="Uniques" selected="True" />
+                <Field field="Values_with_Both_Whitespace" selected="True" />
+                <Field field="Values_with_Leading_Whitespace" selected="True" />
+                <Field field="Values_with_Trailing_Whitespace" selected="True" />
+                <Field field="Variance" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="FieldName" size="28" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="25th_Percentile" size="17" source="CrossTab:Header:Name:25th Percentile:Concat:" type="V_String" />
+                <Field name="25th_Percentile_Margin_Of_Error" size="9" source="CrossTab:Header:Name:25th Percentile Margin Of Error:Concat:" type="V_String" />
+                <Field name="50th_Percentile" size="17" source="CrossTab:Header:Name:50th Percentile:Concat:" type="V_String" />
+                <Field name="50th_Percentile_Margin_Of_Error" size="9" source="CrossTab:Header:Name:50th Percentile Margin Of Error:Concat:" type="V_String" />
+                <Field name="75th_Percentile" size="17" source="CrossTab:Header:Name:75th Percentile:Concat:" type="V_String" />
+                <Field name="75th_Percentile_Margin_Of_Error" size="9" source="CrossTab:Header:Name:75th Percentile Margin Of Error:Concat:" type="V_String" />
+                <Field name="Average" size="17" source="CrossTab:Header:Name:Average:Concat:" type="V_String" />
+                <Field name="Average_Length" size="4" source="CrossTab:Header:Name:Average Length:Concat:" type="String" />
+                <Field name="Average_Number_of_Parts" size="3" source="CrossTab:Header:Name:Average Number of Parts:Concat:" type="String" />
+                <Field name="Average_Number_of_Points" size="3" source="CrossTab:Header:Name:Average Number of Points:Concat:" type="String" />
+                <Field name="Average_Size__Bytes_" size="4" source="CrossTab:Header:Name:Average Size (Bytes):Concat:" type="String" />
+                <Field name="Blanks" size="4" source="CrossTab:Header:Name:Blanks:Concat:" type="String" />
+                <Field name="Count_Line" size="1" source="CrossTab:Header:Name:Count Line:Concat:" type="String" />
+                <Field name="Count_MultiPoint" size="1" source="CrossTab:Header:Name:Count MultiPoint:Concat:" type="String" />
+                <Field name="Count_Point" size="4" source="CrossTab:Header:Name:Count Point:Concat:" type="String" />
+                <Field name="Count_Polygon" size="1" source="CrossTab:Header:Name:Count Polygon:Concat:" type="String" />
+                <Field name="Count_PolyPolyline" size="1" source="CrossTab:Header:Name:Count PolyPolyline:Concat:" type="String" />
+                <Field name="Count_Rectangle" size="1" source="CrossTab:Header:Name:Count Rectangle:Concat:" type="String" />
+                <Field name="Data_Type" size="12" source="CrossTab:Header:Name:Data Type:Concat:" type="String" />
+                <Field name="Description" size="1" source="CrossTab:Header:Name:Description:Concat:" type="String" />
+                <Field name="Histogram" size="243" source="CrossTab:Header:Name:Histogram:Concat:" type="V_String" />
+                <Field name="Histogram_Margin_Of_Error" size="119" source="CrossTab:Header:Name:Histogram Margin Of Error:Concat:" type="V_String" />
+                <Field name="Largest_Area__Sq_Miles_" size="1" source="CrossTab:Header:Name:Largest Area (Sq Miles):Concat:" type="String" />
+                <Field name="Largest_Number_of_Parts" size="1" source="CrossTab:Header:Name:Largest Number of Parts:Concat:" type="String" />
+                <Field name="Largest_Number_of_Points" size="1" source="CrossTab:Header:Name:Largest Number of Points:Concat:" type="String" />
+                <Field name="Largest_Size__Bytes_" size="2" source="CrossTab:Header:Name:Largest Size (Bytes):Concat:" type="String" />
+                <Field name="Longest_Length" size="2" source="CrossTab:Header:Name:Longest Length:Concat:" type="String" />
+                <Field name="Longest_Length__Miles_" size="1" source="CrossTab:Header:Name:Longest Length (Miles):Concat:" type="String" />
+                <Field name="Longest_Value" size="32" source="CrossTab:Header:Name:Longest Value:Concat:" type="V_String" />
+                <Field name="Maximum" size="23" source="CrossTab:Header:Name:Maximum:Concat:" type="V_String" />
+                <Field name="Minimum" size="17" source="CrossTab:Header:Name:Minimum:Concat:" type="V_String" />
+                <Field name="Name" size="28" source="CrossTab:Header:Name:Name:Concat:" type="V_String" />
+                <Field name="Non_Nulls" source="CrossTab:Header:Name:Non-Nulls:Concat:" type="Int16" />
+                <Field name="Nulls" source="CrossTab:Header:Name:Nulls:Concat:" type="Int16" />
+                <Field name="OKs" source="CrossTab:Header:Name:OKs:Concat:" type="Int16" />
+                <Field name="Scale" size="1" source="CrossTab:Header:Name:Scale:Concat:" type="String" />
+                <Field name="Shortest__Non_Blank__Length" size="2" source="CrossTab:Header:Name:Shortest (Non Blank) Length:Concat:" type="String" />
+                <Field name="Shortest_Value" size="13" source="CrossTab:Header:Name:Shortest Value:Concat:" type="V_String" />
+                <Field name="Size" source="CrossTab:Header:Name:Size:Concat:" type="Int32" />
+                <Field name="Source" size="85" source="CrossTab:Header:Name:Source:Concat:" type="V_String" />
+                <Field name="Standard_Deviation" size="17" source="CrossTab:Header:Name:Standard Deviation:Concat:" type="V_String" />
+                <Field name="Sum" size="16" source="CrossTab:Header:Name:Sum:Concat:" type="V_String" />
+                <Field name="Unique_Values" size="611" source="CrossTab:Header:Name:Unique Values:Concat:" type="V_String" />
+                <Field name="Uniques" size="4" source="CrossTab:Header:Name:Uniques:Concat:" type="String" />
+                <Field name="Values_with_Both_Whitespace" size="1" source="CrossTab:Header:Name:Values with Both Whitespace:Concat:" type="String" />
+                <Field name="Values_with_Leading_Whitespace" size="1" source="CrossTab:Header:Name:Values with Leading Whitespace:Concat:" type="String" />
+                <Field name="Values_with_Trailing_Whitespace" size="1" source="CrossTab:Header:Name:Values with Trailing Whitespace:Concat:" type="String" />
+                <Field name="Variance" size="17" source="CrossTab:Header:Name:Variance:Concat:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
+            <Position x="882" y="90" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFileType />
+              <OutputFile>H:\My Drive\Book\Alteryx for Data Engineers\Images\Chapter 07\Chapter 7-7 Proportion of Nulls Chart.png</OutputFile>
+              <BatchMode value="False" />
+              <DataField>Chart</DataField>
+              <Separator>Continuous</Separator>
+              <EmbedDependencies value="False" />
+              <ShowHeader value="False" />
+              <ShowFooter value="False" />
+              <PortraitMode value="True" />
+              <PaperType Width="532" Height="655" Left="0" Right="0" Top="0" Bottom="0" />
+              <DefaultStyles>
+                <Style Name="TextStyle" FontName="Arial" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1033" />
+              </DefaultStyles>
+              <PNGResolution>3</PNGResolution>
+              <PNGLargerAction>stretchPage</PNGLargerAction>
+              <PNGLargerThanPageChoice>ignore</PNGLargerThanPageChoice>
+              <PNGTransparentBG value="False" />
+              <PNGBackColor value="#ffffff" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Render interactive chart for use</AnnotationText>
+              <DefaultAnnotationText>Render interactive chart for use</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="150" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\CalgaryLoadSampleData.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>CalgaryLoadSampleData.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CONAME" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+                <Field name="ADDR" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+                <Field name="CITY16" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+                <Field name="STATE" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+                <Field name="ZIP" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+                <Field name="ZIP4" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+                <Field name="STCODE" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+                <Field name="CNTYCD" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+                <Field name="GROUP" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+                <Field name="SEQUENCE" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+                <Field name="CASS_Address2" size="64" source="CASS: US=2013-03-15 CA=2013-03-15" type="V_String" />
+                <Field name="CASS_AddressPlusSuite" size="64" source="CASS: US=2013-03-15 CA=2013-03-15" type="V_String" />
+                <Field name="CASS_CarrierRoute" size="4" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+                <Field name="CASS_City" size="64" source="CASS: US=2013-03-15 CA=2013-03-15" type="V_String" />
+                <Field name="CASS_DeliveryPointCheckDigit" size="1" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+                <Field name="CASS_DeliveryPointCode" size="2" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+                <Field name="CASS_ErrorCode" size="1" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+                <Field name="CASS_LastLine" size="80" source="CASS: US=2013-03-15 CA=2013-03-15" type="V_String" />
+                <Field name="CASS_Plus4" size="4" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+                <Field name="CASS_State" size="2" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+                <Field name="CASS_StatusCode" size="1" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+                <Field name="CASS_ZIP" size="7" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+                <Field name="MatchStatus" size="8" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="String" />
+                <Field name="Score" scale="1" size="6" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="FixedDecimal" />
+                <Field name="SpatialObj" size="2147483647" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="SpatialObj" />
+                <Field name="Lat" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="Double" />
+                <Field name="Lon" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="Double" />
+                <Field name="GeoLevel" size="15" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="String" />
+                <Field name="CensusId" size="16" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="846" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="" />
+              <Passwords />
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+                <WriteCompatibleVersion>False</WriteCompatibleVersion>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="Insights">
+            <Position x="918" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <InsightFields>
+                <InsightData>C:\Users\paulj\AppData\Local\Temp\Engine_33164_1f776c5c96d5416e9d12a102247f6050_\Insight47\insight.sqlite|||insightdata</InsightData>
+                <InsightDescription>C:\Users\paulj\AppData\Local\Temp\Engine_33164_1f776c5c96d5416e9d12a102247f6050_\Insight47\insightDescription.json</InsightDescription>
+                <Description>
+                  <Elements />
+                </Description>
+                <InsightGalleryID>
+                </InsightGalleryID>
+                <InsightGalleryCheckSum />
+              </InsightFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxInsightsPluginEngine.dll" EngineDllEntryPoint="AlteryxInsights" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="342" y="149" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="221" y="320" width="205" height="301" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Interactive Summary</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+          <Caption>Interactive Summary</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="6">
+          <GuiSettings>
+            <Position x="246" y="453" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Select Fields">CONAME=True,ADDR=True,CITY16=True,STATE=True,ZIP=True,ZIP4=True,STCODE=True,CNTYCD=True,GROUP=True,SEQUENCE=True,CASS_Address2=True,CASS_AddressPlusSuite=True,CASS_CarrierRoute=True,CASS_City=True,CASS_DeliveryPointCheckDigit=True,CASS_DeliveryPointCode=True,CASS_ErrorCode=True,CASS_LastLine=True,CASS_Plus4=True,CASS_State=True,CASS_StatusCode=True,CASS_ZIP=True,MatchStatus=True,Score=True,SpatialObj=True,Lat=True,Lon=True,GeoLevel=True,CensusId=True</Value>
+              <Value name="Sample Data">False</Value>
+              <Value name="Number">True</Value>
+              <Value name="NNumber">5000</Value>
+              <Value name="Percent">False</Value>
+              <Value name="NPercent">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="342" y="369" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_22648_084de4a45857f040a158738b02e74a61_\Engine_22648_e50aad71d955ad448a9fc3a598c444e5~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="342" y="453" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_22648_084de4a45857f040a158738b02e74a61_\Engine_22648_b5f07b0413f3b040b6abc8b766c9a055~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="342" y="537" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_22648_084de4a45857f040a158738b02e74a61_\Engine_22648_cfc3613996b1004597c9a99d335d9920~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="6" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="30" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="33" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="41" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="41" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="43" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="43" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Correlation Matrix" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Reports" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="22" Connection="Input147" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input147" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Reports" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Interactive" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Profiling Data</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="1665e10d-b593-4c5e-b8ff-534bc0105f1b" />
+      <Telemetry>
+        <PreviousWorkflowId value="aba1a1ea-3b4d-4b2c-9c82-87475120cff4" />
+        <OriginWorkflowId value="a406d239-d004-4d2b-b2ce-38314ffde34f" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
