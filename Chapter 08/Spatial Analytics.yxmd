@@ -1,0 +1,648 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="222" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="8">C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <NoProgress>False</NoProgress>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Cust_wTransactions.xls
+Query=`Output$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Customer_ID" size="255" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="Store Number" size="255" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="Customer Segment" size="255" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="First Name" size="255" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="Last Name" size="255" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="Address" size="255" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="City" size="255" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="State" size="255" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="Zip" size="255" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="Visits" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="Double" />
+            <Field name="Spend" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="642" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\Master Store File - CO.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Master Store File - CO.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store Num" size="5" source="TextInput:" type="String" />
+            <Field name="Address" size="26" source="TextInput:" type="V_String" />
+            <Field name="City" size="15" source="TextInput:" type="V_String" />
+            <Field name="State" size="2" source="TextInput:" type="String" />
+            <Field name="ZIP" size="11" source="TextInput:" type="String" />
+            <Field name="Lat" source="TextInput:" type="Double" />
+            <Field name="Lon" source="TextInput:" type="Double" />
+            <Field name="Store Point" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="County " size="17" source="TextInput:" type="String" />
+            <Field name="Region" size="5" source="TextInput:" type="String" />
+            <Field name="Total Sales" source="TextInput:" type="Int32" />
+            <Field name="Credit Sales" source="TextInput:" type="Int32" />
+            <Field name="Total Customers" source="TextInput:" type="Int16" />
+            <Field name="Avg Sales per Customer" source="TextInput:" type="Double" />
+            <Field name="Perf Indicator" size="4" source="TextInput:" type="String" />
+            <Field name="SpatialObject_TradeArea" size="2147483647" source="TradeArea: Source=Store Point Radius=3 Units=Miles" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="918" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_12392_44f5f57f2d61b2428b0992d265ef1efe_\Engine_12392_86e019544b39a8419a14d1c707317194~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="89" y="77" width="421" height="165" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Creating a Spatial Point</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+          <Caption>Creating a Spatial Point</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="114" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\HousingPricesTestData.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>HousingPricesTestData.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="id" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="date" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="price" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="bedrooms" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="bathrooms" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="sqft_living" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="sqft_lot" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="floors" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="waterfront" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="view" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="condition" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="grade" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="sqft_above" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="sqft_basement" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="yr_built" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="yr_renovated" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="zipcode" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="lat" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="long" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="sqft_living15" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="sqft_lot15" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="210" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="id" selected="True" />
+                <Field field="date" selected="True" />
+                <Field field="price" selected="True" />
+                <Field field="bedrooms" selected="True" />
+                <Field field="bathrooms" selected="True" />
+                <Field field="sqft_living" selected="True" />
+                <Field field="sqft_lot" selected="True" />
+                <Field field="floors" selected="True" />
+                <Field field="waterfront" selected="True" />
+                <Field field="view" selected="True" />
+                <Field field="condition" selected="True" />
+                <Field field="grade" selected="True" />
+                <Field field="sqft_above" selected="True" />
+                <Field field="sqft_basement" selected="True" />
+                <Field field="yr_built" selected="True" />
+                <Field field="yr_renovated" selected="True" />
+                <Field field="zipcode" selected="True" />
+                <Field field="lat" selected="True" />
+                <Field field="long" selected="True" />
+                <Field field="sqft_living15" selected="True" />
+                <Field field="sqft_lot15" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="id" size="10" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="String" />
+                <Field name="date" size="15" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="String" />
+                <Field name="price" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Double" />
+                <Field name="bedrooms" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Byte" />
+                <Field name="bathrooms" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Double" />
+                <Field name="sqft_living" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int16" />
+                <Field name="sqft_lot" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int32" />
+                <Field name="floors" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Double" />
+                <Field name="waterfront" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Byte" />
+                <Field name="view" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Byte" />
+                <Field name="condition" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Byte" />
+                <Field name="grade" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Byte" />
+                <Field name="sqft_above" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int16" />
+                <Field name="sqft_basement" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int16" />
+                <Field name="yr_built" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int16" />
+                <Field name="yr_renovated" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int16" />
+                <Field name="zipcode" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int32" />
+                <Field name="lat" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Double" />
+                <Field name="long" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Double" />
+                <Field name="sqft_living15" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int16" />
+                <Field name="sqft_lot15" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.CreatePoints.CreatePoints">
+            <Position x="318" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields fieldX="long" fieldY="lat" />
+              <Mode>Double</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxCreatePoints" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="426" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_42300_0de1afbaca699a43ab7cfe3e92eb37db_\Engine_42300_bd9e6fa867b3b145aad98855d7922399~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Map</DefaultTab>
+                  <Hints>
+                    <Map>
+                      <BaseMap>Latest:Streets</BaseMap>
+                    </Map>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings>
+        <Position x="522" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.Input19"><![CDATA[Address=Concat Address
+]]></Value>
+          <Value name="Text Box (20)">AIzaSyBNmAkTXTozrhhbS8rMq1MRRtbKYMotK2Q</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Address Parts">
+          <RecordInfo>
+            <Field name="Concat Address" size="44" source="Formula: [Address] + ', ' + [City] + ', ' + [State] + ', ' + [Zip]" type="V_String" />
+            <Field name="Formatted Address" size="54" source="JSON_Parse" type="V_String" />
+            <Field description="RegEx: Parsed from JSON_Name" name="ResultNumber" source="RegEx: Parsed from JSON_Name" type="Int64" />
+            <Field name="administrative_area_level_1" size="8" source="JSON_Parse" type="String" />
+            <Field name="administrative_area_level_2" size="17" source="JSON_Parse" type="String" />
+            <Field name="country" size="13" source="JSON_Parse" type="String" />
+            <Field name="locality" size="13" source="JSON_Parse" type="V_String" />
+            <Field name="neighborhood" size="34" source="JSON_Parse" type="V_String" />
+            <Field name="postal_code" source="JSON_Parse" type="Int32" />
+            <Field name="postal_code_suffix" source="JSON_Parse" type="Int16" />
+            <Field name="premise" size="12" source="JSON_Parse" type="V_String" />
+            <Field name="route" size="22" source="JSON_Parse" type="V_String" />
+            <Field name="street_number" source="JSON_Parse" type="Int16" />
+            <Field name="lat" source="JSON_Parse" type="Double" />
+            <Field name="lng" source="JSON_Parse" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Google Geocode\Google Maps Geocode.yxmc" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="318" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Address] + ', ' + [City] + ', ' + [State] + ', ' + [Zip]" field="Concat Address" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Concat Address = [Address] + ', ' + [City] + ', ' + [State] + ', ' + [Zip]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings>
+        <Position x="414" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Ranges">-100</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="SelectRecords.yxmc" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="618" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.CreatePoints.CreatePoints">
+        <Position x="702" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields fieldX="lng" fieldY="lat" />
+          <Mode>Double</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxCreatePoints" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.TradeArea.TradeArea">
+        <Position x="810" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SpatialObj field="Centroid" includeOut="True" />
+          <Units units="Miles" noOverlap="False" />
+          <Radius_FromField value="False" />
+          <Radii>5.0</Radii>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>5.0 Miles</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxTradeArea" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.SpatialMatch.SpatialMatch">
+        <Position x="1002" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Target SpatialObj="Store Point" />
+          <Universe SpatialObj="SpatialObject_TradeArea" />
+          <Method method="Intersects" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Matched">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Universe_lat" selected="True" rename="Universe_lat" input="Universe_" />
+                <SelectField field="Universe_SpatialObject_TradeArea" selected="True" rename="Universe_SpatialObject_TradeArea" input="Universe_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+          <IntersectPoly value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Store Point Where Target Intersects Universe SpatialObject_TradeArea</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSpatialMatch" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.FindNearest.FindNearest">
+        <Position x="1002" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Target SpatialObj="Store Point" />
+          <Universe SpatialObj="SpatialObject_TradeArea" />
+          <HowMany value="1" />
+          <MaxDistance value="20" />
+          <MaxDistanceUnits>Miles</MaxDistanceUnits>
+          <Ignore0 value="False" />
+          <DriveTimeDataSet>Latest</DriveTimeDataSet>
+          <SelectConfiguration>
+            <Configuration outputConnection="Matched">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Universe_lat" selected="True" rename="Universe_lat" input="Universe_" />
+                <SelectField field="Universe_SpatialObject_TradeArea" selected="True" rename="Universe_SpatialObject_TradeArea" input="Universe_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxFindNearest" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.SpatialInfo.SpatialInfo">
+        <Position x="930" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SpatialObj field="Centroid" />
+          <SelectedItems />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSpatialInfo" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="906" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
+        <Position x="1134" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>FieldTypes</Mode>
+          <FieldTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</FieldTypes>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="19" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Universe" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="20" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="20" Connection="Universe" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Address Parts" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="12" Connection="Input19" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Matched" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Spatial Analytics</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="55abe59b-c605-405b-8b8b-8657f26d1690" />
+      <Telemetry>
+        <PreviousWorkflowId value="c227aabd-b556-4f1d-a42a-e990c73e2692" />
+        <OriginWorkflowId value="c227aabd-b556-4f1d-a42a-e990c73e2692" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

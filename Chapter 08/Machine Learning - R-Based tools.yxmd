@@ -1,0 +1,491 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings>
+        <Position x="786" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="target.level" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="predictions">
+          <RecordInfo>
+            <Field name="Actual" source="R-DATA:" type="Double" />
+            <Field name="boosted_model" source="R-DATA:" type="Double" />
+            <Field name="Random_Forest" source="R-DATA:" type="Double" />
+            <Field name="Linear_Regression_5" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="error_measures">
+          <RecordInfo>
+            <Field name="Model" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Correlation" source="R-DATA:" type="Double" />
+            <Field name="RMSE" source="R-DATA:" type="Double" />
+            <Field name="MAE" source="R-DATA:" type="Double" />
+            <Field name="MPE" source="R-DATA:" type="Double" />
+            <Field name="MAPE" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Report">
+          <RecordInfo>
+            <Field name="Group" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Model Comparison\Model Comparison.yxmc" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="138" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\HousingPricesTrainData.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>HousingPricesTrainData.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="id" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="date" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="price" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="bedrooms" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="bathrooms" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="sqft_living" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="sqft_lot" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="floors" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="waterfront" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="view" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="condition" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="grade" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="sqft_above" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="sqft_basement" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="yr_built" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="yr_renovated" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="zipcode" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="lat" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="long" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="sqft_living15" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+            <Field name="sqft_lot15" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="246" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="id" selected="True" />
+            <Field field="date" selected="True" />
+            <Field field="price" selected="True" />
+            <Field field="bedrooms" selected="True" />
+            <Field field="bathrooms" selected="True" />
+            <Field field="sqft_living" selected="True" />
+            <Field field="sqft_lot" selected="True" />
+            <Field field="floors" selected="True" />
+            <Field field="waterfront" selected="True" />
+            <Field field="view" selected="True" />
+            <Field field="condition" selected="True" />
+            <Field field="grade" selected="True" />
+            <Field field="sqft_above" selected="True" />
+            <Field field="sqft_basement" selected="True" />
+            <Field field="yr_built" selected="True" />
+            <Field field="yr_renovated" selected="True" />
+            <Field field="zipcode" selected="True" />
+            <Field field="lat" selected="True" />
+            <Field field="long" selected="True" />
+            <Field field="sqft_living15" selected="True" />
+            <Field field="sqft_lot15" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="id" size="10" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="String" />
+            <Field name="date" size="15" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="String" />
+            <Field name="price" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Double" />
+            <Field name="bedrooms" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Byte" />
+            <Field name="bathrooms" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Double" />
+            <Field name="sqft_living" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int16" />
+            <Field name="sqft_lot" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int32" />
+            <Field name="floors" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Double" />
+            <Field name="waterfront" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Byte" />
+            <Field name="view" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Byte" />
+            <Field name="condition" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Byte" />
+            <Field name="grade" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Byte" />
+            <Field name="sqft_above" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int16" />
+            <Field name="sqft_basement" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int16" />
+            <Field name="yr_built" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int16" />
+            <Field name="yr_renovated" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int16" />
+            <Field name="zipcode" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int32" />
+            <Field name="lat" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Double" />
+            <Field name="long" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Double" />
+            <Field name="sqft_living15" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int16" />
+            <Field name="sqft_lot15" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings>
+        <Position x="414" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Model Name">Random_Forest</Value>
+          <Value name="Y Var">price</Value>
+          <Value name="X Vars">bedrooms + bathrooms + sqft_living + sqft_lot + floors + waterfront + view + condition + grade + sqft_above + sqft_basement + yr_built + yr_renovated + zipcode + lat + long + sqft_living15 + sqft_lot15</Value>
+          <Value name="Num Trees">500</Value>
+          <Value name="Custom Num Vars">False</Value>
+          <Value name="Num Vars">3</Value>
+          <Value name="model.size">False</Value>
+          <Value name="total.nodes">100</Value>
+          <Value name="max.depth">10</Value>
+          <Value name="node.size">5</Value>
+          <Value name="replace">True</Value>
+          <Value name="samp.rate">100</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Forest_Model.yxmc" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="Linear_Regression">
+        <Position x="414" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="curPage">Home</Value>
+          <Value name="curTab">advanced</Value>
+          <Value name="standardize_pred">True</Value>
+          <Value name="internal_cv">True</Value>
+          <Value name="display_graphs">True</Value>
+          <Value name="set_seed_internal_cv">True</Value>
+          <Value name="set_seed_external_cv">True</Value>
+          <Value name="lambda_1se">True</Value>
+          <Value name="lambda_min">False</Value>
+          <Value name="Model Name">Linear_Regression_5</Value>
+          <Value name="Y Var">price</Value>
+          <Value name="X Vars">bedrooms,bathrooms,sqft_living,sqft_lot,floors,waterfront,view,condition,grade,sqft_above,sqft_basement,yr_built,yr_renovated,zipcode,lat,long,sqft_living15,sqft_lot15</Value>
+          <Value name="Omit Constant">False</Value>
+          <Value name="Use Weights">False</Value>
+          <Value name="Weight Vec" />
+          <Value name="regularization">False</Value>
+          <Value name="alpha">0.5</Value>
+          <Value name="nfolds">5</Value>
+          <Value name="lambda">lambda_1se</Value>
+          <Value name="seed_internal_cv">1</Value>
+          <Value name="lambda_no_cv">0.5</Value>
+          <Value name="external_cv">False</Value>
+          <Value name="nfolds_external">5</Value>
+          <Value name="numberTrials">3</Value>
+          <Value name="external_seed_value">1</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Linear_Regression_5</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" EngineDll="Macro" EngineDllEntryPoint="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings>
+        <Position x="414" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="model.name">boosted_model</Value>
+          <Value name="select.target">price</Value>
+          <Value name="select.predictors">id=False,date=False,price=False,bedrooms=True,bathrooms=True,sqft_living=True,sqft_lot=True,floors=True,waterfront=True,view=True,condition=True,grade=True,sqft_above=True,sqft_basement=True,yr_built=True,yr_renovated=True,zipcode=True,lat=True,long=True,sqft_living15=True,sqft_lot15=True</Value>
+          <Value name="use.weights">False</Value>
+          <Value name="select.weights">price</Value>
+          <Value name="marginal.plots">False</Value>
+          <Value name="plot.min.importance">2.5</Value>
+          <Value name="type.distribution">False</Value>
+          <Value name="type.continuous">True</Value>
+          <Value name="dist.gaussian">True</Value>
+          <Value name="dist.laplace">False</Value>
+          <Value name="dist.t">False</Value>
+          <Value name="t.df">4</Value>
+          <Value name="type.count">False</Value>
+          <Value name="type.binomial">False</Value>
+          <Value name="dist.bernoulli">True</Value>
+          <Value name="dist.adaboost">False</Value>
+          <Value name="type.multinomial">False</Value>
+          <Value name="n.trees">4000</Value>
+          <Value name="assess.cv">True</Value>
+          <Value name="num.folds">5</Value>
+          <Value name="n.cores">1</Value>
+          <Value name="assess.test">False</Value>
+          <Value name="train.fraction">50.0</Value>
+          <Value name="assess.oob">False</Value>
+          <Value name="bag.fraction">50.0</Value>
+          <Value name="shrinkage">0.0020</Value>
+          <Value name="interaction.depth">1</Value>
+          <Value name="n.minobsinnode">10</Value>
+          <Value name="rand.seed">1</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Boosted_Model.yxmc" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="606" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="882" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_10520_423396c5a18ef24e937eab42251d01da_\Engine_10520_dbb6bbbe33a740478216e36971d39d12~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="882" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_10520_423396c5a18ef24e937eab42251d01da_\Engine_10520_2d861e229ddc1d40aca613c64687d8ae~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="882" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_10520_423396c5a18ef24e937eab42251d01da_\Engine_10520_fb0032d2ce252244ac1214686a24bc53~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="error_measures" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="predictions" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Report" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="1" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="1" Connection="Models" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Machine Learning - R-Baased tools</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="00972043-d55e-4bfd-af04-2d88f293a338" />
+      <Telemetry>
+        <PreviousWorkflowId value="73089691-0a73-4543-bdd8-19f8ba76e735" />
+        <OriginWorkflowId value="73089691-0a73-4543-bdd8-19f8ba76e735" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
