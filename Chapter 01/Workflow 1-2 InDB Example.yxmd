@@ -1,0 +1,379 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="212" y="260" width="803" height="276" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Generate Filtering Logic</Caption>
+          <Style TextColor="#314c4a" FillColor="#ff8080" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="8">
+          <GuiSettings Plugin="LockInGui.LockInInput.LockInInput">
+            <Position x="222" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Connection>Personal Snowflake</Connection>
+              <Query>select SNOWFLAKE_SAMPLE_DATA.TPCDS_SF10TCL.STORE.S_STORE_SK,
+	SNOWFLAKE_SAMPLE_DATA.TPCDS_SF10TCL.STORE.S_STATE 
+from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF10TCL.STORE</Query>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source=Personal Snowflake
+Query=select SNOWFLAKE_SAMPLE_DATA...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInInput" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="LockInGui.LockInInput.LockInInput">
+            <Position x="462" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Connection>Personal Snowflake</Connection>
+              <Query>select SNOWFLAKE_SAMPLE_DATA.TPCDS_SF10TCL.CUSTOMER.C_CUSTOMER_SK,
+	SNOWFLAKE_SAMPLE_DATA.TPCDS_SF10TCL.CUSTOMER.C_CUSTOMER_ID,
+	SNOWFLAKE_SAMPLE_DATA.TPCDS_SF10TCL.CUSTOMER.C_FIRST_NAME,
+	SNOWFLAKE_SAMPLE_DATA.TPCDS_SF10TCL.CUSTOMER.C_LAST_NAME 
+from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF10TCL.CUSTOMER</Query>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source=Personal Snowflake
+Query=select SNOWFLAKE_SAMPLE_DATA...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInInput" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="LockInGui.LockInFilter.LockInFilter">
+            <Position x="330" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Field>S_STATE</Field>
+                <Operator>=</Operator>
+                <Operands>
+                  <Operand>NM</Operand>
+                </Operands>
+              </Simple>
+              <ValidateBeforeRun value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>"S_STATE" = 'NM'</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInFilter" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="LockInGui.LockInJoin.LockInJoin">
+            <Position x="606" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JoinMode>INNER</JoinMode>
+              <JoinFields>
+                <JoinInfo connection="Left">
+                  <Field field="CTR_CUSTOMER_SK" />
+                </JoinInfo>
+                <JoinInfo connection="Right">
+                  <Field field="C_CUSTOMER_SK" />
+                </JoinInfo>
+              </JoinFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Inner Join</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInJoin" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="LockInGui.LockInBrowse.LockInBrowse">
+            <Position x="906" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+              <FirstNRecords>100</FirstNRecords>
+              <UseCache value="True" />
+              <DataFromCache>True</DataFromCache>
+              <CacheKey>028e1ecf11a076652efc27aa5fa4c159</CacheKey>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_14952_515992905af3454fa4ced49521611e22_\..\Engine_30360_._AlteryxInDBBrowseCache_028e1ecf11a076652efc27aa5fa4c159.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 100 records
+Caching enabled</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInBrowse" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="LockInGui.LockInFormula.LockInFormula">
+            <Position x="798" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ValidateBeforeRun value="True" />
+              <FormulaFields>
+                <FormulaField field="CTR_TOTAL_RETURN_2" type="Double" expression="&quot;Avg_CTR_TOTAL_RETURN&quot;*1.2" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>CTR_TOTAL_RETURN_2="Avg_CTR_TOTAL_RETURN"*1.2</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInFormula" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="LockInGui.LockInSummarize.LockInSummarize">
+            <Position x="702" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="append_join" action="GroupBy" rename="append_join" />
+                <SummarizeField field="CTR_TOTAL_RETURN" action="Avg" rename="Avg_CTR_TOTAL_RETURN" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInSummarize" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="LockInGui.LockInJoin.LockInJoin">
+            <Position x="450" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JoinMode>INNER</JoinMode>
+              <JoinFields>
+                <JoinInfo connection="Left">
+                  <Field field="CTR_STORE_SK" />
+                </JoinInfo>
+                <JoinInfo connection="Right">
+                  <Field field="S_STORE_SK" />
+                </JoinInfo>
+              </JoinFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Inner Join</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInJoin" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="69" y="69" width="314" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Create Initial Sub Query</Caption>
+          <Style TextColor="#314c4a" FillColor="#80ffff" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="3">
+          <GuiSettings Plugin="LockInGui.LockInInput.LockInInput">
+            <Position x="79" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Connection>Personal Snowflake</Connection>
+              <Query>select SNOWFLAKE_SAMPLE_DATA.TPCDS_SF10TCL.STORE_RETURNS.SR_CUSTOMER_SK,
+	SNOWFLAKE_SAMPLE_DATA.TPCDS_SF10TCL.STORE_RETURNS.SR_STORE_SK,
+	SNOWFLAKE_SAMPLE_DATA.TPCDS_SF10TCL.STORE_RETURNS.SR_RETURN_AMT_INC_TAX
+from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF10TCL.STORE_RETURNS 
+	inner join SNOWFLAKE_SAMPLE_DATA.TPCDS_SF10TCL.DATE_DIM on SNOWFLAKE_SAMPLE_DATA.TPCDS_SF10TCL.STORE_RETURNS.SR_RETURNED_DATE_SK = SNOWFLAKE_SAMPLE_DATA.TPCDS_SF10TCL.DATE_DIM.D_DATE_SK 
+where SNOWFLAKE_SAMPLE_DATA.TPCDS_SF10TCL.DATE_DIM.D_YEAR = 1999</Query>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source=Personal Snowflake
+Query=select SNOWFLAKE_SAMPLE_DATA...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInInput" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="LockInGui.LockInSummarize.LockInSummarize">
+            <Position x="187" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="SR_CUSTOMER_SK" action="GroupBy" rename="CTR_CUSTOMER_SK" />
+                <SummarizeField field="SR_STORE_SK" action="GroupBy" rename="CTR_STORE_SK" />
+                <SummarizeField field="SR_RETURN_AMT_INC_TAX" action="Sum" rename="CTR_TOTAL_RETURN" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInSummarize" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="LockInGui.LockInFormula.LockInFormula">
+            <Position x="283" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ValidateBeforeRun value="True" />
+              <FormulaFields>
+                <FormulaField field="append_join" type="Int16" expression="1" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>append_join=1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="12" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="11" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="11" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Workflow 1-2 InDB Example v2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="f1e0687e-3f7b-4d7e-8e40-c20be4cae469" />
+      <Telemetry>
+        <PreviousWorkflowId value="b129444e-723f-440f-b420-e6b12dce6beb" />
+        <OriginWorkflowId value="e72b1806-1364-47ea-b1a8-3d9c61c8c65c" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
