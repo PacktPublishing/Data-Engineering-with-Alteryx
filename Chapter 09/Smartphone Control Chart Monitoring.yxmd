@@ -1,0 +1,452 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File>H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv</File>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>smartphone_cpu_stats.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="rank" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_WString" />
+            <Field name="company" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_WString" />
+            <Field name="cpuName" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_WString" />
+            <Field name="geekbenchSingle" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_WString" />
+            <Field name="geekbenchMulti" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_WString" />
+            <Field name="antutu9" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_WString" />
+            <Field name="coreCount" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_WString" />
+            <Field name="coreConfig" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_WString" />
+            <Field name="clockSpeed" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_WString" />
+            <Field name="gpu" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings>
+        <Position x="306" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"rank","company","cpuName","geekbenchSingle","geekbenchMulti","antutu9","coreCount","coreConfig","clockSpeed","gpu"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="210" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="rank" selected="True" />
+            <Field field="company" selected="True" />
+            <Field field="cpuName" selected="True" />
+            <Field field="geekbenchSingle" selected="True" />
+            <Field field="geekbenchMulti" selected="True" />
+            <Field field="antutu9" selected="True" />
+            <Field field="coreCount" selected="True" />
+            <Field field="coreConfig" selected="True" />
+            <Field field="clockSpeed" selected="True" />
+            <Field field="gpu" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="rank" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="Byte" />
+            <Field name="company" size="9" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="String" />
+            <Field name="cpuName" size="20" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_String" />
+            <Field name="geekbenchSingle" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="Int16" />
+            <Field name="geekbenchMulti" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="Int16" />
+            <Field name="antutu9" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="Int32" />
+            <Field name="coreCount" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="Byte" />
+            <Field name="coreConfig" size="8" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="String" />
+            <Field name="clockSpeed" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="Int16" />
+            <Field name="gpu" size="20" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File>H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv</File>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>smartphone_cpu_stats.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="rank" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_WString" />
+            <Field name="company" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_WString" />
+            <Field name="cpuName" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_WString" />
+            <Field name="geekbenchSingle" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_WString" />
+            <Field name="geekbenchMulti" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_WString" />
+            <Field name="antutu9" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_WString" />
+            <Field name="coreCount" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_WString" />
+            <Field name="coreConfig" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_WString" />
+            <Field name="clockSpeed" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_WString" />
+            <Field name="gpu" size="254" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="174" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="rank" selected="True" />
+            <Field field="company" selected="True" />
+            <Field field="cpuName" selected="True" />
+            <Field field="geekbenchSingle" selected="True" />
+            <Field field="geekbenchMulti" selected="True" />
+            <Field field="antutu9" selected="True" />
+            <Field field="coreCount" selected="True" />
+            <Field field="coreConfig" selected="True" />
+            <Field field="clockSpeed" selected="True" />
+            <Field field="gpu" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="rank" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="Byte" />
+            <Field name="company" size="9" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="String" />
+            <Field name="cpuName" size="20" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_String" />
+            <Field name="geekbenchSingle" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="Int16" />
+            <Field name="geekbenchMulti" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="Int16" />
+            <Field name="antutu9" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="Int32" />
+            <Field name="coreCount" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="Byte" />
+            <Field name="coreConfig" size="8" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="String" />
+            <Field name="clockSpeed" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="Int16" />
+            <Field name="gpu" size="20" source="File: H:\My Drive\Book\Alteryx for Data Engineers\Workflows\Chapter 08\data\smartphone_cpu_stats.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="282" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="geekbenchSingle" action="Avg" rename="Avg_geekbenchSingle" />
+            <SummarizeField field="geekbenchSingle" action="StdDev" rename="StdDev_geekbenchSingle" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Calculate average and standard devation</AnnotationText>
+          <DefaultAnnotationText>Calculate average and standard devation</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="378" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="486" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Round([Avg_geekbenchSingle] + 2 * [StdDev_geekbenchSingle], 0.01)" field="UCL" size="4" type="Float" />
+            <FormulaField expression="Round([Avg_geekbenchSingle] - 2 * [StdDev_geekbenchSingle], 0.01)" field="LCL" size="4" type="Float" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Create Limit fields</AnnotationText>
+          <DefaultAnnotationText>UCL = Round([Avg_geekbenchSingle] + 2 * [StdDev_geekbenchSingle], 0.01)
+LCL = Ro...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="Insights">
+        <Position x="630" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <InsightFields>
+            <InsightData>C:\ProgramData\Alteryx\Engine\Engine_10088_5a9202c9d228e245a49a63b536108996_\Insight1\insight.sqlite|||insightdata</InsightData>
+            <InsightDescription>C:\ProgramData\Alteryx\Engine\Engine_10088_5a9202c9d228e245a49a63b536108996_\Insight1\insightDescription.json</InsightDescription>
+            <Description>
+              <Elements>
+                <TEXT xmlns:json="http://james.newtonking.com/projects/json" json:Array="true">
+                  <x>12</x>
+                  <y>20</y>
+                  <id>insight-0</id>
+                  <width>842</width>
+                  <height />
+                  <type>TEXT</type>
+                  <elementProps>
+                    <quillValue>&lt;p&gt;&lt;span class="ql-size-huge"&gt;Control Chart Monitoring Smartphone CPU performance&lt;/span&gt;&lt;/p&gt;</quillValue>
+                  </elementProps>
+                </TEXT>
+                <CHART xmlns:json="http://james.newtonking.com/projects/json" json:Array="true">
+                  <x>48</x>
+                  <y>73</y>
+                  <id>insight-1</id>
+                  <width>757</width>
+                  <height>524</height>
+                  <type>CHART</type>
+                  <elementProps>
+                    <layout>
+                      <title>
+                        <text />
+                      </title>
+                      <font>
+                        <family>sans-serif</family>
+                        <size>12</size>
+                      </font>
+                      <autosize>false</autosize>
+                      <width>757</width>
+                      <height>524</height>
+                      <xaxis>
+                        <range>-8.0286785793073037</range>
+                        <range>132.0286785793073</range>
+                        <autorange>true</autorange>
+                        <title>
+                          <text>cpuName</text>
+                        </title>
+                        <type>category</type>
+                      </xaxis>
+                      <yaxis>
+                        <range>-140.96519521913126</range>
+                        <range>1848.1387427328302</range>
+                        <autorange>true</autorange>
+                        <title>
+                          <text>geekbenchSingle</text>
+                        </title>
+                        <type>linear</type>
+                      </yaxis>
+                    </layout>
+                    <data>
+                      <type>scatter</type>
+                      <mode>markers</mode>
+                      <xsrc>cpuName</xsrc>
+                      <ysrc>geekbenchSingle</ysrc>
+                      <marker>
+                        <size>6</size>
+                        <line>
+                          <width>0</width>
+                        </line>
+                      </marker>
+                      <name>CPU Performance</name>
+                    </data>
+                    <data>
+                      <type>scatter</type>
+                      <mode>lines</mode>
+                      <xsrc>cpuName</xsrc>
+                      <ysrc>UCL</ysrc>
+                      <name>UCL</name>
+                      <line>
+                        <width>2</width>
+                      </line>
+                      <marker>
+                        <size>6</size>
+                        <line>
+                          <width>0</width>
+                        </line>
+                        <color>rgb(255, 127, 14)</color>
+                      </marker>
+                    </data>
+                    <data>
+                      <type>scatter</type>
+                      <mode>lines</mode>
+                      <name>LCL</name>
+                      <xsrc>cpuName</xsrc>
+                      <ysrc>LCL</ysrc>
+                      <line>
+                        <width>2</width>
+                      </line>
+                      <marker>
+                        <size>6</size>
+                        <line>
+                          <width>0</width>
+                        </line>
+                        <color>rgb(255, 127, 14)</color>
+                      </marker>
+                      <traceIndex>1</traceIndex>
+                    </data>
+                  </elementProps>
+                </CHART>
+              </Elements>
+              <Filters xmlns:json="http://james.newtonking.com/projects/json" json:Array="true">
+                <name>company</name>
+                <controlName>dropdown</controlName>
+                <columnName>company</columnName>
+                <type>in</type>
+              </Filters>
+            </Description>
+            <InsightGalleryID>91c0bd06b5a746b9aaa2ba53949a5cf7</InsightGalleryID>
+            <InsightGalleryCheckSum>6c864192137a2a9eb16728fb5674dba87b9ce54896018ca03399584739ab5993</InsightGalleryCheckSum>
+          </InsightFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxInsightsPluginEngine.dll" EngineDllEntryPoint="AlteryxInsights" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="2" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="8" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Smartphone Control Chart Monitoring</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="6cc02536-a3aa-4af7-baec-f188333d2c1c" />
+      <Telemetry>
+        <PreviousWorkflowId value="" />
+        <OriginWorkflowId value="6cc02536-a3aa-4af7-baec-f188333d2c1c" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
