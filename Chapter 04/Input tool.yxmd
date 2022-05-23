@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Program Files\Alteryx\Samples\data\SampleData\Clothing_Search.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Clothing_Search.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" size="254" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Clothing_Search.csv" type="V_String" />
+            <Field name="ITEM" size="254" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Clothing_Search.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="162" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>42616E6F7E6CF4EA9A0447829CA4C9C0F08E7CB6CACDF95AA44CBA9F1254166F5E358DBDCB92F3641C0EA93C4</Passwords>
+          <File RecordLimit="10" FileFormat="23">odbc:DSN=Snowflake;UID=BIAnalyst;PWD=__EncPwd1__; Role=Analyst|||select DATABARD."PUBLIC"."Snowflake_Demo".* 
+from DATABARD."PUBLIC"."Snowflake_Demo"</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Snowflake
+Query=select DATABARD."PUBLIC"."Sn...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Comment" size="100" source="File: odbc:DSN=Snowflake;UID=BIAnalyst;PWD=__EncPwd1__; Role=Analyst|||select DATABARD.&quot;PUBLIC&quot;.&quot;Snowflake_Demo&quot;.* &#xA;from DATABARD.&quot;PUBLIC&quot;.&quot;Snowflake_Demo&quot;" type="V_WString" />
+            <Field name="Number" scale="0" size="40" source="File: odbc:DSN=Snowflake;UID=BIAnalyst;PWD=__EncPwd1__; Role=Analyst|||select DATABARD.&quot;PUBLIC&quot;.&quot;Snowflake_Demo&quot;.* &#xA;from DATABARD.&quot;PUBLIC&quot;.&quot;Snowflake_Demo&quot;" type="FixedDecimal" />
+            <Field name="List option" size="50" source="File: odbc:DSN=Snowflake;UID=BIAnalyst;PWD=__EncPwd1__; Role=Analyst|||select DATABARD.&quot;PUBLIC&quot;.&quot;Snowflake_Demo&quot;.* &#xA;from DATABARD.&quot;PUBLIC&quot;.&quot;Snowflake_Demo&quot;" type="V_WString" />
+            <Field name="Drop Down" size="10" source="File: odbc:DSN=Snowflake;UID=BIAnalyst;PWD=__EncPwd1__; Role=Analyst|||select DATABARD.&quot;PUBLIC&quot;.&quot;Snowflake_Demo&quot;.* &#xA;from DATABARD.&quot;PUBLIC&quot;.&quot;Snowflake_Demo&quot;" type="V_WString" />
+            <Field name="Upload_Time" source="File: odbc:DSN=Snowflake;UID=BIAnalyst;PWD=__EncPwd1__; Role=Analyst|||select DATABARD.&quot;PUBLIC&quot;.&quot;Snowflake_Demo&quot;.* &#xA;from DATABARD.&quot;PUBLIC&quot;.&quot;Snowflake_Demo&quot;" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="LockInGui.LockInInput.LockInInput">
+        <Position x="558" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Connection />
+          <Query />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInInput" />
+    </Node>
+  </Nodes>
+  <Connections />
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Input tool</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="994ac219-dacb-4901-bd82-a7f4c80a9738" />
+      <Telemetry>
+        <PreviousWorkflowId value="d6db8b3b-8bf0-43d6-a2b8-13b3a3875605" />
+        <OriginWorkflowId value="d6db8b3b-8bf0-43d6-a2b8-13b3a3875605" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
