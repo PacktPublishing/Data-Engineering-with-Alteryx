@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- this is really minimalistic example of the loading job -->    
+<!-- loading job is in fact mapping between stage table(s) and UI application -->
+<!-- loading job(s) are run over API usually periodically to synchronize content of Connect -->
+<loading-instructions xmlns="http://semanta.cz/schema/xf3/load">
+    <loading-instruction>
+        
+<!-- let's start with definition of the job, put here unique job identification which will be called from API (to run it) -->
+        <job-id>load-alteryx-countries</job-id>
+        
+<!-- every job can have sub-jobs such creating hierarchical loaded structures, in this example we will load top level folder and inside this folder entries (County) one per each record in stage table -->        
+        <for-each-row>
+            <sub-job-id>mainFolder</sub-job-id>
+            
+<!-- definie query getting data from stage, we will be mapping this dataset to UI configuration -->
+<!-- in this case we would like to have just one record (empty) and we will create one folder -->            
+            <of-query>
+                <sql>
+                    <connection-id>master</connection-id>
+                    <query-body>select 1</query-body>
+                </sql>
+            </of-query>
+            
+<!-- for each row in returned dataset (from query) we are creating entry -->
+<!-- in this case just one row in dataset thus creating one entry (top level folder) -->                        
+            <define-entry>
+                
+<!-- define type of entry -->                                        
+                <app>folder</app>
+                
+<!-- unique identification of the parent entry (needs to exists) where we are creating our entry -->
+<!-- in our case this is the id of the Data Source folder, thus creating sub-folder -->                                        
+                <parent>f19f38ae-1c68-49f9-8654-288b92284bab</parent>
+                <parent-field>subfolders</parent-field>
+                
+<!-- unique identification of the entry, usually we thake UUID from the source system -->
+<!-- in our case we are creating hash out of string "counties" -->                                                        
+                <xid>$lu.toXidEncoded("counties")</xid>
+                
+<!-- name of the entry which will be visible in UI -->                                                                        
+                <name>Countries Example</name>
+                
+<!-- and now we are setting individual fields, on the left side it's the fieldcode of the application, on the right side it's the value (column) from the datasource -->
+<!-- in our case we are just hardcoding values-->
+                <fields>
+                    <![CDATA[
+                        #set($foldertype="county")
+                        #set($entrytypelist="type:county")
+                        #set($platformDescription="<p>SDK Sample Countries.</p>")
+                        #set($displaytype="smallcard")
+                        #set($displaytype_readable="Small Card")
+                        #set($displaytypeallentries="smallcard")
+                        #set($displaytypeallentries_readable="Small Card")
+                        #set($displaytypefolder="smallcard")
+                        #set($displaytypefolder_readable="Small Card")
+                        #set($integrationcode="promoteInstances")
+                        #set($entriesgroupname="Promote Instances")
+                        #set($subfoldersgroupname="Subfolders")
+                        #set($allentriesgroupname="Counties")
+                    ]]>
+
+                </fields>
+                
+<!-- do not touch fields are fields which should be editable in UI and should not be touch (overwritten) by the loading job -->
+<!-- usually description, owner are such fields -->                
+                <do-not-touch>
+                    <!--@import fragment="common-dont-touch"-->
+                    <field>MainThumbnail</field>
+                    <field>orderbytype</field>
+                    <field>orderascending</field>
+                    <field>entryOwner</field>
+                </do-not-touch>
+                <for-each-row>
+
+<!-- this is the tick how to add attachment, in this case thumbnail of the folder -->                                    
+                    <add-attachment>
+                        <xid>$lu.toXidEncoded("counties-icon")</xid>
+                        <name>Alteryx_Counties.png</name>
+                        <field-code>MainIcon</field-code>
+                        <base64content>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</base64content>
+                    </add-attachment>
+                </for-each-row>
+            </define-entry>
+        </for-each-row>
+
+<!-- so right now, we have created just one folder -->
+
+
+<!-- right now we are going to iterate on dataset of Counties and create a record for each County -->                
+        <for-each-row>            
+            <sub-job-id>countriesList</sub-job-id>
+            
+<!-- get datset of Counties (from the stage table EXT_COUNTRIES) -->                
+            
+            <of-query>
+                <sql>
+                    <connection-id>master</connection-id>
+                    <query-body><![CDATA[
+                        SELECT name, key FROM EXT_COUNTRIES
+                    ]]></query-body>
+                </sql>
+            </of-query>
+            
+<!-- and now create entry one per each row from dataset -->                            
+            <define-entry>
+                
+<!-- creating entry of "county" app we have defined in previous chapter -->                                
+                <app>county</app>
+                
+<!-- start under folder created in previous step -->                                
+                <parent>$lu.toXidEncoded("counties")</parent>
+                <parent-field>entries</parent-field>
+                
+<!-- create uuid out of the county name -->                                
+                
+                <xid>$lu.toXidEncoded("${name}")</xid>
+                
+<!-- county name -->                                                
+                <name>${name}</name>
+                
+<!-- set values for the entry -->
+<!-- in our case we are setting just one which is description, others are parameters for setting displaying behavior of the folder, entries, subentries and are not important for this example too much -->                            
+                <fields>
+                    <![CDATA[
+                        #set($description="${key}")
+                        #set($foldertype="folder")
+                        #set($entrytypelist="folder")
+                        #set($platformDescription="<p>SDK Example.</p>")
+                        #set($displaytype="table")
+                        #set($displaytype_readable="Table")
+                        #set($displaytypeallentries="table")
+                        #set($displaytypeallentries_readable="Table")
+                        #set($displaytypefolder="smallcard")
+                        #set($displaytypefolder_readable="Small Card")
+                        #set($integrationcode="")
+                        #set($entriesgroupname="Promote Owners")
+                        #set($subfoldersgroupname="Subfolders")
+                        #set($allentriesgroupname="County List")
+                    ]]>
+
+                </fields>
+                <do-not-touch>
+                    <!--@import fragment="common-dont-touch"-->
+                    <field>entryOwner</field>
+                </do-not-touch>
+
+            </define-entry>
+        </for-each-row>
+
+
+    </loading-instruction>
+</loading-instructions>
