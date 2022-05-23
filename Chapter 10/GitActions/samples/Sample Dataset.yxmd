@@ -1,0 +1,2289 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="8">C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <NoProgress>False</NoProgress>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Cust_wTransactions.xls
+Query=`Output$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Customer_ID" size="255" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="Store Number" size="255" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="Customer Segment" size="255" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="First Name" size="255" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="Last Name" size="255" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="Address" size="255" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="City" size="255" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="State" size="255" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="Zip" size="255" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="Visits" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="Double" />
+            <Field name="Spend" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Cust_wTransactions.xls|||`Output$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="198" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_f0e756688c20da4694336c9a4444a4b8~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\StatesPopulation.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>StatesPopulation.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="64" source="Allocate: Software\SRC\Portfolio\6.60\ALTERYX_US_Census_2010_SF1_11A" type="V_WString" />
+            <Field description="Population US Census (2010) Total Population" name="P0010001" source="Allocate: Software\SRC\Portfolio\6.60\ALTERYX_US_Census_2010_SF1_11A" type="Int64" />
+            <Field name="SpatialObj" size="2147483647" source="Allocate: Software\SRC\Portfolio\6.60\ALTERYX_US_Census_2010_SF1_11A" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="390" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\Supermarket_chain.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Supermarket_chain.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="4" source="R-DATA:" type="String" />
+            <Field name="Sq_Ft" source="R-DATA:" type="Int32" />
+            <Field name="MinNearest" source="FindNearest: Distance Units=DriveTime" type="Double" />
+            <Field description="Basic Variables US Census (2010) Age Total (Pop) Total Population" name="TotPop" source="Allocate: Latest:Experian_US" type="Int32" />
+            <Field name="PopDens" source="Formula: [CDA04VBASE]/[AreaSqMi]" type="Double" />
+            <Field name="Age0to9Pct" source="Formula: ([CDA04V001]+[CDA04V002])/[CDA04VBASE]" type="Double" />
+            <Field name="Age10to17Pct" source="Formula: ([CDA04V003] + [CDA04V004])/[CDA04VBASE]" type="Double" />
+            <Field name="Age18to29Pct" source="Formula: ([CDA04V005] + [CDA04V006] + [CDA04V007] + [CDA04V008] + [CDA04V009])/[CDA04VBASE]" type="Double" />
+            <Field name="Age30to39Pct" source="Formula: ([CDA04V010]+[CDA04V011])/[CDA04VBASE]" type="Double" />
+            <Field name="Age40to49Pct" source="Formula: ([CDA04V012]+[CDA04V013])/[CDA04VBASE]" type="Double" />
+            <Field name="Age50to64Pct" source="Formula: ([CDA04V014] + [CDA04V015] + [CDA04V016] + [CDA04V017])/[CDA04VBASE]" type="Double" />
+            <Field name="Age65PlusPct" source="Formula: [CDA04T65P]/[CDA04VBASE]" type="Double" />
+            <Field name="HH1PersonPct" source="Formula: [CDB11V001]/[CDB11VBASE]" type="Double" />
+            <Field name="HH2PersonPct" source="Formula: [CDB11V002]/[CDB11VBASE]" type="Double" />
+            <Field name="HH3PersonPct" source="Formula: [CDB11V003]/[CDB11VBASE]" type="Double" />
+            <Field name="HH4PlusPersonPct" source="Formula: ([CDB11V004] + [CDB11V005] + [CDB11V006] + [CDB11V007])/[CDB11VBASE]" type="Double" />
+            <Field name="IncA_U25Pct" source="Formula: ([CDC01V001] + [CDC01V002] + [CDC01V003] + [CDC01V004])/[CDC01VBASE]" type="Double" />
+            <Field name="IncB_25to50Pct" source="Formula: ([CDC01V005] + [CDC01V006] + [CDC01V007] + [CDC01V008] + [CDC01V009])/[CDC01VBASE]" type="Double" />
+            <Field name="IncC_50to100Pct" source="Formula: ([CDC01V010] + [CDC01V011] + [CDC01V012])/[CDC01VBASE]" type="Double" />
+            <Field name="IncD_100to150Pct" source="Formula: ([CDC01V013] + [CDC01V014])/[CDC01VBASE]" type="Double" />
+            <Field name="IncE_150PlusPct" source="Formula: ([CDC01V015] + [CDC01V016] + [CDC01V017] + [CDC01V018])/[CDC01VBASE]" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\Test_Planning_Period_Data.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Test_Planning_Period_Data.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store_ID" size="255" source="File: C:\Users\dputler\Work\Example_Data\AB_Sample_Data\Store_DMA.xlsx|`Sheet1$`" type="V_WString" />
+            <Field name="Store_Name" size="255" source="File: C:\Users\dputler\Work\Example_Data\AB_Sample_Data\Store_DMA.xlsx|`Sheet1$`" type="V_WString" />
+            <Field name="Week_Ending" source="File: C:\Users\dputler\Work\Example_Data\AB_Sample_Data\Store_Season_Trend2.xlsx|`Sheet1$`" type="Date" />
+            <Field name="Gross_Rev" scale="2" size="19" source="Formula: [Traffic]*[Spend_Cust]" type="FixedDecimal" />
+            <Field name="Traffic" source="Formula: [Base_Visits]*[Season]*[Growth]*[Traffic_Shock]" type="Int32" />
+            <Field name="Spend_Cust" scale="2" size="16" source="Formula: [Base_Spend]*[Spend_Shock]" type="FixedDecimal" />
+            <Field name="DMA" size="255" source="File: C:\Users\dputler\Work\Example_Data\AB_Sample_Data\Store_DMA.xlsx|`Sheet1$`" type="V_WString" />
+            <Field name="DMA_Name" size="255" source="File: C:\Users\dputler\Work\Example_Data\AB_Sample_Data\Store_DMA.xlsx|`Sheet1$`" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\CalgaryLoadSampleData.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CalgaryLoadSampleData.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CONAME" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+            <Field name="ADDR" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+            <Field name="CITY16" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+            <Field name="STATE" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+            <Field name="ZIP" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+            <Field name="ZIP4" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+            <Field name="STCODE" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+            <Field name="CNTYCD" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+            <Field name="GROUP" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+            <Field name="SEQUENCE" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\CSVGeocode_example.csv" type="V_String" />
+            <Field name="CASS_Address2" size="64" source="CASS: US=2013-03-15 CA=2013-03-15" type="V_String" />
+            <Field name="CASS_AddressPlusSuite" size="64" source="CASS: US=2013-03-15 CA=2013-03-15" type="V_String" />
+            <Field name="CASS_CarrierRoute" size="4" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+            <Field name="CASS_City" size="64" source="CASS: US=2013-03-15 CA=2013-03-15" type="V_String" />
+            <Field name="CASS_DeliveryPointCheckDigit" size="1" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+            <Field name="CASS_DeliveryPointCode" size="2" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+            <Field name="CASS_ErrorCode" size="1" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+            <Field name="CASS_LastLine" size="80" source="CASS: US=2013-03-15 CA=2013-03-15" type="V_String" />
+            <Field name="CASS_Plus4" size="4" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+            <Field name="CASS_State" size="2" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+            <Field name="CASS_StatusCode" size="1" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+            <Field name="CASS_ZIP" size="7" source="CASS: US=2013-03-15 CA=2013-03-15" type="String" />
+            <Field name="MatchStatus" size="8" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="String" />
+            <Field name="Score" scale="1" size="6" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="FixedDecimal" />
+            <Field name="SpatialObj" size="2147483647" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="SpatialObj" />
+            <Field name="Lat" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="Double" />
+            <Field name="Lon" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="Double" />
+            <Field name="GeoLevel" size="15" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="String" />
+            <Field name="CensusId" size="16" source="Geocoder: PortfolioExplorer_Latest Installed TomTom US_US" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\City Populations.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>City Populations.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="State" size="254" source="File: C:\Users\gjones\Documents\Work\Alteryx Modules\City Populations.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\gjones\Documents\Work\Alteryx Modules\City Populations.csv" type="V_String" />
+            <Field name="Population" source="File: C:\Users\gjones\Documents\Work\Alteryx Modules\City Populations.csv" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\CO_YES_PurchaseData.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CO_YES_PurchaseData.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CustomerNumber" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\CO_YES_PurchaseData.yxdb" type="Double" />
+            <Field name="StoreNum" size="254" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\CO_YES_PurchaseData.yxdb" type="V_String" />
+            <Field name="FindNeares" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\CO_YES_PurchaseData.yxdb" type="Int32" />
+            <Field name="DistanceMi" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\CO_YES_PurchaseData.yxdb" type="Double" />
+            <Field name="Direction" size="2" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\CO_YES_PurchaseData.yxdb" type="String" />
+            <Field name="Response" size="3" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\CO_YES_PurchaseData.yxdb" type="String" />
+            <Field name="PaperGoods_1" scale="2" size="4" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\CO_YES_PurchaseData.yxdb" type="FixedDecimal" />
+            <Field name="PaperGoods_2" scale="2" size="4" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\CO_YES_PurchaseData.yxdb" type="FixedDecimal" />
+            <Field name="PaperGoods_3" scale="2" size="4" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\CO_YES_PurchaseData.yxdb" type="FixedDecimal" />
+            <Field name="PaperGoods_4" scale="2" size="4" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\CO_YES_PurchaseData.yxdb" type="FixedDecimal" />
+            <Field name="PaperGoods_5" scale="2" size="4" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\CO_YES_PurchaseData.yxdb" type="FixedDecimal" />
+            <Field name="OTHER" scale="2" size="4" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\CO_YES_PurchaseData.yxdb" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\Competitor Supply.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Competitor Supply.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SupplyID" source="RecordID: Starting Value=10000" type="Int32" />
+            <Field name="SpatialObj" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\CompetitorLoc.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CompetitorLoc.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SupplyID" source="RecordID: Starting Value=1000000" type="Int32" />
+            <Field name="SpatialObj" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Name" size="21" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="318" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\Eggs.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Eggs.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Week" source="File: C:\Users\dputler\Work\R_Macros\Predictive_Analytics\Eggs.dbf" type="Int32" />
+            <Field name="Month" size="9" source="File: C:\Users\dputler\Work\R_Macros\Predictive_Analytics\Eggs.dbf" type="String" />
+            <Field name="First_Week" size="10" source="File: C:\Users\dputler\Work\R_Macros\Predictive_Analytics\Eggs.dbf" type="String" />
+            <Field name="Easter" size="11" source="File: C:\Users\dputler\Work\R_Macros\Predictive_Analytics\Eggs.dbf" type="String" />
+            <Field name="Cases" source="File: C:\Users\dputler\Work\R_Macros\Predictive_Analytics\Eggs.dbf" type="Int32" />
+            <Field name="Egg_Pr" source="File: C:\Users\dputler\Work\R_Macros\Predictive_Analytics\Eggs.dbf" type="Double" />
+            <Field name="Beef_Pr" source="File: C:\Users\dputler\Work\R_Macros\Predictive_Analytics\Eggs.dbf" type="Double" />
+            <Field name="Pork_Pr" source="File: C:\Users\dputler\Work\R_Macros\Predictive_Analytics\Eggs.dbf" type="Double" />
+            <Field name="Chicken_Pr" source="File: C:\Users\dputler\Work\R_Macros\Predictive_Analytics\Eggs.dbf" type="Double" />
+            <Field name="Cereal_Pr" source="File: C:\Users\dputler\Work\R_Macros\Predictive_Analytics\Eggs.dbf" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="462" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\ExistingLoc.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ExistingLoc.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SupplyID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="SpatialObj" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Name" size="14" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="474" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\ExistingSupplyLocations.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ExistingSupplyLocations.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SupplyID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="SpatialObj" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="402" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\NewSupplyLocations.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>NewSupplyLocations.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SupplyID" source="RecordID: Starting Value=10000" type="Int32" />
+            <Field name="SpatialObj" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="606" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\Other_Stores.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Other_Stores.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="4" source="R-DATA:" type="String" />
+            <Field name="Sq_Ft" source="R-DATA:" type="Int32" />
+            <Field name="MinNearest" source="FindNearest: Distance Units=DriveTime" type="Double" />
+            <Field description=" " name="TotPop" source="Allocate: Latest:Experian_US" type="Int32" />
+            <Field name="PopDens" source="Formula: [CDA04VBASE]/[AreaSqMi]" type="Double" />
+            <Field name="Age0to9Pct" source="Formula: ([CDA04V001]+[CDA04V002])/[CDA04VBASE]" type="Double" />
+            <Field name="Age10to17Pct" source="Formula: ([CDA04V003] + [CDA04V004])/[CDA04VBASE]" type="Double" />
+            <Field name="Age18to29Pct" source="Formula: ([CDA04V005] + [CDA04V006] + [CDA04V007] + [CDA04V008] + [CDA04V009])/[CDA04VBASE]" type="Double" />
+            <Field name="Age30to39Pct" source="Formula: ([CDA04V010]+[CDA04V011])/[CDA04VBASE]" type="Double" />
+            <Field name="Age40to49Pct" source="Formula: ([CDA04V012]+[CDA04V013])/[CDA04VBASE]" type="Double" />
+            <Field name="Age50to64Pct" source="Formula: ([CDA04V014] + [CDA04V015] + [CDA04V016] + [CDA04V017])/[CDA04VBASE]" type="Double" />
+            <Field name="Age65PlusPct" source="Formula: [CDA04T65P]/[CDA04VBASE]" type="Double" />
+            <Field name="HH1PersonPct" source="Formula: [CDB11V001]/[CDB11VBASE]" type="Double" />
+            <Field name="HH2PersonPct" source="Formula: [CDB11V002]/[CDB11VBASE]" type="Double" />
+            <Field name="HH3PersonPct" source="Formula: [CDB11V003]/[CDB11VBASE]" type="Double" />
+            <Field name="HH4PlusPersonPct" source="Formula: ([CDB11V004] + [CDB11V005] + [CDB11V006] + [CDB11V007])/[CDB11VBASE]" type="Double" />
+            <Field name="IncA_U25Pct" source="Formula: ([CDC01V001] + [CDC01V002] + [CDC01V003] + [CDC01V004])/[CDC01VBASE]" type="Double" />
+            <Field name="IncB_25to50Pct" source="Formula: ([CDC01V005] + [CDC01V006] + [CDC01V007] + [CDC01V008] + [CDC01V009])/[CDC01VBASE]" type="Double" />
+            <Field name="IncC_50to100Pct" source="Formula: ([CDC01V010] + [CDC01V011] + [CDC01V012])/[CDC01VBASE]" type="Double" />
+            <Field name="IncD_100to150Pct" source="Formula: ([CDC01V013] + [CDC01V014])/[CDC01VBASE]" type="Double" />
+            <Field name="IncE_150PlusPct" source="Formula: ([CDC01V015] + [CDC01V016] + [CDC01V017] + [CDC01V018])/[CDC01VBASE]" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="582" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\PetStoreMonthlySales.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PetStoreMonthlySales.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NAME" size="255" source="File: C:\Documents and Settings\lsellers\My Documents\petstoressales.xls|`Sheet1$`" type="V_WString" />
+            <Field name="ADDRESS" size="255" source="File: C:\Documents and Settings\lsellers\My Documents\petstoressales.xls|`Sheet1$`" type="V_WString" />
+            <Field name="CITY" size="255" source="File: C:\Documents and Settings\lsellers\My Documents\petstoressales.xls|`Sheet1$`" type="V_WString" />
+            <Field name="STATE" size="255" source="File: C:\Documents and Settings\lsellers\My Documents\petstoressales.xls|`Sheet1$`" type="V_WString" />
+            <Field name="ZIP" size="255" source="File: C:\Documents and Settings\lsellers\My Documents\petstoressales.xls|`Sheet1$`" type="V_WString" />
+            <Field name="January" source="File: C:\Documents and Settings\lsellers\My Documents\petstoressales.xls|`Sheet1$`" type="Double" />
+            <Field name="February" source="File: C:\Documents and Settings\lsellers\My Documents\petstoressales.xls|`Sheet1$`" type="Double" />
+            <Field name="March" source="File: C:\Documents and Settings\lsellers\My Documents\petstoressales.xls|`Sheet1$`" type="Double" />
+            <Field name="April" source="File: C:\Documents and Settings\lsellers\My Documents\petstoressales.xls|`Sheet1$`" type="Double" />
+            <Field name="May" source="File: C:\Documents and Settings\lsellers\My Documents\petstoressales.xls|`Sheet1$`" type="Double" />
+            <Field name="June" source="File: C:\Documents and Settings\lsellers\My Documents\petstoressales.xls|`Sheet1$`" type="Double" />
+            <Field name="July" source="File: C:\Documents and Settings\lsellers\My Documents\petstoressales.xls|`Sheet1$`" type="Double" />
+            <Field name="August " source="File: C:\Documents and Settings\lsellers\My Documents\petstoressales.xls|`Sheet1$`" type="Double" />
+            <Field name="September" source="File: C:\Documents and Settings\lsellers\My Documents\petstoressales.xls|`Sheet1$`" type="Double" />
+            <Field name="October" source="File: C:\Documents and Settings\lsellers\My Documents\petstoressales.xls|`Sheet1$`" type="Double" />
+            <Field name="November" source="File: C:\Documents and Settings\lsellers\My Documents\petstoressales.xls|`Sheet1$`" type="Double" />
+            <Field name="December" source="File: C:\Documents and Settings\lsellers\My Documents\petstoressales.xls|`Sheet1$`" type="Double" />
+            <Field name="Total " source="File: C:\Documents and Settings\lsellers\My Documents\petstoressales.xls|`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="834" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\PetStoresLocations.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PetStoresLocations.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="30" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="Phone" size="15" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="Address" size="35" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="City" size="25" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="State" size="2" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="ZIP" size="5" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="STD_ERROR_CODE" size="1" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="GEO_ADDR_FIRST_LINE" size="64" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="V_String" />
+            <Field name="GEO_ADDR_LAST_LINE" size="64" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="V_String" />
+            <Field name="GEO_CENSUS_ID" size="15" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="GEO_CITY" size="28" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="GEO_LATITUDE" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="Double" />
+            <Field name="GEO_LONGITUDE" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="Double" />
+            <Field name="GEO_MATCH_SCORE" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="Int32" />
+            <Field name="GEO_NUMBER" size="10" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="GEO_POSTDIRECTIONAL" size="2" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="GEO_POSTDIRECTIONAL2" size="2" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="GEO_PREDIRECTIONAL" size="2" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="GEO_PREDIRECTIONAL2" size="2" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="GEO_RESULT_CATEGORY" size="1" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="GEO_RESULT_FLAGS" size="10" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="GEO_STATE" size="2" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="GEO_STATE_FIPS" size="2" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="GEO_STREET_NAME" size="28" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="GEO_STREET_NAME2" size="28" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="GEO_STREET_SUFFIX" size="4" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="GEO_STREET_SUFFIX2" size="4" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="GEO_UNIT_DESIGNATOR" size="4" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="GEO_UNIT_NUMBER" size="8" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="GEO_ZIP" size="6" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="SpatialObj" size="2147483647" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="SpatialObj" />
+            <Field name="Lat" source="Formula: [GEO_LATITUDE]" type="Double" />
+            <Field name="Lon" source="Formula: [GEO_LONGITUDE]" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="894" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\PetStoresLocs.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PetStoresLocs.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="30" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="String" />
+            <Field name="SpatialObj" size="2147483647" source="File: C:\Documents and Settings\lsellers\My Documents\Alteryx\AlteryxSource\RuntimeData\Samples\SampleData\Pet Stores.TAB" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="894" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\PotentialLoc.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PotentialLoc.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SupplyID" source="RecordID: Starting Value=2000000" type="Int32" />
+            <Field name="SpatialObj" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Name" size="20" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="870" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\PotentialSupplyLocations.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PotentialSupplyLocations.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SupplyID" source="RecordID: Starting Value=1000000" type="Int32" />
+            <Field name="SpatialObj" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="870" y="762" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\SABRmetrics.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SABRmetrics.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Tm" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Games" source="R-DATA:" type="Int32" />
+            <Field name="Wins" source="R-DATA:" type="Int32" />
+            <Field name="Win_Pct" source="R-DATA:" type="Double" />
+            <Field name="X_Bat" source="R-DATA:" type="Int32" />
+            <Field name="BatAge" source="R-DATA:" type="Double" />
+            <Field name="R_G" source="R-DATA:" type="Double" />
+            <Field name="PA" source="R-DATA:" type="Int32" />
+            <Field name="AB" source="R-DATA:" type="Int32" />
+            <Field name="R" source="R-DATA:" type="Int32" />
+            <Field name="H" source="R-DATA:" type="Int32" />
+            <Field name="X2B" source="R-DATA:" type="Int32" />
+            <Field name="X3B" source="R-DATA:" type="Int32" />
+            <Field name="HR" source="R-DATA:" type="Int32" />
+            <Field name="RBI" source="R-DATA:" type="Int32" />
+            <Field name="SB" source="R-DATA:" type="Int32" />
+            <Field name="CS" source="R-DATA:" type="Int32" />
+            <Field name="BB" source="R-DATA:" type="Int32" />
+            <Field name="SO" source="R-DATA:" type="Int32" />
+            <Field name="BA" source="R-DATA:" type="Double" />
+            <Field name="OBP" source="R-DATA:" type="Double" />
+            <Field name="SLG" source="R-DATA:" type="Double" />
+            <Field name="OPS" source="R-DATA:" type="Double" />
+            <Field name="OPS_Adj" source="R-DATA:" type="Int32" />
+            <Field name="TB" source="R-DATA:" type="Int32" />
+            <Field name="GDP" source="R-DATA:" type="Int32" />
+            <Field name="HBP" source="R-DATA:" type="Int32" />
+            <Field name="SH" source="R-DATA:" type="Int32" />
+            <Field name="SF" source="R-DATA:" type="Int32" />
+            <Field name="IBB" source="R-DATA:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="83">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="822" y="66" width="300" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Tutorial*.yxdb files are a possible source</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="486" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_94551d277057b54a908af00bae97864a~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="86">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="186" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_17ec2d7399da6a48919e9ae83101ff15~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="87">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="174" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_74ac0f1889ac5e43b2c07a4a32641a6e~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="88">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="162" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_b20a72cdb639fc43b9ed2b94c6aa6d96~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="89">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="198" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_212e710d76cfa646bc4b6b53e83ad23e~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="90">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="198" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_7e69076b4a3ea74a8e5d77e5efd13617~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="91">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="198" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_f359bc35cb5dfd44bf224d5b737501e2~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="92">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="198" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_a5107a56a94d4f469cb2a48978a9eaab~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="93">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="414" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_358b87763cf9e64781caded749681121~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="94">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="558" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_cbee56d6bf9db146980cfae0006e66b7~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>Alteryx_Light</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="95">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="570" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_877ae2c69e3ace43b1bfe595d8bfdbea~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="96">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="498" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_d1987c94e4ba5e4dbfd29488be380978~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="97">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="702" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_1f27bff4b9820443b5536844baa5f3f9~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="98">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="678" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_8d7ff9c1c6fc2e45b58434617d79b69f~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="99">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="930" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_e5709ce8d10e094da333b6d0c8d8e994~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>Alteryx_Light</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="100">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="990" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_4fd7b1f1ed54f34fa28114ca5e510bf3~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="101">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="990" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_48e52bd71a3ff64bb61738f80f1d06b9~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="102">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="966" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_39a8eb19207bb94a9b45ebd51212578c~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>Alteryx_Light</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="103">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="966" y="762" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_8932701003d5ae49a1ce8adeb8fe9856~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="113">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="1278" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Program Files\Alteryx\Samples\data\SampleData\Customers.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Customers.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CustomerID" size="254" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Customers.csv" type="V_String" />
+            <Field name="Store Number" size="254" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Customers.csv" type="V_String" />
+            <Field name="Customer Segment" size="254" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Customers.csv" type="V_String" />
+            <Field name="Responder" size="254" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Customers.csv" type="V_String" />
+            <Field name="First Name" size="254" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Customers.csv" type="V_String" />
+            <Field name="Last Name" size="254" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Customers.csv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Customers.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Customers.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Customers.csv" type="V_String" />
+            <Field name="Zip" size="254" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Customers.csv" type="V_String" />
+            <Field name="Lat" size="254" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Customers.csv" type="V_String" />
+            <Field name="Lon" size="254" source="File: C:\Program Files\Alteryx\Samples\data\SampleData\Customers.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="114">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1410" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_cdb93746322b3e438b0bca07cc93adf3~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="365" y="497" width="433" height="645" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Machine Learing Datasets</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="402" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\HousingPricesTestData.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>HousingPricesTestData.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="id" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="date" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="price" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="bedrooms" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="bathrooms" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="sqft_living" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="sqft_lot" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="floors" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="waterfront" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="view" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="condition" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="grade" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="sqft_above" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="sqft_basement" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="yr_built" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="yr_renovated" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="zipcode" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="lat" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="long" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="sqft_living15" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="sqft_lot15" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="402" y="642" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\HousingPricesTrainData.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>HousingPricesTrainData.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="id" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="date" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="price" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="bedrooms" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="bathrooms" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="sqft_living" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="sqft_lot" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="floors" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="waterfront" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="view" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="condition" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="grade" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="sqft_above" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="sqft_basement" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="yr_built" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="yr_renovated" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="zipcode" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="lat" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="long" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="sqft_living15" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+                <Field name="sqft_lot15" size="254" source="File: C:\Users\pragland\Desktop\kc_house_data.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="390" y="726" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\Iris20.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Iris20.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Id" size="254" source="File: Z:\VM_SHARE\iris-species\Iris.csv" type="V_String" />
+                <Field name="SepalLengthCm" size="254" source="File: Z:\VM_SHARE\iris-species\Iris.csv" type="V_String" />
+                <Field name="SepalWidthCm" size="254" source="File: Z:\VM_SHARE\iris-species\Iris.csv" type="V_String" />
+                <Field name="PetalLengthCm" size="254" source="File: Z:\VM_SHARE\iris-species\Iris.csv" type="V_String" />
+                <Field name="PetalWidthCm" size="254" source="File: Z:\VM_SHARE\iris-species\Iris.csv" type="V_String" />
+                <Field name="Species" size="254" source="File: Z:\VM_SHARE\iris-species\Iris.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="390" y="798" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\Iris80.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Iris80.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Id" size="254" source="File: Z:\VM_SHARE\iris-species\Iris.csv" type="V_String" />
+                <Field name="SepalLengthCm" size="254" source="File: Z:\VM_SHARE\iris-species\Iris.csv" type="V_String" />
+                <Field name="SepalWidthCm" size="254" source="File: Z:\VM_SHARE\iris-species\Iris.csv" type="V_String" />
+                <Field name="PetalLengthCm" size="254" source="File: Z:\VM_SHARE\iris-species\Iris.csv" type="V_String" />
+                <Field name="PetalWidthCm" size="254" source="File: Z:\VM_SHARE\iris-species\Iris.csv" type="V_String" />
+                <Field name="Species" size="254" source="File: Z:\VM_SHARE\iris-species\Iris.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="390" y="882" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\LinearInputData.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>LinearInputData.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ID" source="File: C:\Users\rsnow\Documents\SRC Documents\Training\Macros\Regression Macro\Input Data.xls|`Sheet2$`" type="Double" />
+                <Field name="SALES" source="File: C:\Users\rsnow\Documents\SRC Documents\Training\Macros\Regression Macro\Input Data.xls|`Sheet2$`" type="Double" />
+                <Field name="VAR1" source="File: C:\Users\rsnow\Documents\SRC Documents\Training\Macros\Regression Macro\Input Data.xls|`Sheet2$`" type="Double" />
+                <Field name="VAR2" source="File: C:\Users\rsnow\Documents\SRC Documents\Training\Macros\Regression Macro\Input Data.xls|`Sheet2$`" type="Double" />
+                <Field name="VAR3" source="File: C:\Users\rsnow\Documents\SRC Documents\Training\Macros\Regression Macro\Input Data.xls|`Sheet2$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="570" y="942" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\LogisticInputData.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>LogisticInputData.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ID" source="CrossTab:Group:Sum:" type="Int32" />
+                <Field name="Customer" source="CrossTab:Group:Sum:" type="Double" />
+                <Field name="BehaviorBank__Computer_Owner_Y" source="CrossTab:Header:Name:BehaviorBank__Computer_Owner_Y:Sum:" type="Double" />
+                <Field name="BehaviorBank__Contributes_to_Charities_Y" source="CrossTab:Header:Name:BehaviorBank__Contributes_to_Charities_Y:Sum:" type="Double" />
+                <Field name="BehaviorBank__Donates_to_Environmental_Causes_Y" source="CrossTab:Header:Name:BehaviorBank__Donates_to_Environmental_Causes_Y:Sum:" type="Double" />
+                <Field name="BehaviorBank__Interest_in_Reading_Y" source="CrossTab:Header:Name:BehaviorBank__Interest_in_Reading_Y:Sum:" type="Double" />
+                <Field name="BehaviorBank__Presence_of_Credit_Card_Y" source="CrossTab:Header:Name:BehaviorBank__Presence_of_Credit_Card_Y:Sum:" type="Double" />
+                <Field name="Children_Children__Age_0_3_Code_3" source="CrossTab:Header:Name:Children_Children__Age_0_3_Code_3:Sum:" type="Double" />
+                <Field name="Children_Children__Age_0_3_Code_6" source="CrossTab:Header:Name:Children_Children__Age_0_3_Code_6:Sum:" type="Double" />
+                <Field name="Children_Children__Age_0_3_Code_7" source="CrossTab:Header:Name:Children_Children__Age_0_3_Code_7:Sum:" type="Double" />
+                <Field name="Children_Children__Age_0_3_Code_8" source="CrossTab:Header:Name:Children_Children__Age_0_3_Code_8:Sum:" type="Double" />
+                <Field name="Children_Children__Age_0_3_Code_Y" source="CrossTab:Header:Name:Children_Children__Age_0_3_Code_Y:Sum:" type="Double" />
+                <Field name="Children_Children__Age_0_3_Gender_F" source="CrossTab:Header:Name:Children_Children__Age_0_3_Gender_F:Sum:" type="Double" />
+                <Field name="Children_Children__Age_0_3_Gender_M" source="CrossTab:Header:Name:Children_Children__Age_0_3_Gender_M:Sum:" type="Double" />
+                <Field name="Children_Children__Age_0_3_Type_Y" source="CrossTab:Header:Name:Children_Children__Age_0_3_Type_Y:Sum:" type="Double" />
+                <Field name="Children_Children__Age_10_12_Code_1" source="CrossTab:Header:Name:Children_Children__Age_10_12_Code_1:Sum:" type="Double" />
+                <Field name="Children_Children__Age_10_12_Code_2" source="CrossTab:Header:Name:Children_Children__Age_10_12_Code_2:Sum:" type="Double" />
+                <Field name="Children_Children__Age_10_12_Code_3" source="CrossTab:Header:Name:Children_Children__Age_10_12_Code_3:Sum:" type="Double" />
+                <Field name="Children_Children__Age_10_12_Code_6" source="CrossTab:Header:Name:Children_Children__Age_10_12_Code_6:Sum:" type="Double" />
+                <Field name="Children_Children__Age_10_12_Code_8" source="CrossTab:Header:Name:Children_Children__Age_10_12_Code_8:Sum:" type="Double" />
+                <Field name="Children_Children__Age_10_12_Code_Y" source="CrossTab:Header:Name:Children_Children__Age_10_12_Code_Y:Sum:" type="Double" />
+                <Field name="Children_Children__Age_10_12_Gender_F" source="CrossTab:Header:Name:Children_Children__Age_10_12_Gender_F:Sum:" type="Double" />
+                <Field name="Children_Children__Age_10_12_Gender_M" source="CrossTab:Header:Name:Children_Children__Age_10_12_Gender_M:Sum:" type="Double" />
+                <Field name="Children_Children__Age_10_12_Type_Y" source="CrossTab:Header:Name:Children_Children__Age_10_12_Type_Y:Sum:" type="Double" />
+                <Field name="Children_Children__Age_13_18_Code_2" source="CrossTab:Header:Name:Children_Children__Age_13_18_Code_2:Sum:" type="Double" />
+                <Field name="Children_Children__Age_13_18_Code_8" source="CrossTab:Header:Name:Children_Children__Age_13_18_Code_8:Sum:" type="Double" />
+                <Field name="Children_Children__Age_13_18_Code_Y" source="CrossTab:Header:Name:Children_Children__Age_13_18_Code_Y:Sum:" type="Double" />
+                <Field name="Children_Children__Age_13_18_Gender_F" source="CrossTab:Header:Name:Children_Children__Age_13_18_Gender_F:Sum:" type="Double" />
+                <Field name="Children_Children__Age_13_18_Gender_M" source="CrossTab:Header:Name:Children_Children__Age_13_18_Gender_M:Sum:" type="Double" />
+                <Field name="Children_Children__Age_13_18_Type_Y" source="CrossTab:Header:Name:Children_Children__Age_13_18_Type_Y:Sum:" type="Double" />
+                <Field name="Children_Children__Age_4_6_Code_1" source="CrossTab:Header:Name:Children_Children__Age_4_6_Code_1:Sum:" type="Double" />
+                <Field name="Children_Children__Age_4_6_Code_2" source="CrossTab:Header:Name:Children_Children__Age_4_6_Code_2:Sum:" type="Double" />
+                <Field name="Children_Children__Age_4_6_Code_3" source="CrossTab:Header:Name:Children_Children__Age_4_6_Code_3:Sum:" type="Double" />
+                <Field name="Children_Children__Age_4_6_Code_4" source="CrossTab:Header:Name:Children_Children__Age_4_6_Code_4:Sum:" type="Double" />
+                <Field name="Children_Children__Age_4_6_Code_7" source="CrossTab:Header:Name:Children_Children__Age_4_6_Code_7:Sum:" type="Double" />
+                <Field name="Children_Children__Age_4_6_Code_8" source="CrossTab:Header:Name:Children_Children__Age_4_6_Code_8:Sum:" type="Double" />
+                <Field name="Children_Children__Age_4_6_Code_Y" source="CrossTab:Header:Name:Children_Children__Age_4_6_Code_Y:Sum:" type="Double" />
+                <Field name="Children_Children__Age_4_6_Gender_M" source="CrossTab:Header:Name:Children_Children__Age_4_6_Gender_M:Sum:" type="Double" />
+                <Field name="Children_Children__Age_4_6_Type_Y" source="CrossTab:Header:Name:Children_Children__Age_4_6_Type_Y:Sum:" type="Double" />
+                <Field name="Children_Children__Age_7_9_Code_3" source="CrossTab:Header:Name:Children_Children__Age_7_9_Code_3:Sum:" type="Double" />
+                <Field name="Children_Children__Age_7_9_Code_4" source="CrossTab:Header:Name:Children_Children__Age_7_9_Code_4:Sum:" type="Double" />
+                <Field name="Children_Children__Age_7_9_Code_8" source="CrossTab:Header:Name:Children_Children__Age_7_9_Code_8:Sum:" type="Double" />
+                <Field name="Children_Children__Age_7_9_Code_Y" source="CrossTab:Header:Name:Children_Children__Age_7_9_Code_Y:Sum:" type="Double" />
+                <Field name="Children_Children__Age_7_9_Gender_F" source="CrossTab:Header:Name:Children_Children__Age_7_9_Gender_F:Sum:" type="Double" />
+                <Field name="Children_Children__Age_7_9_Gender_M" source="CrossTab:Header:Name:Children_Children__Age_7_9_Gender_M:Sum:" type="Double" />
+                <Field name="Children_Children__Age_7_9_Type_Y" source="CrossTab:Header:Name:Children_Children__Age_7_9_Type_Y:Sum:" type="Double" />
+                <Field name="Children_Number_of_Children_in_Living_Unit_1" source="CrossTab:Header:Name:Children_Number_of_Children_in_Living_Unit_1:Sum:" type="Double" />
+                <Field name="Children_Number_of_Children_in_Living_Unit_2" source="CrossTab:Header:Name:Children_Number_of_Children_in_Living_Unit_2:Sum:" type="Double" />
+                <Field name="Children_Number_of_Children_in_Living_Unit_3" source="CrossTab:Header:Name:Children_Number_of_Children_in_Living_Unit_3:Sum:" type="Double" />
+                <Field name="Children_Number_of_Children_in_Living_Unit_4" source="CrossTab:Header:Name:Children_Number_of_Children_in_Living_Unit_4:Sum:" type="Double" />
+                <Field name="Children_Number_of_Children_in_Living_Unit_5" source="CrossTab:Header:Name:Children_Number_of_Children_in_Living_Unit_5:Sum:" type="Double" />
+                <Field name="Children_Number_of_Children_in_Living_Unit_6" source="CrossTab:Header:Name:Children_Number_of_Children_in_Living_Unit_6:Sum:" type="Double" />
+                <Field name="Children_Presence_of_Children_Code_Y" source="CrossTab:Header:Name:Children_Presence_of_Children_Code_Y:Sum:" type="Double" />
+                <Field name="Children_Presence_of_Children_Type_Y" source="CrossTab:Header:Name:Children_Presence_of_Children_Type_Y:Sum:" type="Double" />
+                <Field name="ClusterInfo_Mosaic_Household_A05" source="CrossTab:Header:Name:ClusterInfo_Mosaic_Household_A05:Sum:" type="Double" />
+                <Field name="ClusterInfo_Mosaic_Household_A06" source="CrossTab:Header:Name:ClusterInfo_Mosaic_Household_A06:Sum:" type="Double" />
+                <Field name="ClusterInfo_Mosaic_Household_A07" source="CrossTab:Header:Name:ClusterInfo_Mosaic_Household_A07:Sum:" type="Double" />
+                <Field name="ClusterInfo_Mosaic_Household_B03" source="CrossTab:Header:Name:ClusterInfo_Mosaic_Household_B03:Sum:" type="Double" />
+                <Field name="ClusterInfo_Mosaic_Household_B04" source="CrossTab:Header:Name:ClusterInfo_Mosaic_Household_B04:Sum:" type="Double" />
+                <Field name="ClusterInfo_Mosaic_Household_B05" source="CrossTab:Header:Name:ClusterInfo_Mosaic_Household_B05:Sum:" type="Double" />
+                <Field name="ClusterInfo_Mosaic_Household_B06" source="CrossTab:Header:Name:ClusterInfo_Mosaic_Household_B06:Sum:" type="Double" />
+                <Field name="ClusterInfo_Mosaic_Household_C01" source="CrossTab:Header:Name:ClusterInfo_Mosaic_Household_C01:Sum:" type="Double" />
+                <Field name="ClusterInfo_Mosaic_Household_C04" source="CrossTab:Header:Name:ClusterInfo_Mosaic_Household_C04:Sum:" type="Double" />
+                <Field name="ClusterInfo_Mosaic_Household_E04" source="CrossTab:Header:Name:ClusterInfo_Mosaic_Household_E04:Sum:" type="Double" />
+                <Field name="ClusterInfo_Mosaic_Household_F01" source="CrossTab:Header:Name:ClusterInfo_Mosaic_Household_F01:Sum:" type="Double" />
+                <Field name="ClusterInfo_Mosaic_Household_H02" source="CrossTab:Header:Name:ClusterInfo_Mosaic_Household_H02:Sum:" type="Double" />
+                <Field name="ClusterInfo_Mosaic_Household_I01" source="CrossTab:Header:Name:ClusterInfo_Mosaic_Household_I01:Sum:" type="Double" />
+                <Field name="ClusterInfo_Mosaic_Household_I04" source="CrossTab:Header:Name:ClusterInfo_Mosaic_Household_I04:Sum:" type="Double" />
+                <Field name="ClusterInfo_Mosaic_Household_J02" source="CrossTab:Header:Name:ClusterInfo_Mosaic_Household_J02:Sum:" type="Double" />
+                <Field name="ClusterInfo_Mosaic_Household_J04" source="CrossTab:Header:Name:ClusterInfo_Mosaic_Household_J04:Sum:" type="Double" />
+                <Field name="ClusterInfo_Mosaic_Household_K01" source="CrossTab:Header:Name:ClusterInfo_Mosaic_Household_K01:Sum:" type="Double" />
+                <Field name="ClusterInfo_Mosaic_Household_K02" source="CrossTab:Header:Name:ClusterInfo_Mosaic_Household_K02:Sum:" type="Double" />
+                <Field name="ClusterInfo_Mosaic_Household_L02" source="CrossTab:Header:Name:ClusterInfo_Mosaic_Household_L02:Sum:" type="Double" />
+                <Field name="Gold_BehaviorBank__Cruise_Enthusiasts_Y" source="CrossTab:Header:Name:Gold_BehaviorBank__Cruise_Enthusiasts_Y:Sum:" type="Double" />
+                <Field name="Gold_BehaviorBank__Interest_in_Domestic_Travel_Y" source="CrossTab:Header:Name:Gold_BehaviorBank__Interest_in_Domestic_Travel_Y:Sum:" type="Double" />
+                <Field name="Gold_BehaviorBank__Interest_in_Fitness_Y" source="CrossTab:Header:Name:Gold_BehaviorBank__Interest_in_Fitness_Y:Sum:" type="Double" />
+                <Field name="Gold_BehaviorBank__Interest_in_Foreign_Travel_Y" source="CrossTab:Header:Name:Gold_BehaviorBank__Interest_in_Foreign_Travel_Y:Sum:" type="Double" />
+                <Field name="Gold_BehaviorBank__Interest_in_Sports_Y" source="CrossTab:Header:Name:Gold_BehaviorBank__Interest_in_Sports_Y:Sum:" type="Double" />
+                <Field name="Gold_BehaviorBank__Interest_in_the_Outdoors_Y" source="CrossTab:Header:Name:Gold_BehaviorBank__Interest_in_the_Outdoors_Y:Sum:" type="Double" />
+                <Field name="Gold_BehaviorBank__Internet_Online_Subscriber_Y" source="CrossTab:Header:Name:Gold_BehaviorBank__Internet_Online_Subscriber_Y:Sum:" type="Double" />
+                <Field name="Gold_BehaviorBank__Invest_in_Mutual_Funds_Annuities_Y" source="CrossTab:Header:Name:Gold_BehaviorBank__Invest_in_Mutual_Funds_Annuities_Y:Sum:" type="Double" />
+                <Field name="Gold_BehaviorBank__Investor_Y" source="CrossTab:Header:Name:Gold_BehaviorBank__Investor_Y:Sum:" type="Double" />
+                <Field name="Gold_BehaviorBank__Purchase_via_On_line_Y" source="CrossTab:Header:Name:Gold_BehaviorBank__Purchase_via_On_line_Y:Sum:" type="Double" />
+                <Field name="Gold_BehaviorBank__Purchased_Through_the_Mail_Y" source="CrossTab:Header:Name:Gold_BehaviorBank__Purchased_Through_the_Mail_Y:Sum:" type="Double" />
+                <Field name="Gold_Investment_Property__Additional_investment_flag_Y" source="CrossTab:Header:Name:Gold_Investment_Property__Additional_investment_flag_Y:Sum:" type="Double" />
+                <Field name="HH_Combined_Homeowner_Renter_H" source="CrossTab:Header:Name:HH_Combined_Homeowner_Renter_H:Sum:" type="Double" />
+                <Field name="HH_Home_Business_Y" source="CrossTab:Header:Name:HH_Home_Business_Y:Sum:" type="Double" />
+                <Field name="HH_Household_Composition_D" source="CrossTab:Header:Name:HH_Household_Composition_D:Sum:" type="Double" />
+                <Field name="HH_Household_Composition_G" source="CrossTab:Header:Name:HH_Household_Composition_G:Sum:" type="Double" />
+                <Field name="HH_Household_Composition_H" source="CrossTab:Header:Name:HH_Household_Composition_H:Sum:" type="Double" />
+                <Field name="HH_Household_Composition_I" source="CrossTab:Header:Name:HH_Household_Composition_I:Sum:" type="Double" />
+                <Field name="HH_Household_Composition_J" source="CrossTab:Header:Name:HH_Household_Composition_J:Sum:" type="Double" />
+                <Field name="HH_Mail_Responder_M" source="CrossTab:Header:Name:HH_Mail_Responder_M:Sum:" type="Double" />
+                <Field name="HH_Mail_Responder_Y" source="CrossTab:Header:Name:HH_Mail_Responder_Y:Sum:" type="Double" />
+                <Field name="HH_Move_Update_Date_20110102" source="CrossTab:Header:Name:HH_Move_Update_Date_20110102:Sum:" type="Double" />
+                <Field name="HH_Move_Update_Date_20110121" source="CrossTab:Header:Name:HH_Move_Update_Date_20110121:Sum:" type="Double" />
+                <Field name="HH_Number_of_Adults_in_Living_Unit_3" source="CrossTab:Header:Name:HH_Number_of_Adults_in_Living_Unit_3:Sum:" type="Double" />
+                <Field name="HH_Number_of_Adults_in_Living_Unit_4" source="CrossTab:Header:Name:HH_Number_of_Adults_in_Living_Unit_4:Sum:" type="Double" />
+                <Field name="HH_Number_of_Adults_in_Living_Unit_5" source="CrossTab:Header:Name:HH_Number_of_Adults_in_Living_Unit_5:Sum:" type="Double" />
+                <Field name="HH_Number_of_Adults_in_Living_Unit_6" source="CrossTab:Header:Name:HH_Number_of_Adults_in_Living_Unit_6:Sum:" type="Double" />
+                <Field name="HH_Number_of_Adults_in_Living_Unit_7" source="CrossTab:Header:Name:HH_Number_of_Adults_in_Living_Unit_7:Sum:" type="Double" />
+                <Field name="HH_Number_of_Adults_in_Living_Unit_8" source="CrossTab:Header:Name:HH_Number_of_Adults_in_Living_Unit_8:Sum:" type="Double" />
+                <Field name="HH_Number_of_Persons_in_Living_Unit_4" source="CrossTab:Header:Name:HH_Number_of_Persons_in_Living_Unit_4:Sum:" type="Double" />
+                <Field name="HH_Number_of_Persons_in_Living_Unit_5" source="CrossTab:Header:Name:HH_Number_of_Persons_in_Living_Unit_5:Sum:" type="Double" />
+                <Field name="HH_Number_of_Persons_in_Living_Unit_6" source="CrossTab:Header:Name:HH_Number_of_Persons_in_Living_Unit_6:Sum:" type="Double" />
+                <Field name="HH_Number_of_Persons_in_Living_Unit_7" source="CrossTab:Header:Name:HH_Number_of_Persons_in_Living_Unit_7:Sum:" type="Double" />
+                <Field name="HH_Number_of_Persons_in_Living_Unit_8" source="CrossTab:Header:Name:HH_Number_of_Persons_in_Living_Unit_8:Sum:" type="Double" />
+                <Field name="HH_Persons_Per_Household_0160" source="CrossTab:Header:Name:HH_Persons_Per_Household_0160:Sum:" type="Double" />
+                <Field name="HH_Persons_Per_Household_0220" source="CrossTab:Header:Name:HH_Persons_Per_Household_0220:Sum:" type="Double" />
+                <Field name="HH_Persons_Per_Household_0300" source="CrossTab:Header:Name:HH_Persons_Per_Household_0300:Sum:" type="Double" />
+                <Field name="HH_Persons_Per_Household_0310" source="CrossTab:Header:Name:HH_Persons_Per_Household_0310:Sum:" type="Double" />
+                <Field name="HH_Persons_Per_Household_0330" source="CrossTab:Header:Name:HH_Persons_Per_Household_0330:Sum:" type="Double" />
+                <Field name="HH_Persons_Per_Household_0340" source="CrossTab:Header:Name:HH_Persons_Per_Household_0340:Sum:" type="Double" />
+                <Field name="HH_State_Income_Decile__Wealth_Rating__6" source="CrossTab:Header:Name:HH_State_Income_Decile__Wealth_Rating__6:Sum:" type="Double" />
+                <Field name="HH_State_Income_Decile__Wealth_Rating__7" source="CrossTab:Header:Name:HH_State_Income_Decile__Wealth_Rating__7:Sum:" type="Double" />
+                <Field name="INSOURCE_Enhanced_Estimated_Income_v4_E" source="CrossTab:Header:Name:INSOURCE_Enhanced_Estimated_Income_v4_E:Sum:" type="Double" />
+                <Field name="INSOURCE_Enhanced_Estimated_Income_v4_F" source="CrossTab:Header:Name:INSOURCE_Enhanced_Estimated_Income_v4_F:Sum:" type="Double" />
+                <Field name="INSOURCE_Enhanced_Estimated_Income_v4_G" source="CrossTab:Header:Name:INSOURCE_Enhanced_Estimated_Income_v4_G:Sum:" type="Double" />
+                <Field name="INSOURCE_Enhanced_Estimated_Income_v4_I" source="CrossTab:Header:Name:INSOURCE_Enhanced_Estimated_Income_v4_I:Sum:" type="Double" />
+                <Field name="INSOURCE_Enhanced_Estimated_Income_v4_K" source="CrossTab:Header:Name:INSOURCE_Enhanced_Estimated_Income_v4_K:Sum:" type="Double" />
+                <Field name="INSOURCE_Estimated_Income_v4_E" source="CrossTab:Header:Name:INSOURCE_Estimated_Income_v4_E:Sum:" type="Double" />
+                <Field name="INSOURCE_Estimated_Income_v4_F" source="CrossTab:Header:Name:INSOURCE_Estimated_Income_v4_F:Sum:" type="Double" />
+                <Field name="INSOURCE_Estimated_Income_v4_G" source="CrossTab:Header:Name:INSOURCE_Estimated_Income_v4_G:Sum:" type="Double" />
+                <Field name="INSOURCE_Estimated_Income_v4_I" source="CrossTab:Header:Name:INSOURCE_Estimated_Income_v4_I:Sum:" type="Double" />
+                <Field name="INSOURCE_Estimated_Income_v4_K" source="CrossTab:Header:Name:INSOURCE_Estimated_Income_v4_K:Sum:" type="Double" />
+                <Field name="In_the_Market_In_the_Market_Model_1" source="CrossTab:Header:Name:In_the_Market_In_the_Market_Model_1:Sum:" type="Double" />
+                <Field name="In_the_Market_In_the_Market_Model_2" source="CrossTab:Header:Name:In_the_Market_In_the_Market_Model_2:Sum:" type="Double" />
+                <Field name="In_the_Market_In_the_Market_Model_3" source="CrossTab:Header:Name:In_the_Market_In_the_Market_Model_3:Sum:" type="Double" />
+                <Field name="In_the_Market_In_the_Market_Model_4" source="CrossTab:Header:Name:In_the_Market_In_the_Market_Model_4:Sum:" type="Double" />
+                <Field name="In_the_Market_In_the_Market__New_Car_Model_3" source="CrossTab:Header:Name:In_the_Market_In_the_Market__New_Car_Model_3:Sum:" type="Double" />
+                <Field name="In_the_Market_In_the_Market__New_Car_Model_4" source="CrossTab:Header:Name:In_the_Market_In_the_Market__New_Car_Model_4:Sum:" type="Double" />
+                <Field name="In_the_Market_In_the_Market__New_Car_Model_6" source="CrossTab:Header:Name:In_the_Market_In_the_Market__New_Car_Model_6:Sum:" type="Double" />
+                <Field name="In_the_Market_In_the_Market__New_Car_Model_7" source="CrossTab:Header:Name:In_the_Market_In_the_Market__New_Car_Model_7:Sum:" type="Double" />
+                <Field name="In_the_Market_In_the_Market__Used_Car_Model_5" source="CrossTab:Header:Name:In_the_Market_In_the_Market__Used_Car_Model_5:Sum:" type="Double" />
+                <Field name="In_the_Market_In_the_Market__Used_Car_Model_7" source="CrossTab:Header:Name:In_the_Market_In_the_Market__Used_Car_Model_7:Sum:" type="Double" />
+                <Field name="MOR_Bank__Book_Buyer_1" source="CrossTab:Header:Name:MOR_Bank__Book_Buyer_1:Sum:" type="Double" />
+                <Field name="MOR_Bank__Book_Buyer_2" source="CrossTab:Header:Name:MOR_Bank__Book_Buyer_2:Sum:" type="Double" />
+                <Field name="MOR_Bank__Book_Buyer_3" source="CrossTab:Header:Name:MOR_Bank__Book_Buyer_3:Sum:" type="Double" />
+                <Field name="MOR_Bank__Book_Buyer_4" source="CrossTab:Header:Name:MOR_Bank__Book_Buyer_4:Sum:" type="Double" />
+                <Field name="MOR_Bank__Book_Buyer_5" source="CrossTab:Header:Name:MOR_Bank__Book_Buyer_5:Sum:" type="Double" />
+                <Field name="MOR_Bank__Book_Buyer_6" source="CrossTab:Header:Name:MOR_Bank__Book_Buyer_6:Sum:" type="Double" />
+                <Field name="MOR_Bank__Book_Buyer_9" source="CrossTab:Header:Name:MOR_Bank__Book_Buyer_9:Sum:" type="Double" />
+                <Field name="MOR_Bank__Collect_Special_Foods_Buyer_2" source="CrossTab:Header:Name:MOR_Bank__Collect_Special_Foods_Buyer_2:Sum:" type="Double" />
+                <Field name="MOR_Bank__Crafts_Hobby_Merchandise_Buyer_2" source="CrossTab:Header:Name:MOR_Bank__Crafts_Hobby_Merchandise_Buyer_2:Sum:" type="Double" />
+                <Field name="MOR_Bank__Culinary_Interests_Magazine_1" source="CrossTab:Header:Name:MOR_Bank__Culinary_Interests_Magazine_1:Sum:" type="Double" />
+                <Field name="MOR_Bank__Culinary_Interests_Magazine_2" source="CrossTab:Header:Name:MOR_Bank__Culinary_Interests_Magazine_2:Sum:" type="Double" />
+                <Field name="MOR_Bank__Culinary_Interests_Magazine_3" source="CrossTab:Header:Name:MOR_Bank__Culinary_Interests_Magazine_3:Sum:" type="Double" />
+                <Field name="MOR_Bank__Deduped_Category_Hit_Count_001" source="CrossTab:Header:Name:MOR_Bank__Deduped_Category_Hit_Count_001:Sum:" type="Double" />
+                <Field name="MOR_Bank__Deduped_Category_Hit_Count_002" source="CrossTab:Header:Name:MOR_Bank__Deduped_Category_Hit_Count_002:Sum:" type="Double" />
+                <Field name="MOR_Bank__Deduped_Category_Hit_Count_003" source="CrossTab:Header:Name:MOR_Bank__Deduped_Category_Hit_Count_003:Sum:" type="Double" />
+                <Field name="MOR_Bank__Deduped_Category_Hit_Count_004" source="CrossTab:Header:Name:MOR_Bank__Deduped_Category_Hit_Count_004:Sum:" type="Double" />
+                <Field name="MOR_Bank__Deduped_Category_Hit_Count_005" source="CrossTab:Header:Name:MOR_Bank__Deduped_Category_Hit_Count_005:Sum:" type="Double" />
+                <Field name="MOR_Bank__Deduped_Category_Hit_Count_006" source="CrossTab:Header:Name:MOR_Bank__Deduped_Category_Hit_Count_006:Sum:" type="Double" />
+                <Field name="MOR_Bank__Deduped_Category_Hit_Count_008" source="CrossTab:Header:Name:MOR_Bank__Deduped_Category_Hit_Count_008:Sum:" type="Double" />
+                <Field name="MOR_Bank__Deduped_Category_Hit_Count_010" source="CrossTab:Header:Name:MOR_Bank__Deduped_Category_Hit_Count_010:Sum:" type="Double" />
+                <Field name="MOR_Bank__Deduped_Category_Hit_Count_013" source="CrossTab:Header:Name:MOR_Bank__Deduped_Category_Hit_Count_013:Sum:" type="Double" />
+                <Field name="MOR_Bank__Deduped_Category_Hit_Count_015" source="CrossTab:Header:Name:MOR_Bank__Deduped_Category_Hit_Count_015:Sum:" type="Double" />
+                <Field name="MOR_Bank__Do_It_Yourselfers_2" source="CrossTab:Header:Name:MOR_Bank__Do_It_Yourselfers_2:Sum:" type="Double" />
+                <Field name="MOR_Bank__Do_It_Yourselfers_3" source="CrossTab:Header:Name:MOR_Bank__Do_It_Yourselfers_3:Sum:" type="Double" />
+                <Field name="MOR_Bank__Do_It_Yourselfers_4" source="CrossTab:Header:Name:MOR_Bank__Do_It_Yourselfers_4:Sum:" type="Double" />
+                <Field name="MOR_Bank__Do_It_Yourselfers_5" source="CrossTab:Header:Name:MOR_Bank__Do_It_Yourselfers_5:Sum:" type="Double" />
+                <Field name="MOR_Bank__Family_and_General_Magazine_1" source="CrossTab:Header:Name:MOR_Bank__Family_and_General_Magazine_1:Sum:" type="Double" />
+                <Field name="MOR_Bank__Family_and_General_Magazine_2" source="CrossTab:Header:Name:MOR_Bank__Family_and_General_Magazine_2:Sum:" type="Double" />
+                <Field name="MOR_Bank__Family_and_General_Magazine_4" source="CrossTab:Header:Name:MOR_Bank__Family_and_General_Magazine_4:Sum:" type="Double" />
+                <Field name="MOR_Bank__Family_and_General_Magazine_5" source="CrossTab:Header:Name:MOR_Bank__Family_and_General_Magazine_5:Sum:" type="Double" />
+                <Field name="MOR_Bank__Female_Merchandise_Buyer_1" source="CrossTab:Header:Name:MOR_Bank__Female_Merchandise_Buyer_1:Sum:" type="Double" />
+                <Field name="MOR_Bank__Female_Oriented_Magazine_1" source="CrossTab:Header:Name:MOR_Bank__Female_Oriented_Magazine_1:Sum:" type="Double" />
+                <Field name="MOR_Bank__Female_Oriented_Magazine_2" source="CrossTab:Header:Name:MOR_Bank__Female_Oriented_Magazine_2:Sum:" type="Double" />
+                <Field name="MOR_Bank__Female_Oriented_Magazine_3" source="CrossTab:Header:Name:MOR_Bank__Female_Oriented_Magazine_3:Sum:" type="Double" />
+                <Field name="MOR_Bank__Gardening_Farming_Magazine_1" source="CrossTab:Header:Name:MOR_Bank__Gardening_Farming_Magazine_1:Sum:" type="Double" />
+                <Field name="MOR_Bank__Gardening_Farming_Magazine_2" source="CrossTab:Header:Name:MOR_Bank__Gardening_Farming_Magazine_2:Sum:" type="Double" />
+                <Field name="MOR_Bank__Gardening_Farming_Magazine_3" source="CrossTab:Header:Name:MOR_Bank__Gardening_Farming_Magazine_3:Sum:" type="Double" />
+                <Field name="MOR_Bank__Gardening_Farming_Magazine_4" source="CrossTab:Header:Name:MOR_Bank__Gardening_Farming_Magazine_4:Sum:" type="Double" />
+                <Field name="MOR_Bank__General_Contributor_1" source="CrossTab:Header:Name:MOR_Bank__General_Contributor_1:Sum:" type="Double" />
+                <Field name="MOR_Bank__General_Merchandise_Buyer_1" source="CrossTab:Header:Name:MOR_Bank__General_Merchandise_Buyer_1:Sum:" type="Double" />
+                <Field name="MOR_Bank__General_Merchandise_Buyer_6" source="CrossTab:Header:Name:MOR_Bank__General_Merchandise_Buyer_6:Sum:" type="Double" />
+                <Field name="MOR_Bank__Gifts_and_Gadgets_Buyer_1" source="CrossTab:Header:Name:MOR_Bank__Gifts_and_Gadgets_Buyer_1:Sum:" type="Double" />
+                <Field name="MOR_Bank__Gifts_and_Gadgets_Buyer_3" source="CrossTab:Header:Name:MOR_Bank__Gifts_and_Gadgets_Buyer_3:Sum:" type="Double" />
+                <Field name="MOR_Bank__Health_and_Fitness_Magazine_1" source="CrossTab:Header:Name:MOR_Bank__Health_and_Fitness_Magazine_1:Sum:" type="Double" />
+                <Field name="MOR_Bank__Health_and_Fitness_Magazine_2" source="CrossTab:Header:Name:MOR_Bank__Health_and_Fitness_Magazine_2:Sum:" type="Double" />
+                <Field name="MOR_Bank__Health_and_Fitness_Magazine_3" source="CrossTab:Header:Name:MOR_Bank__Health_and_Fitness_Magazine_3:Sum:" type="Double" />
+                <Field name="MOR_Bank__Health_and_Fitness_Magazine_4" source="CrossTab:Header:Name:MOR_Bank__Health_and_Fitness_Magazine_4:Sum:" type="Double" />
+                <Field name="MOR_Bank__Health_and_Fitness_Magazine_5" source="CrossTab:Header:Name:MOR_Bank__Health_and_Fitness_Magazine_5:Sum:" type="Double" />
+                <Field name="MOR_Bank__Health_and_Fitness_Magazine_6" source="CrossTab:Header:Name:MOR_Bank__Health_and_Fitness_Magazine_6:Sum:" type="Double" />
+                <Field name="MOR_Bank__Health_and_Fitness_Magazine_7" source="CrossTab:Header:Name:MOR_Bank__Health_and_Fitness_Magazine_7:Sum:" type="Double" />
+                <Field name="MOR_Bank__Health_and_Fitness_Magazine_8" source="CrossTab:Header:Name:MOR_Bank__Health_and_Fitness_Magazine_8:Sum:" type="Double" />
+                <Field name="MOR_Bank__Health_and_Fitness_Magazine_9" source="CrossTab:Header:Name:MOR_Bank__Health_and_Fitness_Magazine_9:Sum:" type="Double" />
+                <Field name="MOR_Bank__Male_Merchandise_Buyer_1" source="CrossTab:Header:Name:MOR_Bank__Male_Merchandise_Buyer_1:Sum:" type="Double" />
+                <Field name="MOR_Bank__Male_Sports_Magazine_1" source="CrossTab:Header:Name:MOR_Bank__Male_Sports_Magazine_1:Sum:" type="Double" />
+                <Field name="MOR_Bank__Male_Sports_Magazine_2" source="CrossTab:Header:Name:MOR_Bank__Male_Sports_Magazine_2:Sum:" type="Double" />
+                <Field name="MOR_Bank__Male_Sports_Magazine_3" source="CrossTab:Header:Name:MOR_Bank__Male_Sports_Magazine_3:Sum:" type="Double" />
+                <Field name="MOR_Bank__Miscellaneous_1" source="CrossTab:Header:Name:MOR_Bank__Miscellaneous_1:Sum:" type="Double" />
+                <Field name="MOR_Bank__Miscellaneous_2" source="CrossTab:Header:Name:MOR_Bank__Miscellaneous_2:Sum:" type="Double" />
+                <Field name="MOR_Bank__Miscellaneous_3" source="CrossTab:Header:Name:MOR_Bank__Miscellaneous_3:Sum:" type="Double" />
+                <Field name="MOR_Bank__News_and_Financial_1" source="CrossTab:Header:Name:MOR_Bank__News_and_Financial_1:Sum:" type="Double" />
+                <Field name="MOR_Bank__News_and_Financial_3" source="CrossTab:Header:Name:MOR_Bank__News_and_Financial_3:Sum:" type="Double" />
+                <Field name="MOR_Bank__News_and_Financial_4" source="CrossTab:Header:Name:MOR_Bank__News_and_Financial_4:Sum:" type="Double" />
+                <Field name="MOR_Bank__News_and_Financial_5" source="CrossTab:Header:Name:MOR_Bank__News_and_Financial_5:Sum:" type="Double" />
+                <Field name="MOR_Bank__Non_Deduped_Category_Hit_Count_001" source="CrossTab:Header:Name:MOR_Bank__Non_Deduped_Category_Hit_Count_001:Sum:" type="Double" />
+                <Field name="MOR_Bank__Non_Deduped_Category_Hit_Count_002" source="CrossTab:Header:Name:MOR_Bank__Non_Deduped_Category_Hit_Count_002:Sum:" type="Double" />
+                <Field name="MOR_Bank__Non_Deduped_Category_Hit_Count_003" source="CrossTab:Header:Name:MOR_Bank__Non_Deduped_Category_Hit_Count_003:Sum:" type="Double" />
+                <Field name="MOR_Bank__Non_Deduped_Category_Hit_Count_004" source="CrossTab:Header:Name:MOR_Bank__Non_Deduped_Category_Hit_Count_004:Sum:" type="Double" />
+                <Field name="MOR_Bank__Non_Deduped_Category_Hit_Count_005" source="CrossTab:Header:Name:MOR_Bank__Non_Deduped_Category_Hit_Count_005:Sum:" type="Double" />
+                <Field name="MOR_Bank__Non_Deduped_Category_Hit_Count_006" source="CrossTab:Header:Name:MOR_Bank__Non_Deduped_Category_Hit_Count_006:Sum:" type="Double" />
+                <Field name="MOR_Bank__Non_Deduped_Category_Hit_Count_007" source="CrossTab:Header:Name:MOR_Bank__Non_Deduped_Category_Hit_Count_007:Sum:" type="Double" />
+                <Field name="MOR_Bank__Non_Deduped_Category_Hit_Count_008" source="CrossTab:Header:Name:MOR_Bank__Non_Deduped_Category_Hit_Count_008:Sum:" type="Double" />
+                <Field name="MOR_Bank__Non_Deduped_Category_Hit_Count_009" source="CrossTab:Header:Name:MOR_Bank__Non_Deduped_Category_Hit_Count_009:Sum:" type="Double" />
+                <Field name="MOR_Bank__Non_Deduped_Category_Hit_Count_014" source="CrossTab:Header:Name:MOR_Bank__Non_Deduped_Category_Hit_Count_014:Sum:" type="Double" />
+                <Field name="MOR_Bank__Non_Deduped_Category_Hit_Count_015" source="CrossTab:Header:Name:MOR_Bank__Non_Deduped_Category_Hit_Count_015:Sum:" type="Double" />
+                <Field name="MOR_Bank__Odds_and_Ends_1" source="CrossTab:Header:Name:MOR_Bank__Odds_and_Ends_1:Sum:" type="Double" />
+                <Field name="MOR_Bank__Odds_and_Ends_2" source="CrossTab:Header:Name:MOR_Bank__Odds_and_Ends_2:Sum:" type="Double" />
+                <Field name="MOR_Bank__Odds_and_Ends_3" source="CrossTab:Header:Name:MOR_Bank__Odds_and_Ends_3:Sum:" type="Double" />
+                <Field name="MOR_Bank__Opportunity_Seekers_and_CE_1" source="CrossTab:Header:Name:MOR_Bank__Opportunity_Seekers_and_CE_1:Sum:" type="Double" />
+                <Field name="MOR_Bank__Opportunity_Seekers_and_CE_5" source="CrossTab:Header:Name:MOR_Bank__Opportunity_Seekers_and_CE_5:Sum:" type="Double" />
+                <Field name="MOR_Bank__Opportunity_Seekers_and_CE_6" source="CrossTab:Header:Name:MOR_Bank__Opportunity_Seekers_and_CE_6:Sum:" type="Double" />
+                <Field name="MOR_Bank__Opportunity_Seekers_and_CE_9" source="CrossTab:Header:Name:MOR_Bank__Opportunity_Seekers_and_CE_9:Sum:" type="Double" />
+                <Field name="MOR_Bank__Political_Contributor_1" source="CrossTab:Header:Name:MOR_Bank__Political_Contributor_1:Sum:" type="Double" />
+                <Field name="MOR_Bank__Political_Contributor_3" source="CrossTab:Header:Name:MOR_Bank__Political_Contributor_3:Sum:" type="Double" />
+                <Field name="MOR_Bank__Political_Contributor_4" source="CrossTab:Header:Name:MOR_Bank__Political_Contributor_4:Sum:" type="Double" />
+                <Field name="MOR_Bank__Political_Contributor_5" source="CrossTab:Header:Name:MOR_Bank__Political_Contributor_5:Sum:" type="Double" />
+                <Field name="MOR_Bank__Religious_Contributor_2" source="CrossTab:Header:Name:MOR_Bank__Religious_Contributor_2:Sum:" type="Double" />
+                <Field name="MOR_Bank__Religious_Contributor_3" source="CrossTab:Header:Name:MOR_Bank__Religious_Contributor_3:Sum:" type="Double" />
+                <Field name="MOR_Bank__Upscale_Merchandise_Buyer_1" source="CrossTab:Header:Name:MOR_Bank__Upscale_Merchandise_Buyer_1:Sum:" type="Double" />
+                <Field name="Silver_BehaviorBank__Cat_Enthusiast_Y" source="CrossTab:Header:Name:Silver_BehaviorBank__Cat_Enthusiast_Y:Sum:" type="Double" />
+                <Field name="Silver_BehaviorBank__Dog_Enthusiasts_Y" source="CrossTab:Header:Name:Silver_BehaviorBank__Dog_Enthusiasts_Y:Sum:" type="Double" />
+                <Field name="Silver_BehaviorBank__Home_Decorating_Furnishing_Y" source="CrossTab:Header:Name:Silver_BehaviorBank__Home_Decorating_Furnishing_Y:Sum:" type="Double" />
+                <Field name="Silver_BehaviorBank__Interest_in_Automotive_Y" source="CrossTab:Header:Name:Silver_BehaviorBank__Interest_in_Automotive_Y:Sum:" type="Double" />
+                <Field name="Silver_BehaviorBank__Interest_in_Gardening_Y" source="CrossTab:Header:Name:Silver_BehaviorBank__Interest_in_Gardening_Y:Sum:" type="Double" />
+                <Field name="Silver_BehaviorBank__Interest_in_Gourmet_Cooking_Y" source="CrossTab:Header:Name:Silver_BehaviorBank__Interest_in_Gourmet_Cooking_Y:Sum:" type="Double" />
+                <Field name="Silver_BehaviorBank__Interest_in_Travel_Y" source="CrossTab:Header:Name:Silver_BehaviorBank__Interest_in_Travel_Y:Sum:" type="Double" />
+                <Field name="Silver_BehaviorBank__Pet_Enthusiast_Y" source="CrossTab:Header:Name:Silver_BehaviorBank__Pet_Enthusiast_Y:Sum:" type="Double" />
+                <Field name="Silver_Property_Realty__Home_Bedrooms_16" source="CrossTab:Header:Name:Silver_Property_Realty__Home_Bedrooms_16:Sum:" type="Double" />
+                <Field name="Silver_Property_Realty__Home_Swimming_Pool_Indicator_Y" source="CrossTab:Header:Name:Silver_Property_Realty__Home_Swimming_Pool_Indicator_Y:Sum:" type="Double" />
+                <Field name="Silver_Property_Realty__Home_Total_Rooms_02" source="CrossTab:Header:Name:Silver_Property_Realty__Home_Total_Rooms_02:Sum:" type="Double" />
+                <Field name="Silver_Property_Realty__Home_Total_Rooms_06" source="CrossTab:Header:Name:Silver_Property_Realty__Home_Total_Rooms_06:Sum:" type="Double" />
+                <Field name="Silver_Property_Realty__Home_Total_Rooms_07" source="CrossTab:Header:Name:Silver_Property_Realty__Home_Total_Rooms_07:Sum:" type="Double" />
+                <Field name="Silver_Property_Realty__Home_Total_Rooms_08" source="CrossTab:Header:Name:Silver_Property_Realty__Home_Total_Rooms_08:Sum:" type="Double" />
+                <Field name="Silver_Property_Realty__Home_Total_Rooms_10" source="CrossTab:Header:Name:Silver_Property_Realty__Home_Total_Rooms_10:Sum:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="390" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\MushroomTestData.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>MushroomTestData.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="class" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="cap-shape" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="cap-surface" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="cap-color" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="bruises" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="odor" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="gill-attachment" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="gill-spacing" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="gill-size" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="gill-color" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="stalk-shape" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="stalk-root" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="stalk-surface-above-ring" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="stalk-surface-below-ring" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="stalk-color-above-ring" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="stalk-color-below-ring" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="veil-type" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="veil-color" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="ring-number" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="ring-type" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="spore-print-color" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="population" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="habitat" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="450" y="1026" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\MushroomTrainData.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>MushroomTrainData.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="class" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="cap-shape" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="cap-surface" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="cap-color" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="bruises" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="odor" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="gill-attachment" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="gill-spacing" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="gill-size" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="gill-color" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="stalk-shape" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="stalk-root" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="stalk-surface-above-ring" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="stalk-surface-below-ring" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="stalk-color-above-ring" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="stalk-color-below-ring" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="veil-type" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="veil-color" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="ring-number" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="ring-type" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="spore-print-color" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="population" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+                <Field name="habitat" size="254" source="File: C:\Users\pragland\Desktop\mushrooms.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="618" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\Samples\data\SampleData\New_Donor.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>New_Donor.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Donate" size="64" source="Formula: [Donate2]" type="String" />
+                <Field name="Degrees" source="File: C:\Users\dputler\Dropbox\R_Commander\Windows_Packages\UBC.dbf" type="Int32" />
+                <Field name="First_Years" source="File: C:\Users\dputler\Dropbox\R_Commander\Windows_Packages\UBC.dbf" type="Int32" />
+                <Field name="Last_Years" source="File: C:\Users\dputler\Dropbox\R_Commander\Windows_Packages\UBC.dbf" type="Int32" />
+                <Field name="Undergraduate" size="64" source="Formula: IF [Undergradu] == 1 THEN &quot;Yes&quot; ELSE &quot;No&quot; ENDIF" type="String" />
+                <Field name="First_School" size="64" source="Formula: IF [First_School] == &quot;HK&quot; THEN &quot;PE&quot; ELSE [First_School] ENDIF" type="String" />
+                <Field name="Last_School" size="64" source="Formula: IF [Last_School] == &quot;CO&quot; THEN &quot;BU&quot; ELSE [Last_School] ENDIF" type="String" />
+                <Field name="Faculty_Staff" size="64" source="Formula: IF [Faculty_St] == 1 THEN &quot;Yes&quot; ELSE &quot;No&quot; ENDIF" type="String" />
+                <Field name="Intercollegiate" size="64" source="Formula: IF [Intercolle] == 1 THEN &quot;Yes&quot; ELSE &quot;No&quot; ENDIF" type="String" />
+                <Field name="Intramural" size="64" source="Formula: [Intramural2]" type="String" />
+                <Field name="Other_Activities" size="64" source="Formula: IF [Other_Acti] == 1 THEN &quot;Yes&quot; ELSE &quot;No&quot; ENDIF" type="String" />
+                <Field name="Gender" size="64" source="Formula: [Gender2]" type="String" />
+                <Field name="Child" size="64" source="Formula: [Child2]" type="String" />
+                <Field name="Parent" size="64" source="Formula: [Parent2]" type="String" />
+                <Field name="Spouse" size="64" source="Formula: [Spouse2]" type="String" />
+                <Field name="Telephone" source="File: C:\Users\dputler\Dropbox\R_Commander\Windows_Packages\UBC.dbf" type="Int32" />
+                <Field name="Mail" source="File: C:\Users\dputler\Dropbox\R_Commander\Windows_Packages\UBC.dbf" type="Int32" />
+                <Field name="Personal" source="File: C:\Users\dputler\Dropbox\R_Commander\Windows_Packages\UBC.dbf" type="Int32" />
+                <Field name="Combined" source="File: C:\Users\dputler\Dropbox\R_Commander\Windows_Packages\UBC.dbf" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="104">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="498" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_978909ee3e24b3458a1f120492e92aa5~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints />
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="105">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="498" y="642" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_4599276bd54b5846933ae467dbdbcde2~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints />
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="106">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="486" y="726" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_f2d36211ec008542bbcbdc5493216e0c~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints />
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="107">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="486" y="798" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_bdead9a6be7824499c97f3ddd23c1204~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints />
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="108">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="486" y="882" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_2e79db624872c54aa3a2d0793f94f16a~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints />
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="109">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="666" y="942" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_03dcb4e120a58e4ab2800fa2beadd949~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints />
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="110">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="486" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_cbda009055c62c4db7e7c51189fade97~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="111">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="546" y="1026" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_e86632a18307e34d8446f75b402e3e3c~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="112">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="714" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine2_15712_75bce3256f7d674eb284f802c8e514cc_\Engine_15712_5b7e777aa28f054e8e6589d45ea92f58~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="85" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="87" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="88" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="90" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="94" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="95" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="97" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="98" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="99" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="101" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="102" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="103" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="113" Connection="Output" />
+      <Destination ToolID="114" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="104" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="105" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="106" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="107" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="108" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="109" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="110" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="111" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="112" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Sample Dataset</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="6da0042e-09dc-41a3-847c-7cc3c9cae370" />
+      <Telemetry>
+        <PreviousWorkflowId value="c367c4a7-fa31-4558-85c7-1e322f2f689d" />
+        <OriginWorkflowId value="c367c4a7-fa31-4558-85c7-1e322f2f689d" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
