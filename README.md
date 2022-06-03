@@ -1,8 +1,8 @@
 # Data Engineering with Alteryx
 
-<a href="[https://www.packtpub.com/product/mastering-azure-machine-learning-second-edition/9781803232416?utm_source=github&utm_medium=repository&utm_campaign=9781803232416](https://www.packtpub.com/product/data-engineering-with-alteryx/9781803236483?utm_source=github&utm_medium=repository&utm_campaign=9781803236483)"><img src="[https://static.packt-cdn.com/products/9781803232416/cover/smaller](https://static.packt-cdn.com/products/9781803236483/cover/smaller" alt="Mastering Azure Machine Learning - Second Edition" height="256px" align="right"></a>
+<a href="(https://www.packtpub.com/product/data-engineering-with-alteryx/9781803236483?utm_source=github&utm_medium=repository&utm_campaign=9781803236483)"><img src="[https://static.packt-cdn.com/products/9781803232416/cover/smaller](https://static.packt-cdn.com/products/9781803236483/cover/smaller" alt="Mastering Azure Machine Learning - Second Edition" height="256px" align="right"></a>
 
-This is the code repository for [Data Engineering with Alteryx]([https://www.packtpub.com/product/mastering-azure-machine-learning-second-edition/9781803232416?utm_source=github&utm_medium=repository&utm_campaign=9781803232416](https://www.packtpub.com/product/data-engineering-with-alteryx/9781803236483?utm_source=github&utm_medium=repository&utm_campaign=9781803236483), published by Packt.
+This is the code repository for [Data Engineering with Alteryx](https://www.packtpub.com/product/data-engineering-with-alteryx/9781803236483?utm_source=github&utm_medium=repository&utm_campaign=9781803236483), published by Packt.
 
 **Helping data engineers apply DataOps practices with Alteryx**
 
@@ -59,10 +59,11 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 ### Related products <Other books you may enjoy>
 * Data Engineering with AWS [[Packt]](https://www.packtpub.com/product/data-engineering-with-aws/9781800560413?utm_source=github&utm_medium=repository&utm_campaign=9781800560413) [[Amazon]](https://www.amazon.com/dp/B09C2MN5DV)
 
-* Learning Alteryx [[Packt]](https://subscription.packtpub.com/book/big-data-and-business-intelligence/9781788392655?utm_source=github&utm_medium=repository&utm_campaign=9781788392655) [[Amazon]](https://www.amazon.com/dp/B072Q9Q9ML)
+* Learning Alteryx [[Packt]](https://www.packtpub.com/product/learning-alteryx/9781788392655?utm_source=github&utm_medium=repository&utm_campaign=9781788392655) [[Amazon]](https://www.amazon.com/dp/B072Q9Q9ML)
 
 ## Get to Know the Author
-**Paul Houghton** 
+**Paul Houghton** [(https://subscription.packtpub.com/book/big-data-and-business-intelligence/9781788392655?utm_source=github&utm_medium=repository&utm_campaign=9781788392655
+](https://www.packtpub.com/product/learning-alteryx/9781788392655?utm_source=github&utm_medium=repository&utm_campaign=9781788392655)
 is an experienced business analyst with the ability to make focused
 data-led decisions. He is able to utilize data from a multitude of sources, including
 structured company data alongside unstructured data, such as social media sites. Paul's
