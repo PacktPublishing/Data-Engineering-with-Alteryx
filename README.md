@@ -1,6 +1,6 @@
 # Data Engineering with Alteryx
 
-<a href="(https://www.packtpub.com/product/data-engineering-with-alteryx/9781803236483?utm_source=github&utm_medium=repository&utm_campaign=9781803236483)"><img src="[https://static.packt-cdn.com/products/9781803232416/cover/smaller](https://static.packt-cdn.com/products/9781803236483/cover/smaller" alt="Mastering Azure Machine Learning - Second Edition" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/product/data-engineering-with-alteryx/9781803236483?utm_source=github&utm_medium=repository&utm_campaign=9781803236483"><img src="https://static.packt-cdn.com/products/9781803236483/cover/smaller" alt="Mastering Azure Machine Learning - Second Edition" height="256px" align="right"></a>
 
 This is the code repository for [Data Engineering with Alteryx](https://www.packtpub.com/product/data-engineering-with-alteryx/9781803236483?utm_source=github&utm_medium=repository&utm_campaign=9781803236483), published by Packt.
 
@@ -14,7 +14,7 @@ This book covers the following exciting features:
 * Develop monitoring processes for the pipeline example
 * Understand and apply DataOps principles to an Alteryx data pipeline
 * Gain skills for data engineering with the Alteryx software stack
-* Work with spatial analytics and machine learning techniques in an Alteryx workflow Explore Alteryx workflow deployment strategies using metadata validation and continuous integration
+* Work with spatial analytics and machine learning techniques in an Alteryx workflow Explore Alteryx workflow deployment strategies using metadata validation and    continuous integration
 * Organize content on Alteryx Server and secure user access
 
 If you feel this book is for you, get your [copy](https://www.amazon.com/dp/B09NC5XJ6D) today!
@@ -37,7 +37,7 @@ files = [f for f in listdir(os.getcwd()) if f.endswith(ayx_file)]
 ```
 
 **Following is what you need for this book:**
-If you’re a data engineer, data scientist, or data analyst who wants to set up a reliable process for developing data pipelines using Alteryx, this book is for you. You’ll also find this book useful if you are trying to make the development and deployment of datasets more robust by following the DataOps principles. 
+If you're a data engineer, data scientist, or data analyst who wants to set up a reliable process for developing data pipelines using Alteryx, this book is for you. You’ll also find this book useful if you are trying to make the development and deployment of datasets more robust by following the DataOps principles. 
 Familiarity with Alteryx products will be helpful but is not necessary.
 
 With the following software and hardware list you can run all code files present in the book (Chapter 1-13).
@@ -62,8 +62,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 * Learning Alteryx [[Packt]](https://www.packtpub.com/product/learning-alteryx/9781788392655?utm_source=github&utm_medium=repository&utm_campaign=9781788392655) [[Amazon]](https://www.amazon.com/dp/B072Q9Q9ML)
 
 ## Get to Know the Author
-**Paul Houghton** [(https://subscription.packtpub.com/book/big-data-and-business-intelligence/9781788392655?utm_source=github&utm_medium=repository&utm_campaign=9781788392655
-](https://www.packtpub.com/product/learning-alteryx/9781788392655?utm_source=github&utm_medium=repository&utm_campaign=9781788392655)
+**Paul Houghton** 
 is an experienced business analyst with the ability to make focused
 data-led decisions. He is able to utilize data from a multitude of sources, including
 structured company data alongside unstructured data, such as social media sites. Paul's
