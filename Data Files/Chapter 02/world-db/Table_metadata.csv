@@ -1,0 +1,25 @@
+﻿Table,Column Name,Column Type
+city,ID,int
+city,Name,char(35)
+city,CountryCode,char(3)
+city,District,char(20)
+city,Population,int
+country,Code,char(3)
+country,Name,char(52)
+country,Continent,"enum('Asia','Europe','North"
+country,Region,char(26)
+country,SurfaceArea,"decimal(10,2)"
+country,IndepYear,smallint
+country,Population,int
+country,LifeExpectancy,"decimal(3,1)"
+country,GNP,"decimal(10,2)"
+country,GNPOld,"decimal(10,2)"
+country,LocalName,char(45)
+country,GovernmentForm,char(45)
+country,HeadOfState,char(60)
+country,Capital,int
+country,Code2,char(2)
+countrylanguage,CountryCode,char(3)
+countrylanguage,Language,char(30)
+countrylanguage,IsOfficial,"enum('T','F')"
+countrylanguage,Percentage,"decimal(4,1)"
