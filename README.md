@@ -71,3 +71,7 @@ structured company data alongside unstructured data, such as social media sites.
 ability to combine data from structured business sources with open and unstructured
 data and analyze a range of datasets enables him to make fast, accurate, and relevant
 business decisions.
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781803236483">https://packt.link/free-ebook/9781803236483 </a> </p>
